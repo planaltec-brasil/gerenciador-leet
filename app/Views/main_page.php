@@ -12,6 +12,16 @@
     
 
 <style>
+    input{
+        filter: hue-rotate(750deg)
+    }
+
+    .btn-primary {
+    color: #fff;
+    background-color: #6d009b;
+    border-color: #fff;
+    }
+
     .divider:after,
         .divider:before {
             content: "";
@@ -34,10 +44,45 @@
 
     img{
         border-radius: 50%;
-        width: 50vh;
-        align-items: center;
+        width: 111px;
+        height: 100px;
+        position: relative;
+        left: 41px;
+        bottom: 99px
+            
+    }
+    img{
+        -moz-box-shadow: 0px 0px 20px #ff00c8;
+        -webkit-box-shadow: 0px 0px 20px #ff00c8;
+        cursor: pointer;
     }
 
+    p {
+        color: #fff;
+        font-weight: bold;
+        font-size: 2vw;
+        display: flex;
+        align-items: center:
+    }
+
+    .layout{
+        display:flex;
+        bottom: 100px;
+        flex-direction: row;
+    }
+
+    /* <svg width="487" height="768" viewBox="0 0 487 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H487V768H0V0Z" fill="url(#paint0_linear_226_334)"/>
+<path d="M0 0H487V768H0V0Z" fill="#1B1B1B" fill-opacity="0.2"/>
+<defs>
+<linearGradient id="paint0_linear_226_334" x1="0" y1="384" x2="487" y2="384" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B800FF"/>
+<stop offset="1" stop-color="#FF3D81"/>
+</linearGradient>
+</defs>
+</svg> */
+
+  
 
 </style>
 </head>
@@ -45,11 +90,14 @@
 <section class="vh-100">
     <div class="container-fluid h-custom">
          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-9 col-lg-6 col-xl-5 d-flex justify-content-center">
+            <div>
                 <img src="../assets/leett.jpg" class="img-fluid" alt="Sample image">
             </div> 
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div class="layout col-md-8 col-lg-6">
                 <form>
+                    <div>
+                        <p>Acesse sua conta</p>
+                    </div>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                         <input type="text" id="usuario" class="form-control form-control-lg" placeholder="Digite o Usuário "/>
@@ -59,7 +107,7 @@
                         <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Digite sua Senha" />
                     </div>
                     <div class="text-center text-lg-start mt-4 pt-2">
-                        <button type="button" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar</button>
+                        <button class=" glow-on-hover btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar</button>
                     </div>
                 </form>
             </div>
