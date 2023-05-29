@@ -167,7 +167,7 @@
                             
                             <div class="form-group col-12 d-grid gap-3" >
                                 <label for="username" >Senha</label>
-                                <input id="logSenha" name="username" type="password" class="form-control" />
+                                <input id="logSenha" name="username" type="password" class="form-control" style="height: 50px; border-radius: 12px;" />
                             </div>
 
                             <div class="form-group col-12 d-grid gap-3" >
