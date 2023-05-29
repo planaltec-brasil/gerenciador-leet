@@ -9,7 +9,6 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
-
 /**
  * Class BaseController
  *
@@ -20,7 +19,7 @@ use Psr\Log\LoggerInterface;
  *
  * For security be sure to declare any new methods as protected or private.
  */
- abstract class BaseController extends Controller
+abstract class BaseController extends Controller
 {
     /**
      * Instance of the main Request object.
@@ -57,3 +56,4 @@ use Psr\Log\LoggerInterface;
         // E.g.: $this->session = \Config\Services::session();
     }
 }
+

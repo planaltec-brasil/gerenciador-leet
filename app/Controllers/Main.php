@@ -1,11 +1,13 @@
-<?php
+<?php namespace App\Controllers;
 
-namespace App\Controllers;
 use CodeIgniter\Controller;
 
-class Main extends Controller{
+class Main extends BaseController{
 
     public function index(){
+
         return view('login');
+
     }
+
 }

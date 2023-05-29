@@ -159,30 +159,30 @@
                     <div class="titulo">
                         <h1>Acesse sua conta</h1>
                     </div>
-                    <div class="form-row d-grid gap-3">
-                        <div class="form-group col-12 d-grid gap-3" >
-                            <label for="username" >Login</label>
-                            <input id="logNome" name="username" type="text" class="form-control" />
-                        </div>
-                        
-                        <div class="form-group col-12 d-grid gap-3" >
-                            <label for="username" >Senha</label>
-                            <input id="logSenha" name="username" type="text" class="form-control" />
-                        </div>
+                        <div class="form-row d-grid gap-3">
+                            <div class="form-group col-12 d-grid gap-3" >
+                                <label for="username" >Login</label>
+                                <input id="logNome" name="username" type="text" class="form-control" />
+                            </div>
+                            
+                            <div class="form-group col-12 d-grid gap-3" >
+                                <label for="username" >Senha</label>
+                                <input id="logSenha" name="username" type="password" class="form-control" />
+                            </div>
 
-                        <div class="form-group col-12 d-grid gap-3" >
-                            <div class="form-check d-flex justify-content-start align-items-center">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label ms-2" for="flexCheckDefault">
-                                    Lembrar-me
-                                </label>
+                            <div class="form-group col-12 d-grid gap-3" >
+                                <div class="form-check d-flex justify-content-start align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label ms-2" for="flexCheckDefault">
+                                        Lembrar-me
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12 d-flex justify-content-center mt-5">
+                                <button type="button" class="btn btn-lg glow-on-hover" >Entrar</button>
                             </div>
                         </div>
-
-                        <div class="form-group col-12 d-flex justify-content-center mt-5">
-                            <button type="button" class="btn btn-lg glow-on-hover" >Entrar</button>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 corzinha">
