@@ -29,7 +29,12 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-// $routes->get('/', 'index::login');
+$routes->get('/login', 'Main::index');
+$routes->get('/Dashboard', 'Dash_controller::dashleet');
+$routes->get('/CadsPedidos', 'Dash_controller::CadsPedidos');
+$routes->get('/CadsCliente', 'Dash_controller::CadsCliente');
+$routes->get('/CadsProduto', 'Dash_controller::CadsProduto');
+$routes->get('/CadsUsuario', 'Dash_controller::CadsUsuario');
 
 /*
  * --------------------------------------------------------------------

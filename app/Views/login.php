@@ -149,7 +149,7 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid h-100" >
+    <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col-lg-7 col-md-12 col-sm-12 d-flex justify-content-center align-items-center" style="background-color: #1B1B1B">
                 <div id="imagenzinha">  
@@ -180,7 +180,7 @@
                             </div>
 
                             <div class="form-group col-12 d-flex justify-content-center mt-5">
-                                <button type="button" class="btn btn-lg glow-on-hover" >Entrar</button>
+                                <button type="button" class="btn btn-lg glow-on-hover" href="Dashboard">Entrar</button>
                             </div>
                         </div>
                 </div>

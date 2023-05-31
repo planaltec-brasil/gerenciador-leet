@@ -9,5 +9,4 @@ class Main extends BaseController{
         return view('login');
 
     }
-
 }
