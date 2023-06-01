@@ -27,6 +27,10 @@
 
 </style>
 
+<script>
+    
+</script>
+
 <div class="main-top">
     <h1 class="corInit">Cadastro de Usuário</h1>
 </div>
@@ -41,12 +45,10 @@
         <input type="text" class="form-control" id="">
     </div>
     <div class="col-md-3">
-        <label for="dadosProduto" class="form-label">E-mail</label>
-        <input type="text" class="form-control" id="" >
-    </div>
-    <div class="col-md-3">
         <label for="inputAddress2" class="form-label">Cargo/Permissões</label>
-        <input type="text" class="form-control" id="inputAddress" >
+        <select  class="form-select form-control" name="cargo" id="">
+            <option>Selecione</option>
+        </select>
     </div>
     <div class="col-md-3">
         <button type="submit" class="btn btn-primary">Cadastrar</button>
@@ -55,7 +57,7 @@
     <div class="main-top mt-3">
         <h1 class="corInit">Lista de Usuário</h1>
     </div>
-    <table class="table table-hover">
+    <table id="tb_usuario" class="table table-hover">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -64,24 +66,5 @@
                 <th scope="col">Handle</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
     </table>
 </div>
