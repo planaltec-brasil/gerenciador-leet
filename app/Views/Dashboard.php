@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Jquery -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- Datatables -->
-      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" lang="javascript" src="<?php echo base_url(); ?>assets/js/date-uk.js" ></script>
     <!-- DATATABLE BUTTONS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/b-1.6.5/b-colvis-1.6.5/b-flash-1.6.5/b-html5-1.6.5/b-print-1.6.5/datatables.min.js"></script>
-      <!-- Jquery Mask -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <!-- /*bootstrap*/ -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/b-1.6.5/b-colvis-1.6.5/b-flash-1.6.5/b-html5-1.6.5/b-print-1.6.5/datatables.min.js"></script>
+    <!-- Jquery Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+        integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- /*bootstrap*/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-    *{
+    * {
         margin: 0;
         padding: 0;
         outline: none;
-        border:none;
+        border: none;
         text-decoration: none;
         box-sizing: border-box;
-        font-family:"Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
     }
 
-    body{
+    body {
         background: white;
     }
 
-    .form-control{
-        background-color: #b7b7b7 !important;
+    .form-control {
+        background-color: #F5F3F3 !important;
     }
 
     .navbar-global {
-        position:relative;
+        position: sticky;
         top: 0;
         bottom: 0;
         height: 100vh;
@@ -53,16 +65,16 @@
         box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     }
 
-    .navbar-global ul{
+    .navbar-global ul {
         list-style: none !important;
         padding-left: 0 !important;
     }
 
-    .navbar-global li{
+    .navbar-global li {
         cursor: pointer !important;
     }
 
-    .navbar-global a{
+    .navbar-global a {
         text-decoration: none !important;
         cursor: pointer !important;
         padding: 17px !important;
@@ -70,27 +82,27 @@
         width: 100%;
     }
 
-    .logo{
+    .logo {
         text-align: center;
-        
+
     }
 
-    .logo img{
+    .logo img {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        
+
     }
 
-    .logo span{
+    .logo span {
         font-weight: bold;
         padding-left: 15px;
         font-size: 18px;
         text-transform: uppercase;
-        
+
     }
 
-    .navbar-global a{
+    .navbar-global a {
         color: #b7b7b7;
         font-size: 10px;
         display: table;
@@ -98,12 +110,12 @@
         margin-top: 10px !important;
     }
 
-    .navbar-global .fas{
+    .navbar-global .fas {
         position: relative;
         width: 66px;
         height: 30px;
         font-size: 20px;
-        text-align:center;
+        text-align: center;
     }
 
     .navbar-global li:not(:first-child) a:hover {
@@ -113,26 +125,26 @@
     }
 
 
-    .logout{
+    .logout {
         position: relative;
         bottom: 0;
     }
 
     /* section */
 
-    .main{
+    .main {
         position relative;
         padding: 20px;
         width: 100%;
         align-items: center;
     }
 
-    .main-top{
+    .main-top {
         display: flex;
         width: 100%;
     }
 
-    .main-top i{
+    .main-top i {
         position: absolute;
         right: 0;
         margin: 10px 30px;
@@ -140,12 +152,12 @@
         cursor: pointer;
     }
 
-    .main-skills{
+    .main-skills {
         display: flex;
         margin-top: 20px;
     }
 
-    .main-skills .card{
+    .main-skills .card {
         width: 25%;
         margin: 10px;
         background: #fff;
@@ -155,16 +167,16 @@
         box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     }
 
-    .main-skills .card h3{
+    .main-skills .card h3 {
         margin: 10px;
         text-transform: capitalize;
     }
 
-    .main-skills .card p{
+    .main-skills .card p {
         font-size: 12px;
     }
 
-    .main-skills .card button{
+    .main-skills .card button {
         background: orangered;
         color: #fff;
         padding: 7px 15px;
@@ -173,23 +185,23 @@
         cursor: pointer;
     }
 
-    .main-skills .card button:hover{
+    .main-skills .card button:hover {
         background: rgba(223, 70, 15, 0.856);
     }
 
-    .main-skills .card i{
+    .main-skills .card i {
         font-size: 22px;
         padding: 10px;
     }
 
     /* course */
 
-    .main-sourse{
+    .main-sourse {
         margin-top: 20px;
         text-transform: capitalize;
     }
 
-    .course-box{
+    .course-box {
         width: 100%;
         padding: 10px;
         margin-top: 10px;
@@ -198,12 +210,12 @@
         box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     }
 
-    .course-box ul{
-        list-style: none;  
+    .course-box ul {
+        list-style: none;
         display: flex;
     }
 
-    .course-box ul li{
+    .course-box ul li {
         margin: 10px;
         color: gray;
         cursor: pointer;
@@ -214,30 +226,30 @@
         border-bottom: 1px solid #000;
     } */
 
-    .active:hover{
+    .active:hover {
         color: #000;
         border-bottom: 1px solid #000;
     }
 
-    .course-box .course{
+    .course-box .course {
         display: flex;
     }
 
-    .box{
+    .box {
         width: 33%;
-        padding: 10px; 
+        padding: 10px;
         margin: 10px;
         border-radius: 10px;
         background: rgb(235, 233, 233);
         box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     }
 
-    .box p{
+    .box p {
         font-size: 12px;
         margin-top: 5px;
     }
 
-    .box button{
+    .box button {
         background: #000;
         color: #fff;
         padding: 7px 10px;
@@ -245,37 +257,37 @@
         margin-top: 3rem;
         cursor: pointer;
     }
-    
-    .box button:hover{
+
+    .box button:hover {
         background: rgba(0, 0, 0, 0.482);
     }
 
-    .box i{
+    .box i {
         font-size: 7rem;
         float: right;
         margin: -20px 20px 20px 0;
     }
 
-    .html{
+    .html {
         color: rgb(25, 94, 54);
     }
 
-    .css{
+    .css {
         color: rgb(104, 179, 35);
     }
 
-    .js{
+    .js {
         color: rgb(28, 98, 179);
     }
 
     @media only screen and (max-width: 1000px) {
-            i{
-                display:none;
-            }
-            
+        i {
+            display: none;
         }
-        
+
+    }
 </style>
+
 <body>
     <div class="container-fluid ps-0">
         <div class="row">
@@ -283,13 +295,13 @@
                 <nav class="navbar-global">
                     <ul>
                         <li><a class="logo">
-                            <img src="<?= base_url();?>assets/img/Leet Logo.png"/>
-                            <span class="navBar-daniel">DashBoard</span>
-                        </a></li>
-                        <li class="navBar-daniel" >
-                            <a href="Dashboard"> 
-                                <i class="fas fa-home" ></i> Home
-                         </a>
+                                <img src="<?= base_url(); ?>assets/img/Leet Logo.png" />
+                                <span class="navBar-daniel">DashBoard</span>
+                            </a></li>
+                        <li class="navBar-daniel">
+                            <a href="Dashboard">
+                                <i class="fas fa-home"></i> Home
+                            </a>
                         </li>
                         <li class="navBar-daniel">
                             <a href="CadsPedidos">
@@ -330,10 +342,11 @@
             </div>
             <div class="col-10">
                 <section class="main" style="">
-                    <?php echo view($pagina);  ?>
+                    <?php echo view($pagina); ?>
                 </section>
             </div>
         </div>
     </div>
 </body>
+
 </html>

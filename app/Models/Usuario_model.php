@@ -3,10 +3,10 @@
 namespace App\Models; 
 use CodeIgniter\Model;
 
-class Clientes_model extends Model {
+class Usuario_model extends Model {
 
-    protected $table = 'tb_cliente';
-    protected $primaryKey = 'id_cliente';
+    protected $table = 'tb_usuario';
+    protected $primaryKey = 'id_usuario';
 
     protected $useAutoIncrement = true;
 
@@ -14,24 +14,17 @@ class Clientes_model extends Model {
     protected $useSoftDeletes = false;
 
     protected $allowedFields = [ 
-        'nome_cliente',
-        'cpf_cliente',
-        'telefone_cliente',
-        'logradouro_cliente',
-        'bairro_cliente',
-        'numero_cliente',
-        'complemento_cliente',
-        'cidade_cliente',
-        'estado_cliente',
-        'cep_cliente',
+        'usuario',
+        'senha',
+        'cargo',
         ];
 
-    public function getClientes($id = false) {
+    public function getUsuario($id = false) {
         if ($id === false) {
             return $this->findAll();
         }
 
-        return $this->where(['id_cliente' => $id])->first();
+        return $this->where(['id_usuario' => $id])->first();
     }
 
     

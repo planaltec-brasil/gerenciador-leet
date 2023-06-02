@@ -3,10 +3,10 @@
 namespace App\Models; 
 use CodeIgniter\Model;
 
-class Clientes_model extends Model {
+class Cadsproduto_model extends Model {
 
-    protected $table = 'tb_cliente';
-    protected $primaryKey = 'id_cliente';
+    protected $table = 'tb_produto';
+    protected $primaryKey = 'id_produto';
 
     protected $useAutoIncrement = true;
 
@@ -14,24 +14,22 @@ class Clientes_model extends Model {
     protected $useSoftDeletes = false;
 
     protected $allowedFields = [ 
-        'nome_cliente',
-        'cpf_cliente',
-        'telefone_cliente',
-        'logradouro_cliente',
-        'bairro_cliente',
-        'numero_cliente',
-        'complemento_cliente',
-        'cidade_cliente',
-        'estado_cliente',
-        'cep_cliente',
+        'nome_produto',
+        'cor_produto',
+        'estoque_atual',
+        'estoque_anterior',
+        'unidade_produto',
+        'volume_produto',
+        'material_produto',
+        'fotos_produto',
         ];
 
-    public function getClientes($id = false) {
+    public function getProduto($id = false) {
         if ($id === false) {
             return $this->findAll();
         }
 
-        return $this->where(['id_cliente' => $id])->first();
+        return $this->where(['id_produto' => $id])->first();
     }
 
     

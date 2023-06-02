@@ -29,12 +29,31 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+//telas
 $routes->get('/login', 'Main::index');
 $routes->get('/Dashboard', 'Dash_controller::dashleet');
 $routes->get('/CadsPedidos', 'Dash_controller::CadsPedidos');
 $routes->get('/CadsCliente', 'Dash_controller::CadsCliente');
 $routes->get('/CadsProduto', 'Dash_controller::CadsProduto');
 $routes->get('/CadsUsuario', 'Dash_controller::CadsUsuario');
+
+//controllers
+$routes->post('/InsereDadosCliente', 'Cliente_controller::InsereDadosCliente');
+$routes->get('/getClientes', 'Cliente_controller::getClientes');
+$routes->post('/InsereDadosUsuario', 'Usuario_controller::InsereDadosUsuario');
+$routes->get('/getUsuario', 'Usuario_controller::getUsuario');
+$routes->post('/InsereDadosProduto', 'Cadsproduto_controller::InsereDadosProduto');
+$routes->get('/getProduto', 'Cadsproduto_controller::getProduto');
+$routes->post('/InsereDadosPedido', 'Cadspedido_controller::InsereDadosPedido');
+$routes->get('/getPedido', 'Cadspedido_controller::getPedido');
+
+//functions
+$routes->post('/CarregaPedido', 'Cadspedido_controller::CarregaEditaPedido');
+$routes->post('/CarregaCliente', 'Cliente_controller::CarregaEditaCliente');
+$routes->post('/CarregaProduto', 'Cadsproduto_controller::CarregaEditaProduto');
+$routes->post('/CarregaUsuario', 'Usuario_controller::CarregaEditaUsuario');
+
+
 
 /*
  * --------------------------------------------------------------------

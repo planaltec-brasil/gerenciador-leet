@@ -1,0 +1,287 @@
+ERROR - 2023-06-02 14:47:29 --> mysqli_sql_exception: Unknown column 'tb_produto' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 14:47:29 --> Unknown column 'tb_produto' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = :tb_produto:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 14:47:29 --> mysqli_sql_exception: Unknown column 'tb_produto' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 14:47:29 --> Unknown column 'tb_produto' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = :tb_produto:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 14:47:29 --> mysqli_sql_exception: Unknown column 'tb_produto' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 14:47:29 --> Unknown column 'tb_produto' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = :tb_produto:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 14:47:29 --> mysqli_sql_exception: Unknown column 'tb_produto' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 14:47:29 --> Unknown column 'tb_produto' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = :tb_produto:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 14:47:30 --> mysqli_sql_exception: Unknown column 'tb_produto' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 14:47:30 --> Unknown column 'tb_produto' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = :tb_produto:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 14:49:03 --> mysqli_sql_exception: Unknown column 'tb_produto' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 14:49:03 --> Unknown column 'tb_produto' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = :tb_produto:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 14:49:04 --> mysqli_sql_exception: Unknown column 'tb_produto' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 14:49:04 --> Unknown column 'tb_produto' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`
+WHERE `tb_produto` = :tb_produto:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadsproduto_model.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Cadsproduto_controller.php(27): App\Models\Cadsproduto_model->getProduto('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->CarregaEditaProduto()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,195 @@
+CRITICAL - 2023-06-01 13:40:05 --> Undefined property: App\Controllers\Cliente_controller::$clienteModel
+in APPPATH\Controllers\Cliente_controller.php on line 13.
+ 1 APPPATH\Controllers\Cliente_controller.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Cliente_controller::$clienteModel', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\Cliente_controller.php', 13, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->InsereDadosCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 13:42:06 --> Class 'Codeigniter\Model' not found
+in APPPATH\Models\clientes_model.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Models\\CLientes_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CLientes_model')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CLientes_model')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CLientes_model')
+ 6 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\CLientes_model')
+ 7 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Controllers\\CLientes_model')
+ 8 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models('App\\Controllers\\CLientes_model', [...], null)
+10 APPPATH\Controllers\BaseController.php(57): model('App\\Controllers\\CLientes_model')
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 13:44:41 --> syntax error, unexpected '/', expecting ';' or ','
+in APPPATH\Models\clientes_model.php on line 4.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Models\\CLientes_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CLientes_model')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CLientes_model')
+ 4 [internal function]: spl_autoload_call('App\\Models\\CLientes_model')
+ 5 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\CLientes_model')
+ 6 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Controllers\\CLientes_model')
+ 7 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models('App\\Controllers\\CLientes_model', [...], null)
+ 9 APPPATH\Controllers\BaseController.php(57): model('App\\Controllers\\CLientes_model')
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+11 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-01 13:45:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\gerenciador-leet\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(13): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->InsereDadosCliente()
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#11 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#3 C:\wamp64\www\gerenciador-leet\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 C:\wamp64\www\gerenciador-leet\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(13): CodeIgniter\BaseModel->save(Array)
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->InsereDadosCliente()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-01 13:45:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_cliente` (`nome_cliente`, `cpf_cliente`, `telefone_cliente`, `logradouro_cliente`, `bairro_cliente`, `numero_cliente`, `complemento_cliente`, `cidade_cliente`, `estado_cliente`, `cep_cliente`) VALUES (:nome_cliente:, :cpf_cliente:, :telefone_cliente:, :logradouro_cliente:, :bairro_cliente:, :numero_cliente:, :complemento_cliente:, :cidade_cliente:, :estado_cliente:, :cep_cliente:)', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Cliente_controller.php(13): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->InsereDadosCliente()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 14:23:16 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Usuario_controller.php(13): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->InsereDadosUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 14:23:30 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Usuario_controller.php(13): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->InsereDadosUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 14:25:04 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Usuario_controller.php(14): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->InsereDadosUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 14:30:14 --> Call to undefined method App\Models\usuario_model::getClientes
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Usuario_controller.php(21): CodeIgniter\Model->__call('getClientes', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->getUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-01 19:48:02 --> mysqli_sql_exception: Unknown column 'id_cliente' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadspedido_model.php(37): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(27): App\Models\Cadspedido_model->getPedido('3')
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->CarregaEditaPedido()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-01 19:48:02 --> Unknown column 'id_cliente' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_pedido`
+WHERE `id_cliente` = \'3\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_pedido`
+WHERE `id_cliente` = \'3\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_pedido`
+WHERE `id_cliente` = \'3\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_pedido`
+WHERE `id_cliente` = :id_cliente:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Cadspedido_model.php(37): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\CadsPedido_controller.php(27): App\Models\Cadspedido_model->getPedido('3')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->CarregaEditaPedido()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-01 19:51:30 --> mysqli_sql_exception: Unknown column 'tb_pedido.tb_pedido' in 'where clause' in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_pedi...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_pedi...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_pedi...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_pedi...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\wamp64\www\gerenciador-leet\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(15): CodeIgniter\Model->update(Array, Array)
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-01 19:51:30 --> Unknown column 'tb_pedido.tb_pedido' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_pedido` SET `numero_pedido` = \'daniel ccccc\', `dados_cliente` = \'asdas\', `dados_produto` = \'1515\', `dados_arte` = \'dasd\', `data_pedido` = \'2023-06-08\', `data_evento` = \'2023-06-08\', `data_entrega` = \'2023-06-13\', `cep_pedido` = \'4345\', `retirada_envio` = \'2023-06-15\', `valor_unitario` = \'345345\', `valor_total` = \'453453\', `valor_sinal` = \'453453\', `falta_pagar` = \'4534\'
+WHERE `tb_pedido`.`tb_pedido` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_pedido` SET `numero_pedido` = \'daniel ccccc\', `dados_cliente` = \'asdas\', `dados_produto` = \'1515\', `dados_arte` = \'dasd\', `data_pedido` = \'2023-06-08\', `data_evento` = \'2023-06-08\', `data_entrega` = \'2023-06-13\', `cep_pedido` = \'4345\', `retirada_envio` = \'2023-06-15\', `valor_unitario` = \'345345\', `valor_total` = \'453453\', `valor_sinal` = \'453453\', `falta_pagar` = \'4534\'
+WHERE `tb_pedido`.`tb_pedido` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_pedido` SET `numero_pedido` = \'daniel ccccc\', `dados_cliente` = \'asdas\', `dados_produto` = \'1515\', `dados_arte` = \'dasd\', `data_pedido` = \'2023-06-08\', `data_evento` = \'2023-06-08\', `data_entrega` = \'2023-06-13\', `cep_pedido` = \'4345\', `retirada_envio` = \'2023-06-15\', `valor_unitario` = \'345345\', `valor_total` = \'453453\', `valor_sinal` = \'453453\', `falta_pagar` = \'4534\'
+WHERE `tb_pedido`.`tb_pedido` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_pedido` SET `numero_pedido` = :numero_pedido:, `dados_cliente` = :dados_cliente:, `dados_produto` = :dados_produto:, `dados_arte` = :dados_arte:, `data_pedido` = :data_pedido:, `data_evento` = :data_evento:, `data_entrega` = :data_entrega:, `cep_pedido` = :cep_pedido:, `retirada_envio` = :retirada_envio:, `valor_unitario` = :valor_unitario:, `valor_total` = :valor_total:, `valor_sinal` = :valor_sinal:, `falta_pagar` = :falta_pagar:
+WHERE `tb_pedido`.`tb_pedido` IN :tb_pedido.tb_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CadsPedido_controller.php(15): CodeIgniter\Model->update([...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
