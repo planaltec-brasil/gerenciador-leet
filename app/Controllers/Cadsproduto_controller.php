@@ -22,6 +22,11 @@ class Cadsproduto_controller extends BaseController {
         echo json_encode(['data' => $res]);
     }
 
+    public function getAllProd() {
+        $res = $this->produto_model->getProduto();
+        echo json_encode($res);
+    }
+
     public function CarregaEditaProduto(){
         $id = isset($_POST['id']) ? $_POST['id'] : "";
         $res = $this->produto_model->getProduto($id);

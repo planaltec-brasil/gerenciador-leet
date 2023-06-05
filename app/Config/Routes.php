@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 //telas
 $routes->get('/login', 'Main::index');
 $routes->get('/Dashboard', 'Dash_controller::dashleet');
-$routes->get('/CadsPedidos', 'Dash_controller::CadsPedidos');
+$routes->get('/CadsPedidos', 'CadsPedido_controller::CadsPedidos');
 $routes->get('/CadsCliente', 'Dash_controller::CadsCliente');
 $routes->get('/CadsProduto', 'Dash_controller::CadsProduto');
 $routes->get('/CadsUsuario', 'Dash_controller::CadsUsuario');
@@ -52,6 +52,7 @@ $routes->post('/CarregaPedido', 'Cadspedido_controller::CarregaEditaPedido');
 $routes->post('/CarregaCliente', 'Cliente_controller::CarregaEditaCliente');
 $routes->post('/CarregaProduto', 'Cadsproduto_controller::CarregaEditaProduto');
 $routes->post('/CarregaUsuario', 'Usuario_controller::CarregaEditaUsuario');
+$routes->post('/getall', 'Cadsproduto_controller::getAllProd');
 
 
 

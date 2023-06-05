@@ -20,14 +20,7 @@ class Dash_controller extends BaseController{
 
     }
 
-    function CadsPedidos(){
 
-       $data = [
-            'pagina' => 'cadastroPedido'
-        ];
-
-        return view('Dashboard', $data);
-    }
 
     function CadsCliente(){
 
