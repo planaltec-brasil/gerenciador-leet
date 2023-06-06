@@ -188,7 +188,7 @@
                 <label for="inputState" class="form-label">CEP</label>
                 <input type="text" class="form-control" id="cep_cliente">
                 <input type="text" hidden="true" id="id_Edita">
-                <button hidden="true" id="atualizaTable"></button>
+                <button type="button" hidden="true" id="atualizaTable"></button>
             </div>
             <div class="col-md-3">
                 <button type="button" id="btnEnvia" class="btn btn-primary">Cadastrar</button>

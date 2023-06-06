@@ -982,3 +982,31 @@ WHERE `id_pedido` IN :id_pedido:', [...], false)
  9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
 10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 17:35:13 --> Undefined variable: response
+in APPPATH\Controllers\CadsPedido_controller.php on line 66.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 17:36:02 --> Undefined variable: response
+in APPPATH\Controllers\CadsPedido_controller.php on line 66.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 17:36:06 --> Undefined variable: response
+in APPPATH\Controllers\CadsPedido_controller.php on line 66.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 17:36:28 --> Undefined variable: response
+in APPPATH\Controllers\CadsPedido_controller.php on line 66.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

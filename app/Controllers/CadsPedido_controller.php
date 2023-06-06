@@ -65,7 +65,9 @@ class CadsPedido_controller extends BaseController {
 
         if($response[0]['id'] == null){
             $res = $this->pedido_model->delete($id);
+
         }else{
+            
             $temp = $this->prodPedidoModel->deleta($id);
             if($temp){
                 $res = $this->pedido_model->delete($id);

@@ -124,7 +124,7 @@
                 <option>Selecione</option>
             </select>
             <input type="text" hidden="true" id="id_Edita">
-            <button hidden="true" id="atualizaTable"></button>
+            <button type="button" hidden="true" id="atualizaTable"></button>
         </div>
         <div class="col-md-3">
             <button type="button" id="Enviabtn" class="btn btn-primary">Cadastrar</button>

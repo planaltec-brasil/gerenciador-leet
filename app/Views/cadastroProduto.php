@@ -159,7 +159,7 @@
             <label for="inputState" class="form-label">Fotos do produto</label>
             <input type="file" id="fotos_produto" class="form-control" id="">
             <input type="text" hidden="true" id="id_Edita">
-            <button type="text" hidden="true" id="atualizaTable"></button>
+            <button type="button" hidden="true" id="atualizaTable"></button>
         </div>
         <!-- <div class="mb-3">
             <label for="formFile" class="form-label">Fotos do produto</label>

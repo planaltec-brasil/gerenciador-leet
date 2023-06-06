@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class Clientes_model extends Model {
 
     protected $table = 'tb_cliente';
-    protected $primaryKey = 'id_cliente';
+    protected $primaryKey = 'id';
 
     protected $useAutoIncrement = true;
 

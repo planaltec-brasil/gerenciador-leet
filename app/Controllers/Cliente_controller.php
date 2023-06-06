@@ -27,5 +27,4 @@ class Cliente_controller extends BaseController {
         $res = $this->Cliente_model->getClientes($id);
         echo json_encode($res);
     }
-
 }
