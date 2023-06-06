@@ -1,0 +1,984 @@
+ERROR - 2023-06-06 13:09:19 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(58): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:09:19 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(58): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:10:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(60): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:10:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(60): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:11:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(60): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:11:16 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(60): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:12:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(60): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:12:44 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'151\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(60): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiDados()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:44:54 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-06-06 13:44:54 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(37): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:44:54 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 13:44:54 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Cadsproduto_controller.php(37): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:45:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(37): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:45:00 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Cadsproduto_controller.php(37): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:45:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:45:00 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'152\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:46:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:46:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 13:50:18 --> Function name must be a string
+in APPPATH\Controllers\CadsPedido_controller.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:50:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:50:18 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 13:50:54 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 13:50:54 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:05:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:05:21 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:05:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:05:46 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:15:27 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:15:27 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:16:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:16:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 14:35:09 --> syntax error, unexpected ';'
+in APPPATH\Controllers\CadsPedido_controller.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CadsPedido_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CadsPedido_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\CadsPedido_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CadsPedido_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 14:36:34 --> syntax error, unexpected ';'
+in APPPATH\Controllers\CadsPedido_controller.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CadsPedido_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CadsPedido_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\CadsPedido_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CadsPedido_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:38:23 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:38:23 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:40:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:40:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'149\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:41:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:41:47 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:46:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:46:16 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 14:50:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Models\prodPedidoModel.php on line 34.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(62): App\Models\prodPedidoModel->CarregaProduto('153')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:50:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:50:41 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:52:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:52:01 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:52:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:52:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:52:55 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:52:55 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 14:55:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 14:55:02 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 15:08:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 15:08:24 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(64): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 15:16:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(72): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 15:16:44 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(72): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 15:17:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(70): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 15:17:33 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(70): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 15:19:22 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(70): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 15:19:22 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(70): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 16:48:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(70): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 16:48:51 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(70): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 16:57:01 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\CadsPedido_controller.php on line 66.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 16:57:15 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\CadsPedido_controller.php on line 66.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 16:58:03 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\CadsPedido_controller.php on line 66.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 17:09:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(71): CodeIgniter\BaseModel->delete(Array)
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-06 17:09:57 --> Cannot delete or update a parent row: a foreign key constraint fails (`bd_leet`.`tb_produtos_pedido`, CONSTRAINT `FK_pedidos` FOREIGN KEY (`pedidos`) REFERENCES `tb_pedido` (`id_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN (\'153\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_pedido`
+WHERE `id_pedido` IN :id_pedido:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\CadsPedido_controller.php(71): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->ExcluiProdPedido()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -58,6 +58,8 @@ abstract class BaseController extends Controller
         $this->user_model = model(Usuario_model::class);
         $this->produto_model = model(Cadsproduto_model::class);
         $this->pedido_model = model(Cadspedido_model::class);
+        $this->prodPedidoModel = model(prodPedidoModel::class);
+
     }
 }
 

@@ -22,7 +22,8 @@ class Cadsproduto_model extends Model {
         'volume_produto',
         'material_produto',
         'fotos_produto',
-        ];
+        'qtdPrd',
+    ];
 
     public function getProduto($id = false) {
         if ($id === false) {

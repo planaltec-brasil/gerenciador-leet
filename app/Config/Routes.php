@@ -53,6 +53,8 @@ $routes->post('/CarregaCliente', 'Cliente_controller::CarregaEditaCliente');
 $routes->post('/CarregaProduto', 'Cadsproduto_controller::CarregaEditaProduto');
 $routes->post('/CarregaUsuario', 'Usuario_controller::CarregaEditaUsuario');
 $routes->post('/getall', 'Cadsproduto_controller::getAllProd');
+$routes->post('/excluiPedido', 'Cadspedido_controller::ExcluiPedido');
+$routes->post('/excluiProdPedido', 'Cadspedido_controller::ExcluiProdPedido');
 
 
 
