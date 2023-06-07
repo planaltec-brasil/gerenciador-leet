@@ -33,17 +33,33 @@
                 "<'row'<'col-sm-12'tr>>" +
                 "<'row'<'col-sm-5'i><'col-sm-7'p>>",
             buttons: ['copy', 'excel', 'pdf'],
+            "language": {
+                "url": "<?php echo base_url(); ?>assets/media/Portuguese-Brasil.json"
+            },
             "ajax": "getUsuario",
             columns: [
                 { data: 'id_usuario' },
                 { data: 'usuario' },
                 { data: 'cargo' },
                 {
+                    "data": null,
+                    "defaultContent": "",
+                    "render": function(data, type, row) {
+                        var inativo_ativo = [];
+                        inativo_ativo[0] = 'Ativo';
+                        inativo_ativo[1] = 'Inativo';
+                        return inativo_ativo[data.inativo_ativo];
+                    }
+                },
+                {
                     data: null,
                     defaultContent: "",
                     render: function (data, type, row) {
                         var html = "<button title='editar registro' type='button' onclick='EditaDadosUs(" + data.id_usuario + ")'  class='btn btn-sm btn-outline'><i style='color: #00008B;' class='far fa-edit'></i></button>&nbsp;";
-
+                        if (data.inativo_ativo == 0)
+                            html += "<button onclick='situacao_usuario(" +  data.id_usuario + ", 1)' title='inativar registro' type='button' class='btn btn-sm btn-outline'><i style='color: red;' class='far fa-minus-square'></i></button>&nbsp;"; 
+                        else
+                            html += "<button type='button' title='Reativar Funcionário' class='btn btn-sm btn-outline' onclick='situacao_usuario(" + data.id_usuario + ", 0)'><i style='color: green;' class='fa fa-recycle'></i></button>";
                         return html;
                     }
                 },
@@ -103,6 +119,41 @@
         });
     }
 
+    function situacao_usuario(id_usuario, inativo_ativo) {
+            if (confirm('Deseja realmente executar essa ação?') === true) {
+                $.ajax({
+                    url: "situacao_usuario",
+                    type: "POST",
+                    dataType: "JSON",
+                    data: {
+                        id: id_usuario,
+                        situacao : inativo_ativo
+                    },
+                    
+                    success: function(res) {
+
+                        if (inativo_ativo == 1 && res) {
+                            $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        } else if (inativo_ativo == 0 && res) {
+                            $("#alerta").html("<div class='alert alert-info'> Cliente reativado!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        } else {
+                            $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        }
+                        $("#atualizaTable").click();
+                    }
+                });
+            }
+        }
+
 </script>
 
 <div class="main-top">
@@ -139,6 +190,7 @@
                     <th scope="col">Id</th>
                     <th scope="col">Usuário</th>
                     <th scope="col">Cargo</th>
+                    <th scope="col">Situação</th>
                     <th scope="col">Ações</th>
                 </tr>
             </thead>

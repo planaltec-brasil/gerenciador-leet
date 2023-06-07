@@ -42,6 +42,9 @@
                     "<'row'<'col-sm-12'tr>>" +
                     "<'row'<'col-sm-5'i><'col-sm-7'p>>",
                 buttons: ['copy', 'excel', 'pdf'],
+                "language": {
+                    "url": "<?php echo base_url(); ?>assets/media/Portuguese-Brasil.json"
+                },
                 "ajax": "getClientes",
                 columns: [
                     { data: 'nome_cliente' },
@@ -55,17 +58,30 @@
                     { data: 'estado_cliente' },
                     { data: 'cep_cliente' },
                     {
+                        "data": null,
+                        "defaultContent": "",
+                        "render": function(data, type, row) {
+                            var ativo_inativo = [];
+                            ativo_inativo[0] = 'Ativo';
+                            ativo_inativo[1] = 'Inativo';
+                            return ativo_inativo[data.ativo_inativo];
+                        }
+                    },
+                    {
                         data: null,
                         defaultContent: "",
                         render: function (data, type, row) {
                             var html = "<button title='editar registro' type='button' onclick='EditaDadosCL(" + data.id_cliente + ")'  class='btn btn-sm btn-outline'><i style='color: #00008B;' class='far fa-edit'></i></button>&nbsp;";
-
+                            if (data.ativo_inativo == 0)
+                                html += "<button onclick='situacao_cliente(" +  data.id_cliente + ", 1)' title='inativar registro' type='button' class='btn btn-sm btn-outline'><i style='color: red;' class='far fa-minus-square'></i></button>&nbsp;"; 
+                            else
+                                html += "<button type='button' title='Reativar Cliente' class='btn btn-sm btn-outline' onclick='situacao_cliente(" + data.id_cliente + ", 0)'><i style='color: green;' class='fa fa-recycle'></i></button>";
                             return html;
                         }
                     },
-
                 ]
             });
+
             // envio do formulario de cadastro
             $("#btnEnvia").on('click', function () {
                 $.ajax({
@@ -133,6 +149,41 @@
                     }
                 }
             });
+        }
+
+        function situacao_cliente(id_cliente, ativo_inativo) {
+            if (confirm('Deseja realmente executar essa ação?') === true) {
+                $.ajax({
+                    url: "situacao_cliente",
+                    type: "POST",
+                    dataType: "JSON",
+                    data: {
+                        id: id_cliente,
+                        situacao: ativo_inativo
+                    },
+                    
+                    success: function(res) {
+
+                        if (ativo_inativo == 1 && res) {
+                            $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        } else if (ativo_inativo == 0 && res) {
+                            $("#alerta").html("<div class='alert alert-info'> Cliente reativado!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        } else {
+                            $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        }
+                        $("#atualizaTable").click();
+                    }
+                });
+            }
         }
 
     </script>
@@ -212,6 +263,7 @@
                     <th scope="col">Cidade</th>
                     <th scope="col">Estado</th>
                     <th scope="col">CEP</th>
+                    <th scope="col">Situação</th>
                     <th scope="col">Ações</th>
                 </tr>
             </thead>

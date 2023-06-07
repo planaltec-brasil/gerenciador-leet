@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class Clientes_model extends Model {
 
     protected $table = 'tb_cliente';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_cliente';
 
     protected $useAutoIncrement = true;
 
@@ -24,6 +24,7 @@ class Clientes_model extends Model {
         'cidade_cliente',
         'estado_cliente',
         'cep_cliente',
+        'ativo_inativo'
         ];
 
     public function getClientes($id = false) {
@@ -34,7 +35,6 @@ class Clientes_model extends Model {
         return $this->where(['id_cliente' => $id])->first();
     }
 
-    
     // function ListaCliente($id = null){
     //     $db = db_connect();
     //     $query =  $db->query("SELECT * FROM tb_cliente WHERE id_cliente = $id");

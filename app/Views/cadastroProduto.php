@@ -35,6 +35,9 @@
             "<'row'<'col-sm-12'tr>>" +
             "<'row'<'col-sm-5'i><'col-sm-7'p>>",
         buttons: ['copy', 'excel', 'pdf'],
+        "language": {
+            "url": "<?php echo base_url(); ?>assets/media/Portuguese-Brasil.json"
+        },
         "ajax": "getProduto",
         columns: [
             { data: 'nome_produto' },

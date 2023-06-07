@@ -27,4 +27,13 @@ class Cliente_controller extends BaseController {
         $res = $this->Cliente_model->getClientes($id);
         echo json_encode($res);
     }
+
+    function Situacao_cliente(){
+        $dados = [
+            'ativo_inativo' => $_POST['situacao'],
+        ];
+        $id = $_POST["id"];
+        $res = $this->Cliente_model->update([ 'id_cliente' => $id ], $dados);
+        echo json_encode($res);
+    }
 }

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\Usuario_model;
 
 class Usuario_controller extends BaseController {
 
@@ -26,6 +27,16 @@ class Usuario_controller extends BaseController {
         $id = isset($_POST['id']) ? $_POST['id'] : "";
         $res = $this->user_model->getUsuario($id);
         echo json_encode($res);
+    }
+
+    function Situacao_usuario(){
+        $dados = [
+            'inativo_ativo' => $_POST['situacao']
+        ];
+
+        $id = $_POST["id"];
+        $res = $this->user_model->update([ 'id_usuario' => $id ], $dados);
+        // echo json_encode($res);
     }
 
 }

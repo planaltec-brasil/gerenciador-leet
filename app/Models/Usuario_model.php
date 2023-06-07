@@ -17,6 +17,7 @@ class Usuario_model extends Model {
         'usuario',
         'senha',
         'cargo',
+        'inativo_ativo',
         ];
 
     public function getUsuario($id = false) {
@@ -26,12 +27,6 @@ class Usuario_model extends Model {
 
         return $this->where(['id_usuario' => $id])->first();
     }
-
-    
-    // function ListaCliente($id = null){
-    //     $db = db_connect();
-    //     $query =  $db->query("SELECT * FROM tb_cliente WHERE id_cliente = $id");
-    //     return $query->getResult();
-    // }
+ 
 
 }
