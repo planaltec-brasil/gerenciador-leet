@@ -1,0 +1,904 @@
+CRITICAL - 2023-06-07 19:49:16 --> syntax error, unexpected 'extends' (T_EXTENDS), expecting identifier (T_STRING)
+in APPPATH\Controllers\pdfLeet_controller.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:51:54 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:53:49 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:53:50 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:55:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:55:03 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:55:47 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:55:47 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:55:48 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:55:48 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:56:00 --> Class 'App\Controllers\Controller' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:56:01 --> Class 'App\Controllers\Controller' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:56:05 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:56:35 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:08 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:09 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:09 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:09 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:09 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:09 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:10 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:10 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:10 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 19:57:42 --> Cannot redeclare App\Controllers\Main::index()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-07 19:57:44 --> Cannot redeclare App\Controllers\Main::index()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-07 19:57:44 --> Cannot redeclare App\Controllers\Main::index()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-07 19:58:05 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\Main.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->meee()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:08:54 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:09:51 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:01 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:01 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:03 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:03 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:09 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:15 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\pdfLeet_controller.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:16 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\pdfLeet_controller.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:16 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\pdfLeet_controller.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:17 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\pdfLeet_controller.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:17 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\pdfLeet_controller.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:37 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:38 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:38 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:38 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:38 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:39 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:39 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:39 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:39 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:40 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:40 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:40 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:40 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:40 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:41 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:41 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:41 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:11:41 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:13:26 --> Class 'App\Controllers\vendor\mpdf\mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:13:27 --> Class 'App\Controllers\vendor\mpdf\mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:13:52 --> Class 'App\Controllers\vendor' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:13:59 --> Class 'vendor\mpdf\mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:13:59 --> Class 'vendor\mpdf\mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:13:59 --> Class 'vendor\mpdf\mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:24 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:25 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:25 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:25 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:26 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:26 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:26 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:26 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:26 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:17:26 --> Class 'App\ThirdParty\FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:18:33 --> require(fpdf.php): failed to open stream: No such file or directory
+in APPPATH\Controllers\pdfLeet_controller.php on line 2.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php', 2, [...])
+ 2 APPPATH\Controllers\pdfLeet_controller.php(2): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 7 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 8 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 9 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:18:51 --> Undefined constant 'App\Controllers\App\ThirdParty\FPDF'
+in APPPATH\Controllers\pdfLeet_controller.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:18:52 --> Undefined constant 'App\Controllers\App\ThirdParty\FPDF'
+in APPPATH\Controllers\pdfLeet_controller.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:18:52 --> Undefined constant 'App\Controllers\App\ThirdParty\FPDF'
+in APPPATH\Controllers\pdfLeet_controller.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:18:52 --> Undefined constant 'App\Controllers\App\ThirdParty\FPDF'
+in APPPATH\Controllers\pdfLeet_controller.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\pdfLeet_controller.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\pdfLeet_controller')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\pdfLeet_controller')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\pdfLeet_controller')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\pdfLeet_controller', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:19:06 --> Class 'FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:19:07 --> Class 'FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:19:07 --> Class 'FPDF' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:19:52 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:19:53 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:19:53 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:09 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:10 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:10 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:10 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:11 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:11 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:26:43 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:26:44 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:26:44 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:26:44 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:26:45 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:26:45 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:01 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:08 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:09 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:09 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:09 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:25 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:26 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:26 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:26 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:26 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:27 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:27 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:27 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:27 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:28 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:28 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:28 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:29 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:29 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:29 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:30 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:30 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:30 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:31 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:31 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:31 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:31 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:31 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:32 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:32 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:32 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:32 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:33 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:27:33 --> Class 'App\Controllers\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:30:43 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:30:44 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:30:44 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:30:44 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:30:44 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:32:01 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:32:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Controllers\pdfLeet_controller.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

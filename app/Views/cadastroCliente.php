@@ -50,10 +50,6 @@
                     { data: 'nome_cliente' },
                     { data: 'cpf_cliente' },
                     { data: 'telefone_cliente' },
-                    { data: 'logradouro_cliente' },
-                    { data: 'bairro_cliente' },
-                    { data: 'numero_cliente' },
-                    { data: 'complemento_cliente' },
                     { data: 'cidade_cliente' },
                     { data: 'estado_cliente' },
                     { data: 'cep_cliente' },
@@ -92,10 +88,6 @@
                         'nome_cliente': $("#nome_cliente").val(),
                         'cpf_cliente': $("#cpf_cliente").val(),
                         'telefone_cliente': $("#telefone_cliente").val(),
-                        'logradouro_cliente': $("#logradouro_cliente").val(),
-                        'bairro_cliente': $("#bairro_cliente").val(),
-                        'numero_cliente': $("#numero_cliente").val(),
-                        'complemento_cliente': $("#complemento_cliente").val(),
                         'cidade_cliente': $("#cidade_cliente").val(),
                         'estado_cliente': $("#estado_cliente").val(),
                         'cep_cliente': $("#cep_cliente").val(),
@@ -138,10 +130,6 @@
                         $("#nome_cliente").val(res.nome_cliente);
                         $("#cpf_cliente").val(res.cpf_cliente);
                         $("#telefone_cliente").val(res.telefone_cliente);
-                        $("#logradouro_cliente").val(res.logradouro_cliente);
-                        $("#bairro_cliente").val(res.bairro_cliente);
-                        $("#numero_cliente").val(res.numero_cliente);
-                        $("#complemento_cliente").val(res.complemento_cliente);
                         $("#cidade_cliente").val(res.cidade_cliente);
                         $("#estado_cliente").val(res.estado_cliente);
                         $("#cep_cliente").val(res.cep_cliente);
@@ -208,22 +196,6 @@
                 <input type="text" id="telefone_cliente" class="form-control" id="">
             </div>
             <div class="col-md-3">
-                <label for="inputAddress2" class="form-label">Logradouro</label>
-                <input type="text" id="logradouro_cliente" class="form-control">
-            </div>
-            <div class="col-md-3">
-                <label for="inputCity" class="form-label">Bairro</label>
-                <input type="text" id="bairro_cliente" class="form-control">
-            </div>
-            <div class="col-md-3">
-                <label for="inputState" class="form-label">Número</label>
-                <input type="text" id="numero_cliente" class="form-control" id="">
-            </div>
-            <div class="col-md-3">
-                <label for="inputState" class="form-label">Complemento</label>
-                <input type="text" id="complemento_cliente" class="form-control" id="">
-            </div>
-            <div class="col-md-3">
                 <label for="exampleDataList" class="form-label">Selecione a Cidade</label>
                 <input class="form-control" id="cidade_cliente" list="datalistOptions" placeholder="Cidade">
                 <datalist id="datalistOptions">
@@ -256,10 +228,6 @@
                     <th scope="col">Nome</th>
                     <th scope="col">CPF</th>
                     <th scope="col">Telefone</th>
-                    <th scope="col">Logradouro</th>
-                    <th scope="col">Bairro</th>
-                    <th scope="col">Número</th>
-                    <th scope="col">Complemento</th>
                     <th scope="col">Cidade</th>
                     <th scope="col">Estado</th>
                     <th scope="col">CEP</th>

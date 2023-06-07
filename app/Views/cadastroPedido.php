@@ -91,6 +91,7 @@
             columns: [
                 { data: 'numero_pedido' },
                 { data: 'dados_cliente' },
+                { data: 'telefone_cliente' },
                 {
                     data: null,
                     defaultContent: "",
@@ -98,7 +99,6 @@
                         return row.dados_produto;
                     }
                 },
-                { data: 'dados_arte' },
                 {
                     "data": null,
                     "defaultContent": "",
@@ -113,21 +113,20 @@
                         return row.data_evento.split('-').reverse().join('/');
                     }
                 },
-                // {
-                //     "data": null,
-                //     "defaultContent": "",
-                //     "render": function (data, type, row) {
-                //         return row.data_entrega.split('-').reverse().join('/');
-                //     }
-                // },
-                // { data: 'cep_pedido' },
-                // {
-                //     "data": null,
-                //     "defaultContent": "",
-                //     "render": function (data, type, row) {
-                //         return row.retirada_envio.split('-').reverse().join('/');
-                //     }
-                // },
+                {
+                    "data": null,
+                    "defaultContent": "",
+                    "render": function (data, type, row) {
+                        return row.data_entrega.split('-').reverse().join('/');
+                    }
+                },
+                {
+                    data: null,
+                    defaultContent: "",
+                    render: function (data, type, row) {
+                        return row.valor_frete.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+                    }
+                },
                 {
                     data: null,
                     defaultContent: "",
@@ -156,7 +155,7 @@
                         return row.falta_pagar.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
                     }
                 },
-                {
+                { 
                     data: null,
                     defaultContent: "",
                     render: function (data, type, row) {
@@ -190,6 +189,7 @@
                     'data_evento': $("#data_evento").val(),
                     'data_entrega': $("#data_entrega").val(),
                     'cep_pedido': $("#cep_pedido").val(),
+                    'valor_frete': $("valor_frete").val(),
                     'retirada_envio': $("#retirada_envio").val(),
                     'valor_unitario': $("#valor_unitario").val(),
                     'valor_total': $("#valor_total").val(),
@@ -214,6 +214,7 @@
                         $("#data_evento").val("")
                         $("#data_entrega").val("")
                         $("#cep_pedido").val("")
+                        $("valor_frete").val("")
                         $("#retirada_envio").val("")
                         $("#valor_unitario").val("")
                         $("#valor_total").val("")
@@ -295,6 +296,7 @@
                     $("#data_evento").val(res.data_evento);
                     $("#data_entrega").val(res.data_entrega);
                     $("#cep_pedido").val(res.cep_pedido);
+                    $("#valor_frete").val(res.valor_frete);
                     $("#retirada_envio").val(res.retirada_envio);
                     $("#valor_unitario").val(res.valor_unitario);
                     $("#valor_total").val(res.valor_total);
@@ -477,8 +479,16 @@
             <input type="text" class="form-control" id="dados_cliente">
         </div>
         <div class="col-md-3">
-            <label for="inputAddress2" class="form-label">Dados da Arte</label>
+            <label for="inputAddress2" class="form-label">Telefone</label>
             <input type="text" class="form-control" id="dados_arte">
+        </div>
+        <div class="col-md-3">
+            <label for="inputAddress2" class="form-label">Produto</label>
+            <input type="text" class="form-control" id="dados_arte">
+        </div>
+        <div class="col-md-3">
+            <label for="inputAddress2" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="cep_pedido">
         </div>
         <div class="col-md-3">
             <label for="numPedido" class="form-label">Data do Pedido</label>
@@ -493,8 +503,8 @@
             <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="data_entrega">
         </div>
         <div class="col-md-3">
-            <label for="inputAddress2" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="cep_pedido">
+            <label for="inputAddress2" class="form-label">Valor do Frete</label>
+            <input type="text" class="form-control" id="valor_frete" onKeyUp="maskIt(this,event,'#########.##',true)">
         </div>
         <div class="col-md-3">
             <label for="inputAddress2" class="form-label">Retirada/Envio</label>
@@ -548,14 +558,15 @@
         <thead>
             <tr>
                 <th scope="col">Pedidos</th>
-                <th scope="col">Clientes</th>
-                <th scope="col">Produtos</th>
-                <th scope="col">Arte</th>
-                <th scope="col">Data Pedido</th>
-                <th scope="col">Data Evento</th>
-                <!-- <th scope="col">Data Entrega</th> -->
-                <!-- <th scope="col">CEP</th>
-                <th scope="col">Retirada/Envio</th> -->
+                <th scope="col">Cliente</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Produto</th>
+                <!-- <th scope="col">CEP</th> -->
+                <th scope="col">Data do Pedido</th>
+                <th scope="col">Data do Evento</th>
+                <th scope="col">Data da Entrega</th>
+                <th scope="col">Valor do Frete</th>
+                <!-- <th scope="col">Retirada/Envio</th> -->
                 <th scope="col">Valor Unitário</th>
                 <th scope="col">Valor Total</th>
                 <th scope="col">Valor Sinal</th>

@@ -1,5 +1,5 @@
 <?php namespace App\Controllers;
-
+use \Mpdf\Mpdf;
 use CodeIgniter\Controller;
 
 class Main extends BaseController{
@@ -9,4 +9,5 @@ class Main extends BaseController{
         return view('login');
 
     }
+
 }

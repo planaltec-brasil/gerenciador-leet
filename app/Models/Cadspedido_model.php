@@ -23,6 +23,7 @@ class Cadspedido_model extends Model {
         'data_entrega',
         'retirada_envio',
         'cep_pedido',
+        'valor_frete',
         'valor_unitario',
         'valor_total',
         'valor_sinal',
