@@ -41,12 +41,7 @@ class Cadspedido_model extends Model {
     function deleta($id){
         return $this->where(['id_pedido' => $id])->delete();
     }
-
     
-    // function ListaCliente($id = null){
-    //     $db = db_connect();
-    //     $query =  $db->query("SELECT * FROM tb_cliente WHERE id_cliente = $id");
-    //     return $query->getResult();
-    // }
+
 
 }

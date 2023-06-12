@@ -31,10 +31,22 @@ class Clientes_model extends Model {
         return $this->where(['id_cliente' => $id])->first();
     }
 
-    // function ListaCliente($id = null){
-    //     $db = db_connect();
-    //     $query =  $db->query("SELECT * FROM tb_cliente WHERE id_cliente = $id");
-    //     return $query->getResult();
-    // }
+    function ListaEstado(){
+        $db = db_connect();
+        $query =  $db->query("SELECT * FROM servico_bd.estados");
+        return $query->getResult();
+    }
+
+    function cidadeporID($idEstado){
+        $db = db_connect();
+        $query =  $db->query("SELECT * FROM servico_bd.cidades where estado_id = $idEstado");
+        return $query->getResult();
+    }
+
+    function getidEstado($sigla){
+        $db = db_connect();
+        $query =  $db->query("SELECT * FROM servico_bd.estados where sigla = '$sigla' ");
+        return $query->getResult();
+    }
 
 }

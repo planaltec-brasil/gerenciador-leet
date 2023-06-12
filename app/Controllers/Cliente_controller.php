@@ -36,4 +36,25 @@ class Cliente_controller extends BaseController {
         $res = $this->Cliente_model->update([ 'id_cliente' => $id ], $dados);
         echo json_encode($res);
     }
+
+    function getEstado (){
+        $res = $this->Cliente_model->ListaEstado();
+        echo json_encode($res);
+    }
+
+    function getCidade(){
+        $idEstado = isset($_POST['idEstado']) ? $_POST['idEstado'] : "";
+        $res = false;
+        if($idEstado)
+            $res = $this->Cliente_model->cidadeporID($idEstado);
+        echo json_encode($res);
+    }
+
+    function pegaId(){
+        $sigla = isset($_POST['sigla']) ? $_POST['sigla'] : "";
+        $res = false;
+        if($sigla)
+            $res = $this->Cliente_model->getidEstado($sigla);
+        echo json_encode($res);
+    }
 }

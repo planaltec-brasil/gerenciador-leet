@@ -1,0 +1,145 @@
+CRITICAL - 2023-06-12 14:31:17 --> Call to undefined method App\Models\Clientes_model::ListaEstado
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cliente_controller.php(41): CodeIgniter\Model->__call('ListaEstado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 14:31:25 --> Call to undefined method App\Models\Clientes_model::ListaEstado
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cliente_controller.php(41): CodeIgniter\Model->__call('ListaEstado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 14:34:15 --> Call to undefined method App\Models\Clientes_model::ListaEstado
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cliente_controller.php(41): CodeIgniter\Model->__call('ListaEstado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 14:37:37 --> Call to undefined method App\Models\Clientes_model::ListaEstado
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cliente_controller.php(41): CodeIgniter\Model->__call('ListaEstado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 14:39:06 --> Call to undefined method App\Models\Cadspedido_model::ListaEstado
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cliente_controller.php(41): CodeIgniter\Model->__call('ListaEstado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 14:40:23 --> Call to undefined method App\Models\Cadspedido_model::ListaEstado
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cliente_controller.php(41): CodeIgniter\Model->__call('ListaEstado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 14:41:41 --> Call to undefined method App\Models\Clientes_model::ListaEstado
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cliente_controller.php(41): CodeIgniter\Model->__call('ListaEstado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 17:46:16 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(36): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(36): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#3 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#4 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-12 17:46:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Clientes_model.php(36): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servico_bd.estados')
+ 3 APPPATH\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 17:46:16 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-12 17:46:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_cliente`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Clientes_model.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -23,6 +23,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,6 +79,7 @@
                 ]
             });
 
+
             // envio do formulario de cadastro
             $("#btnEnvia").on('click', function () {
                 $.ajax({
@@ -109,6 +111,20 @@
                     }
                 })
             });
+
+            $.ajax({
+                url: "listaEstado",
+                type: "POST",
+                dataType:"JSON",
+                data: {},
+                success: function (res) {
+                    var html = "";
+                    $.each( res, function( idx, obj ) {
+                        html += `<option value="${obj.id}">${obj.nome + " - " + obj.sigla}</option>`;
+                    });
+                    $('#estado').append(html);
+                }
+            })
 
             // atualizatable
             $("#atualizaTable").on('click', function () {
@@ -174,6 +190,54 @@
             }
         }
 
+        function cidadeporID(idestado, nomeCidade){
+           var idEstado = ($('#estado').val() == "" || $('#estado').val() == null) ? idestado : $('#estado').val();
+            $.ajax({
+                url: "cidadeporID",
+                type: "POST",
+                dataType:"JSON",
+                data: {
+                    idEstado : idEstado
+                },
+                success: function (res) {
+                    $('#cidade').empty();
+                    var html = "";
+                    $.each( res, function( idx, obj ) {
+                        html += `<option value="${obj.id}" ${ (obj.nome == nomeCidade) ? 'selected' : ''}>${obj.nome}</option>`;
+                    });
+                    $('#cidade').append(html);
+                }
+            })
+        }
+
+        function getCep(cep){
+            // url: "https://viacep.com.br/ws/"+$('#cep').val,
+            $.ajax({
+                url: `https://viacep.com.br/ws/${cep}/json/`,
+                type: "GET",
+                dataType: "JSON",
+                headers: { 'content-type': 'application/json;charset=utf-8'},
+                data:{},
+                success: function(res){
+                    $.post( "listaEstado", function( data ) {
+                        var listEst = JSON.parse(data);
+                        var html = "";
+                        $.each( listEst, function( idx, obj ) {
+                            html += `<option value="${obj.id}" ${(obj.sigla == res.uf) ? 'selected' : "" }>${obj.nome + " - " + obj.sigla}</option>`;
+                        });
+                        $('#estado').append(html);
+                    });
+
+                    $.post( "pegaId", { sigla : res.uf} , function( data ) {
+                        var idEst = JSON.parse(data);
+                        console.log(idEst)
+                        cidadeporID(idEst[0].id, res.localidade);
+                    });
+                    
+                }
+            })
+        }
+
     </script>
 </head>
 
@@ -196,22 +260,22 @@
                 <input type="text" id="telefone_cliente" class="form-control" id="">
             </div>
             <div class="col-md-3">
-                <label for="exampleDataList" class="form-label">Selecione a Cidade</label>
-                <input class="form-control" id="cidade_cliente" list="datalistOptions" placeholder="Cidade">
-                <datalist id="datalistOptions">
-                </datalist>
-            </div>
-            <div class="col-md-3">
-                <label for="exampleDataList" class="form-label">Selecione o Estado</label>
-                <input class="form-control" id="estado_cliente" list="datalistOptions" placeholder="Estado">
-                <datalist id="datalistOptions">
-                </datalist>
-            </div>
-            <div class="col-md-3">
                 <label for="inputState" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="cep_cliente">
+                <input type="text" class="form-control" id="cep_cliente" onblur="getCep(this.value)">
                 <input type="text" hidden="true" id="id_Edita">
                 <button type="button" hidden="true" id="atualizaTable"></button>
+            </div>
+            <div class="col-md-3">
+                <label for="estado" class="form-label">Estado</label>
+                <select name="estados" id="estado" class="form-select form-control" aria-label="Default select example" onchange="cidadeporID();">
+                    <option value="">Selecione o Estado</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="cidade" class="form-label">Cidade</label>
+                <select name="cidade" id="cidade" class="form-select form-control" aria-label="Default select example">
+                    <option value="">Aguardando estado</option>
+                </select>
             </div>
             <div class="col-md-3">
                 <button type="button" id="btnEnvia" class="btn btn-primary">Cadastrar</button>
