@@ -27,7 +27,7 @@ class prodPedidoModel extends Model {
         return $this->where(['id' => $id])->first();
     }
 
-    function CarregaProduto($id ){
+    function CarregaProduto($id){
         return $this->where(['pedidos' => $id])->findAll();
     }
 

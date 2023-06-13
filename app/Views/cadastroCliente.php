@@ -23,7 +23,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,13 +50,13 @@
                     { data: 'nome_cliente' },
                     { data: 'cpf_cliente' },
                     { data: 'telefone_cliente' },
-                    { data: 'cidade_cliente' },
-                    { data: 'estado_cliente' },
+                    { data: 'nomeEstado' },
+                    { data: 'nomeCidade' },
                     { data: 'cep_cliente' },
                     {
                         "data": null,
                         "defaultContent": "",
-                        "render": function(data, type, row) {
+                        "render": function (data, type, row) {
                             var ativo_inativo = [];
                             ativo_inativo[0] = 'Ativo';
                             ativo_inativo[1] = 'Inativo';
@@ -70,7 +69,7 @@
                         render: function (data, type, row) {
                             var html = "<button title='editar registro' type='button' onclick='EditaDadosCL(" + data.id_cliente + ")'  class='btn btn-sm btn-outline'><i style='color: #00008B;' class='far fa-edit'></i></button>&nbsp;";
                             if (data.ativo_inativo == 0)
-                                html += "<button onclick='situacao_cliente(" +  data.id_cliente + ", 1)' title='inativar registro' type='button' class='btn btn-sm btn-outline'><i style='color: red;' class='far fa-minus-square'></i></button>&nbsp;"; 
+                                html += "<button onclick='situacao_cliente(" + data.id_cliente + ", 1)' title='inativar registro' type='button' class='btn btn-sm btn-outline'><i style='color: red;' class='far fa-minus-square'></i></button>&nbsp;";
                             else
                                 html += "<button type='button' title='Reativar Cliente' class='btn btn-sm btn-outline' onclick='situacao_cliente(" + data.id_cliente + ", 0)'><i style='color: green;' class='fa fa-recycle'></i></button>";
                             return html;
@@ -90,8 +89,8 @@
                         'nome_cliente': $("#nome_cliente").val(),
                         'cpf_cliente': $("#cpf_cliente").val(),
                         'telefone_cliente': $("#telefone_cliente").val(),
-                        'cidade_cliente': $("#cidade_cliente").val(),
-                        'estado_cliente': $("#estado_cliente").val(),
+                        'cidade_cliente': $("#cidade").val(),
+                        'estado_cliente': $("#estado").val(),
                         'cep_cliente': $("#cep_cliente").val(),
                         'id_Edita': $("#id_Edita").val()
                     },
@@ -115,11 +114,11 @@
             $.ajax({
                 url: "listaEstado",
                 type: "POST",
-                dataType:"JSON",
+                dataType: "JSON",
                 data: {},
                 success: function (res) {
                     var html = "";
-                    $.each( res, function( idx, obj ) {
+                    $.each(res, function (idx, obj) {
                         html += `<option value="${obj.id}">${obj.nome + " - " + obj.sigla}</option>`;
                     });
                     $('#estado').append(html);
@@ -165,8 +164,8 @@
                         id: id_cliente,
                         situacao: ativo_inativo
                     },
-                    
-                    success: function(res) {
+
+                    success: function (res) {
 
                         if (ativo_inativo == 1 && res) {
                             $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
@@ -190,50 +189,50 @@
             }
         }
 
-        function cidadeporID(idestado, nomeCidade){
-           var idEstado = ($('#estado').val() == "" || $('#estado').val() == null) ? idestado : $('#estado').val();
+        function cidadeporID(idestado, nomeCidade) {
+            var idEstado = ($('#estado').val() == "" || $('#estado').val() == null) ? idestado : $('#estado').val();
             $.ajax({
                 url: "cidadeporID",
                 type: "POST",
-                dataType:"JSON",
+                dataType: "JSON",
                 data: {
-                    idEstado : idEstado
+                    idEstado: idEstado
                 },
                 success: function (res) {
                     $('#cidade').empty();
                     var html = "";
-                    $.each( res, function( idx, obj ) {
-                        html += `<option value="${obj.id}" ${ (obj.nome == nomeCidade) ? 'selected' : ''}>${obj.nome}</option>`;
+                    $.each(res, function (idx, obj) {
+                        html += `<option value="${obj.id}" ${(obj.nome == nomeCidade) ? 'selected' : ''}>${obj.nome}</option>`;
                     });
                     $('#cidade').append(html);
                 }
             })
         }
 
-        function getCep(cep){
+        function getCep(cep) {
             // url: "https://viacep.com.br/ws/"+$('#cep').val,
             $.ajax({
                 url: `https://viacep.com.br/ws/${cep}/json/`,
                 type: "GET",
                 dataType: "JSON",
-                headers: { 'content-type': 'application/json;charset=utf-8'},
-                data:{},
-                success: function(res){
-                    $.post( "listaEstado", function( data ) {
+                headers: { 'content-type': 'application/json;charset=utf-8' },
+                data: {},
+                success: function (res) {
+                    $.post("listaEstado", function (data) {
                         var listEst = JSON.parse(data);
                         var html = "";
-                        $.each( listEst, function( idx, obj ) {
-                            html += `<option value="${obj.id}" ${(obj.sigla == res.uf) ? 'selected' : "" }>${obj.nome + " - " + obj.sigla}</option>`;
+                        $.each(listEst, function (idx, obj) {
+                            html += `<option value="${obj.id}" ${(obj.sigla == res.uf) ? 'selected' : ""}>${obj.nome + " - " + obj.sigla}</option>`;
                         });
                         $('#estado').append(html);
                     });
 
-                    $.post( "pegaId", { sigla : res.uf} , function( data ) {
+                    $.post("pegaId", { sigla: res.uf }, function (data) {
                         var idEst = JSON.parse(data);
                         console.log(idEst)
                         cidadeporID(idEst[0].id, res.localidade);
                     });
-                    
+
                 }
             })
         }
@@ -246,28 +245,29 @@
         <h1 class="corInit">Cadastro de Clientes</h1>
     </div>
     <div class="main-cadastro-produto">
-        <form class="row g-4">
+        <form class="row g-4 was-validated">
             <div class="col-md-3">
                 <label for="numPedido" class="form-label">Nome</label>
-                <input type="text" id="nome_cliente" class="form-control" id="">
+                <input type="text" id="nome_cliente" class="form-control" id="" required>
             </div>
             <div class="col-md-3">
                 <label for="dadosClient" class="form-label">CPF</label>
-                <input type="text" id="cpf_cliente" class="form-control" id="">
+                <input type="text" id="cpf_cliente" class="form-control" id="" required>
             </div>
             <div class="col-md-3">
                 <label for="dadosProduto" class="form-label">Telefone</label>
-                <input type="text" id="telefone_cliente" class="form-control" id="">
+                <input type="text" id="telefone_cliente" class="form-control" id="" required>
             </div>
             <div class="col-md-3">
                 <label for="inputState" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="cep_cliente" onblur="getCep(this.value)">
+                <input type="text" class="form-control" id="cep_cliente" onblur="getCep(this.value)" required>
                 <input type="text" hidden="true" id="id_Edita">
                 <button type="button" hidden="true" id="atualizaTable"></button>
             </div>
             <div class="col-md-3">
                 <label for="estado" class="form-label">Estado</label>
-                <select name="estados" id="estado" class="form-select form-control" aria-label="Default select example" onchange="cidadeporID();">
+                <select name="estados" id="estado" class="form-select form-control" aria-label="Default select example"
+                    onchange="cidadeporID();">
                     <option value="">Selecione o Estado</option>
                 </select>
             </div>

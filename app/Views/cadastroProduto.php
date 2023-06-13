@@ -129,37 +129,37 @@
     <h1 class="corInit">Cadastro de Produtos</h1>
 </div>
 <div class="main-cadastro-produto mt-3">
-    <form class="row g-4">
+    <form class="row g-4 was-validated">
         <div class="col-md-3">
             <label for="numPedido" class="form-label">Nome do Produto</label>
-            <input type="text" id="nome_produto" class="form-control" id="">
+            <input type="text" id="nome_produto" class="form-control" id="" required>
         </div>
         <div class="col-md-3">
             <label for="dadosClient" class="form-label">Cor</label>
-            <input type="text-color" id="cor_produto" class="form-control" id="">
+            <input type="text-color" id="cor_produto" class="form-control" id="" required>
         </div>
         <div class="col-md-3">
             <label for="dadosProduto" class="form-label">Estoque Atual</label>
-            <input type="text" id="estoque_atual" class="form-control" id="" >
+            <input type="text" id="estoque_atual" class="form-control" id="" required>
         </div>
         <div class="col-md-3">
             <label for="inputAddress2" class="form-label">Estoque anterior</label>
-            <input type="text" id="estoque_anterior" class="form-control" id="inputAddress" >
+            <input type="text" id="estoque_anterior" class="form-control" id="inputAddress" required>
         </div>
         <div class="col-md-3">
             <label for="inputCity" class="form-label">Unidade</label>
-            <input type="text" id="unidade_produto" class="form-control" id="inputCity">
+            <input type="text" id="unidade_produto" class="form-control" id="inputCity"required>
         </div>
         <div class="col-md-3">
             <label for="inputState" class="form-label">Volume</label>
-            <input type="text" id="volume_produto" class="form-control" id="">
+            <input type="text" id="volume_produto" class="form-control" id="" required>
         </div>
         <div class="col-md-3">
             <label for="inputState" class="form-label">Material</label>
-            <input type="text" id="material_produto" class="form-control" id="">
+            <input type="text" id="material_produto" class="form-control" id="" required>
         </div>
         <div class="col-md-3">
-            <label for="inputState" class="form-label">Fotos do produto</label>
+            <label for="inputState" class="form-label">Fotos do produto</label required>
             <input type="file" id="fotos_produto" class="form-control" id="">
             <input type="text" hidden="true" id="id_Edita">
             <button type="button" hidden="true" id="atualizaTable"></button>

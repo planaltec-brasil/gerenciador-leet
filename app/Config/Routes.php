@@ -54,13 +54,17 @@ $routes->post('/CarregaCliente', 'Cliente_controller::CarregaEditaCliente');
 $routes->post('/CarregaProduto', 'Cadsproduto_controller::CarregaEditaProduto');
 $routes->post('/CarregaUsuario', 'Usuario_controller::CarregaEditaUsuario');
 $routes->post('/getall', 'Cadsproduto_controller::getAllProd');
+$routes->post('/getCliente', 'Cliente_controller::getAllCliente');
 $routes->post('/excluiPedido', 'Cadspedido_controller::ExcluiPedido');
 $routes->post('/excluiProdPedido', 'Cadspedido_controller::ExcluiProdPedido');
 $routes->post('/situacao_cliente', 'Cliente_controller::situacao_cliente');
 $routes->post('/situacao_usuario', 'Usuario_controller::situacao_usuario');
 $routes->post('/listaEstado', 'Cliente_controller::getEstado');
+$routes->post('/listaEstado', 'Cadspedido_controller::getEstado');
 $routes->post('/cidadeporID', 'Cliente_controller::getCidade');
+$routes->post('/cidadeporID', 'Cadspedido_controller::getCidade');
 $routes->post('/pegaId', 'Cliente_controller::pegaId');
+$routes->post('/pegaId', 'Cadspedido_controller::pegaId');
 
 
 

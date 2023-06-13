@@ -1,0 +1,229 @@
+ERROR - 2023-06-13 16:58:12 --> mysqli_sql_exception: Table 'servicos_bd.tb_cliente' doesn't exist in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM s...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-13 16:58:12 --> Table 'servicos_bd.tb_cliente' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 4 APPPATH\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 5 APPPATH\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 16:58:21 --> mysqli_sql_exception: Table 'servicos_bd.tb_cliente' doesn't exist in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM s...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-13 16:58:21 --> Table 'servicos_bd.tb_cliente' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 4 APPPATH\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servicos_bd.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 5 APPPATH\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 16:59:10 --> mysqli_sql_exception: Table 'servicos_bd.estados' doesn't exist in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-13 16:59:10 --> Table 'servicos_bd.estados' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM bd_leet.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM bd_leet.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM bd_leet.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 4 APPPATH\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bd_leet.tb_cliente TC
+        LEFT JOIN servicos_bd.estados SBE ON SBE.id = TC.estado_cliente')
+ 5 APPPATH\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 17:03:57 --> syntax error, unexpected 'JOIN' (T_STRING)
+in APPPATH\Models\Clientes_model.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\gerenciador-leet\\app\\Models\\CLientes_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CLientes_model')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CLientes_model')
+ 4 [internal function]: spl_autoload_call('App\\Models\\CLientes_model')
+ 5 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\CLientes_model')
+ 6 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Controllers\\CLientes_model')
+ 7 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(829): CodeIgniter\Config\Factories::models('App\\Controllers\\CLientes_model', [...], null)
+ 9 APPPATH\Controllers\BaseController.php(57): model('App\\Controllers\\CLientes_model')
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+11 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:03 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:05 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:05 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:06 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:07 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:07 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:07 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:07 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:07 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:07 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:10 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:10 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:11 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:11 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:17 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:18 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:19 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:19 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 19:04:20 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\CadsPedido_controller.php on line 32.
+ 1 APPPATH\Controllers\CadsPedido_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\CadsPedido_controller.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->InsereDadosPedido()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

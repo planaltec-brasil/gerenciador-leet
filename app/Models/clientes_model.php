@@ -23,12 +23,12 @@ class Clientes_model extends Model {
         'ativo_inativo'
         ];
 
-    public function getClientes($id = false) {
-        if ($id === false) {
-            return $this->findAll();
-        }
-
-        return $this->where(['id_cliente' => $id])->first();
+    public function getClientes() {
+        $db = db_connect();
+        $query =  $db->query("SELECT TC.*, SBE.nome as nomeEstado, SBC.nome as nomeCidade  FROM bd_leet.tb_cliente TC
+        LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
+        LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente");
+        return $query->getResult();
     }
 
     function ListaEstado(){

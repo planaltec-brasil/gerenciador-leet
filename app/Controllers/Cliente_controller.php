@@ -57,4 +57,9 @@ class Cliente_controller extends BaseController {
             $res = $this->Cliente_model->getidEstado($sigla);
         echo json_encode($res);
     }
+
+    public function getAllCliente() {
+        $res = $this->Cliente_model->getClientes();
+        echo json_encode($res);
+    }
 }

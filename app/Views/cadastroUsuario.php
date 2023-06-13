@@ -160,14 +160,14 @@
     <h1 class="corInit">Cadastro de Usuários</h1>
 </div>
 <div class="main-cadastro-produto">
-    <form class="row g-4">
+    <form class="row g-4 was-validated">
         <div class="col-md-3">
-            <label for="numPedido" class="form-label">Nome de Usuário</label>
-            <input type="text" id="usuario" class="form-control" id="">
+            <label for="numPedido" class="form-label">Nome de Usuário</label >
+            <input type="text" id="usuario" class="form-control" id="" required>
         </div>
         <div class="col-md-3">
             <label for="dadosClient" class="form-label">Senha</label>
-            <input type="text" id="senha" class="form-control" id="">
+            <input type="text" id="senha" class="form-control" id="" required>
         </div>
         <div class="col-md-3">
             <label for="inputAddress2" class="form-label">Cargo/Permissões</label>

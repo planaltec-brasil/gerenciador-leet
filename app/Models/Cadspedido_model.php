@@ -41,6 +41,24 @@ class Cadspedido_model extends Model {
     function deleta($id){
         return $this->where(['id_pedido' => $id])->delete();
     }
+
+    function ListaEstado(){
+        $db = db_connect();
+        $query =  $db->query("SELECT * FROM servico_bd.estados");
+        return $query->getResult();
+    }
+
+    function cidadeporID($idEstado){
+        $db = db_connect();
+        $query =  $db->query("SELECT * FROM servico_bd.cidades where estado_id = $idEstado");
+        return $query->getResult();
+    }
+
+    function getidEstado($sigla){
+        $db = db_connect();
+        $query =  $db->query("SELECT * FROM servico_bd.estados where sigla = '$sigla' ");
+        return $query->getResult();
+    }
     
 
 
