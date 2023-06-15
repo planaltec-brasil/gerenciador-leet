@@ -1,15 +1,14 @@
-<?php namespace App\Controllers;
-use \Mpdf\Mpdf;
+<?php
+
+namespace App\Controllers;
+use App\Libraries\MeuPDF;
+
 class pdfLeet_controller extends BaseController{
 
     public function pdfLeet(){
-
-        $mpdf = new Mpdf;
-       
-		$html = view('html_to_pdf',[]);""
-		$mpdf->WriteHTML($html);
+        $mpdf = new MeuPDF();
+		$html = view('html_to_pdf');
 		$this->response->setHeader('Content-Type', 'application/pdf');
-		$mpdf->Output('arjun.pdf','I');
-
+		$mpdf->GerarPDF($html);
     }
 }

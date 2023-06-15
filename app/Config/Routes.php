@@ -38,6 +38,7 @@ $routes->get('/CadsProduto', 'Dash_controller::CadsProduto');
 $routes->get('/CadsUsuario', 'Dash_controller::CadsUsuario');
 $routes->get('/pdfLeet', 'pdfLeet_controller::pdfLeet');
 
+
 //controllers
 $routes->post('/InsereDadosCliente', 'Cliente_controller::InsereDadosCliente');
 $routes->get('/getClientes', 'Cliente_controller::getClientes');
@@ -65,6 +66,7 @@ $routes->post('/cidadeporID', 'Cliente_controller::getCidade');
 $routes->post('/cidadeporID', 'Cadspedido_controller::getCidade');
 $routes->post('/pegaId', 'Cliente_controller::pegaId');
 $routes->post('/pegaId', 'Cadspedido_controller::pegaId');
+$routes->post('/verificaLogin', 'Login_controller::verificaLogin');
 
 
 

@@ -27,6 +27,10 @@ class Usuario_model extends Model {
 
         return $this->where(['id_usuario' => $id])->first();
     }
+
+    public function checkLogin($condicao){
+        return $this->where($condicao)->first();
+    }
  
 
 }

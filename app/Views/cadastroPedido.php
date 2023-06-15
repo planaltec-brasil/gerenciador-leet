@@ -536,7 +536,7 @@
                 id="mymodal" data-bs-toggle="modal" data-bs-whatever="@getbootstrap" title="Adicionar Cliente"
                 required></i>
             <select name="" id="addCliente" class="selectpicker form-control">
-
+                    
             </select>
         </div>
 

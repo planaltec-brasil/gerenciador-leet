@@ -3,42 +3,32 @@
 namespace App\Controllers;
 
 class Login_Controller extends BaseController {
-    
+
     public function login() {
-        if($this->session->get('id') != ''){
-            return redirect()->route('clientes');
-        }
         return view('login');
     }
 
     public function verificaLogin() {
+        $retorno = false;
+
         if(isset($_POST['usuario']) && isset($_POST['senha'])) {
-            $res = Login_Controller::_checkLogin($_POST);
+            $res = $this->user_model->checkLogin(["usuario" => $_POST['usuario'], "senha" => SHA1(MD5($_POST['senha']))]);
 
             if(!empty($res)) {
                 $newdata = [
-                    'id'  => $res['id'],
+                    'id'  => $res['id_usuario'],
                     'usuario'  => $res['usuario'],
                     'logged_in' => true,
                 ];
                 
                 $this->session->set($newdata);
                 
-                $res = true;    
+                $retorno = true;    
             }
-        } else {
-            $res = false;
         }
 
-        echo json_encode($res);
+        echo json_encode($retorno);
         
-    }
-
-    private function _checkLogin($post) {
-        $usuario = $post['usuario'];
-        $senha = SHA1(MD5($post['senha']));
-
-        return $this->usuarioModel->checkLogin($usuario, $senha);
     }
 
     public function logout() {

@@ -41,24 +41,26 @@ abstract class BaseController extends Controller
      * Be sure to declare properties for any property fetch you initialized.
      * The creation of dynamic property is deprecated in PHP 8.2.
      */
-    // protected $session;
+    protected $session;
 
     /**
      * Constructor.
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
+        
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
+        $this->session = \Config\Services::session();
         $this->Cliente_model = model(CLientes_model::class);
         $this->user_model = model(Usuario_model::class);
         $this->produto_model = model(Cadsproduto_model::class);
         $this->pedido_model = model(Cadspedido_model::class);
         $this->prodPedidoModel = model(prodPedidoModel::class);
+
 
     }
 }

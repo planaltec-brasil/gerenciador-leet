@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login leet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -27,11 +35,11 @@
         }
 
 
-        .corzinha{
+        .corzinha {
             background: linear-gradient(90deg, #B800FF 0%, #FF3D81 100%), linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2));
         }
 
-        #imagenzinha{
+        #imagenzinha {
             position: absolute;
             width: 95px;
             height: 95px;
@@ -43,7 +51,7 @@
             padding: 50px 0px;
         }
 
-        .titulo h1{
+        .titulo h1 {
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
@@ -52,10 +60,10 @@
             text-align: center;
         }
 
-        input[type="text"]{
+        input[type="text"] {
             height: 48px;
             background: #ECECEC;
-            border-radius: 12px!important;
+            border-radius: 12px !important;
         }
 
         input[type='checkbox'] {
@@ -65,7 +73,7 @@
             border-radius: 3px;
         }
 
-        label{
+        label {
             color: white;
             font-size: 16px;
             font-weight: 700;
@@ -78,6 +86,7 @@
         .btn:hover {
             color: white;
         }
+
         .glow-on-hover {
             width: 177px;
             height: 50px;
@@ -94,7 +103,7 @@
             background: linear-gradient(90deg, #B800FF 0%, #FF3D81 100%), linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2));
             position: absolute;
             top: -2px;
-            left:-2px;
+            left: -2px;
             z-index: -1;
             width: calc(100% + 4px);
             height: calc(100% + 4px);
@@ -134,55 +143,65 @@
         }
 
         @keyframes glowing {
-            0% { background-position: 0 0; }
-            50% { background-position: 400% 0; }
-            100% { background-position: 0 0; }
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
         }
 
         @media only screen and (max-width: 1000px) {
-            .corzinha{
-                display:none;
+            .corzinha {
+                display: none;
             }
-            
-        }
 
+        }
     </style>
 </head>
+
 <body>
     <div class="container-fluid h-100">
         <div class="row h-100">
-            <div class="col-lg-7 col-md-12 col-sm-12 d-flex justify-content-center align-items-center" style="background-color: #1B1B1B">
-                <div id="imagenzinha">  
-                   <img src="<?= base_url();?>assets/logolet.png">
+            <div class="col-lg-7 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+                style="background-color: #1B1B1B">
+                <div id="imagenzinha">
+                    <img src="<?= base_url(); ?>assets/logolet.png">
                 </div>
-                <div class="row " >
+                <div class="row ">
                     <div class="titulo">
                         <h1>Acesse sua conta</h1>
                     </div>
-                        <div class="form-row d-grid gap-3">
-                            <div class="form-group col-12 d-grid gap-3" >
-                                <label for="username" >Login</label>
-                                <input id="logNome" name="username" type="text" class="form-control" />
-                            </div>
-                            
-                            <div class="form-group col-12 d-grid gap-3" >
-                                <label for="username" >Senha</label>
-                                <input id="logSenha" name="username" type="password" class="form-control" style="height: 50px; border-radius: 12px;" />
-                            </div>
+                    <form class="form-row d-grid gap-3" id="formLogin" method="POST" action="#">
+                        <div class="form-group col-12 d-grid gap-3">
+                            <label for="username">Login</label>
+                            <input id="logNome" name="usuario" type="text" class="form-control" />
+                        </div>
 
-                            <div class="form-group col-12 d-grid gap-3" >
-                                <div class="form-check d-flex justify-content-start align-items-center">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label ms-2" for="flexCheckDefault">
-                                        Lembrar-me
-                                    </label>
-                                </div>
-                            </div>
+                        <div class="form-group col-12 d-grid gap-3">
+                            <label for="username">Senha</label>
+                            <input id="logSenha" name="senha" type="password" class="form-control"
+                                style="height: 50px; border-radius: 12px;" />
+                        </div>
 
-                            <div class="form-group col-12 d-flex justify-content-center mt-5">
-                                <button type="button" class="btn btn-lg glow-on-hover" href="Dashboard">Entrar</button>
+                        <div class="form-group col-12 d-grid gap-3">
+                            <div class="form-check d-flex justify-content-start align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ms-2" for="flexCheckDefault">
+                                    Lembrar-me
+                                </label>
                             </div>
                         </div>
+
+                        <div class="form-group col-12 d-flex justify-content-center mt-5">
+                            <button type="submit" class="btn btn-lg glow-on-hover" href="Dashboard">Entrar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 corzinha">
@@ -190,5 +209,33 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $("#formLogin").submit(function (e) {
+                e.preventDefault();//cancela o Submit
+
+                // envia o formulario utilizando o AJAX
+                $.ajax({
+                    url: "verificaLogin",
+                    type: "POST",
+                    dataType: "JSON",
+                    data: {
+                        usuario: $("#logNome").val(),
+                        senha: $("#logSenha").val(),
+                    },
+                    success: function (res) {
+                    success: function (res) {
+                        res = JSON.parse(res);
+
+                        if(res == true){
+                            window.reload;
+                        }
+                    }
+
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

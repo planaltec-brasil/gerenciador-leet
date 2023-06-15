@@ -1,0 +1,811 @@
+ERROR - 2023-06-14 12:39:41 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(26): App\Models\Cadsproduto_model->getProduto()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->getAllProd()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\gerenciador-leet\app\Models\Cadsproduto_model.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(26): App\Models\Cadsproduto_model->getProduto()
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->getAllProd()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-14 12:39:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Cadsproduto_model.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Cadsproduto_controller.php(26): App\Models\Cadsproduto_model->getProduto()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->getAllProd()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 12:39:41 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(36): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(36): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#3 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#4 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-14 12:39:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Clientes_model.php(36): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servico_bd.estados')
+ 3 APPPATH\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 12:39:41 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(62): App\Models\Clientes_model->getClientes()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getAllCliente()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\gerenciador-leet\app\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#3 C:\wamp64\www\gerenciador-leet\app\Controllers\Cliente_controller.php(62): App\Models\Clientes_model->getClientes()
+#4 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getAllCliente()
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-14 12:39:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Clientes_model.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SBE.nome as nomeEstado, SBC.nome as nomeCidade  FROM bd_leet.tb_cliente TC
+        LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
+        LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente')
+ 3 APPPATH\Controllers\Cliente_controller.php(62): App\Models\Clientes_model->getClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getAllCliente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 12:39:41 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\gerenciador-leet\app\Models\Cadspedido_model.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(47): App\Models\Cadspedido_model->getPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->getPedido()
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#10 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\gerenciador-leet\app\Models\Cadspedido_model.php(35): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\gerenciador-leet\app\Controllers\CadsPedido_controller.php(47): App\Models\Cadspedido_model->getPedido()
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->getPedido()
+#8 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#9 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-14 12:39:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_pedido`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Cadspedido_model.php(35): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\CadsPedido_controller.php(47): App\Models\Cadspedido_model->getPedido()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->getPedido()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:23:27 --> Undefined index: senha
+in APPPATH\Controllers\Login_Controller.php on line 27.
+ 1 APPPATH\Controllers\Login_Controller.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: senha', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\Login_Controller.php', 27, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login_Controller->verificaLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:32:45 --> Undefined property: App\Controllers\Login_Controller::$Usuario_Model
+in APPPATH\Controllers\Login_Controller.php on line 15.
+ 1 APPPATH\Controllers\Login_Controller.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login_Controller::$Usuario_Model', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\Login_Controller.php', 15, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login_Controller->verificaLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:33:22 --> Call to undefined method App\Models\Usuario_model::checkLogin
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Login_Controller.php(15): CodeIgniter\Model->__call('checkLogin', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login_Controller->verificaLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:33:38 --> Call to undefined method App\Models\Usuario_model::checkLogin
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Login_Controller.php(15): CodeIgniter\Model->__call('checkLogin', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login_Controller->verificaLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:37:09 --> Undefined index: id
+in APPPATH\Controllers\Login_Controller.php on line 19.
+ 1 APPPATH\Controllers\Login_Controller.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\Login_Controller.php', 19, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login_Controller->verificaLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:37:41 --> Undefined property: App\Controllers\Login_Controller::$session
+in APPPATH\Controllers\Login_Controller.php on line 24.
+ 1 APPPATH\Controllers\Login_Controller.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login_Controller::$session', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Controllers\\Login_Controller.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login_Controller->verificaLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 14:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:52:36 --> Invalid file: "html_to_pdf.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('html_to_pdf.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('html_to_pdf', [], true)
+ 3 APPPATH\Controllers\pdfLeet_controller.php(11): view('html_to_pdf', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:53:58 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:54:02 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:54:26 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:54:33 --> Class 'Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:54:48 --> Class 'Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:54:49 --> Class 'Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:57:31 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:57:32 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 8.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:58:24 --> CodeIgniter\Autoloader\Autoloader::main(): Failed opening required 'C:\wamp64\www\gerenciador-leet\app\Libraries/vendor/autoload.php' (include_path='.;C:\php\pear')
+in APPPATH\Libraries\MeuPDF.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-06-14 17:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:58:56 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:58:57 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:59:12 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:59:28 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 17:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 17:59:28 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:00:07 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:00:21 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:00:22 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 9.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:01:06 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 14.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:01:08 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 14.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:01:11 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 14.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:01:24 --> Class 'Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 14.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:01:52 --> Class 'Mpdf\Mpdf' not found
+in APPPATH\Libraries\MeuPDF.php on line 14.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:05:19 --> Undefined property: App\Libraries\MeuPDF::$response
+in APPPATH\Libraries\MeuPDF.php on line 16.
+ 1 APPPATH\Libraries\MeuPDF.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Libraries\\MeuPDF::$response', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Libraries\\MeuPDF.php', 16, [...])
+ 2 APPPATH\Controllers\pdfLeet_controller.php(12): App\Libraries\MeuPDF->teste('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\html_to_pdf.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    teste
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\html_to_pdf.php -->
+')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:09:32 --> Argument 3 passed to view() must be of the type array, bool given, called in C:\wamp64\www\gerenciador-leet\app\Controllers\pdfLeet_controller.php on line 11
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(11): view('html_to_pdf', [], false)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 18:09:59 --> Argument 3 passed to view() must be of the type array, bool given, called in C:\wamp64\www\gerenciador-leet\app\Controllers\pdfLeet_controller.php on line 11
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\pdfLeet_controller.php(11): view('html_to_pdf', [], true)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 18:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
