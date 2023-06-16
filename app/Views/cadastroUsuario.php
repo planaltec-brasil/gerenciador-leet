@@ -44,7 +44,7 @@
                 {
                     "data": null,
                     "defaultContent": "",
-                    "render": function(data, type, row) {
+                    "render": function (data, type, row) {
                         var inativo_ativo = [];
                         inativo_ativo[0] = 'Ativo';
                         inativo_ativo[1] = 'Inativo';
@@ -57,7 +57,7 @@
                     render: function (data, type, row) {
                         var html = "<button title='editar registro' type='button' onclick='EditaDadosUs(" + data.id_usuario + ")'  class='btn btn-sm btn-outline'><i style='color: #00008B;' class='far fa-edit'></i></button>&nbsp;";
                         if (data.inativo_ativo == 0)
-                            html += "<button onclick='situacao_usuario(" +  data.id_usuario + ", 1)' title='inativar registro' type='button' class='btn btn-sm btn-outline'><i style='color: red;' class='far fa-minus-square'></i></button>&nbsp;"; 
+                            html += "<button onclick='situacao_usuario(" + data.id_usuario + ", 1)' title='inativar registro' type='button' class='btn btn-sm btn-outline'><i style='color: red;' class='far fa-minus-square'></i></button>&nbsp;";
                         else
                             html += "<button type='button' title='Reativar Funcionário' class='btn btn-sm btn-outline' onclick='situacao_usuario(" + data.id_usuario + ", 0)'><i style='color: green;' class='fa fa-recycle'></i></button>";
                         return html;
@@ -66,6 +66,19 @@
             ]
         });
         $("#Enviabtn").on('click', function () {
+            if (
+                ($("#usuario").val() == "" || $("#usuario").val() == null) ||
+                ($("#senha").val() == "" || $("#senha").val() == null) ||
+                // ($("#telefone_cliente").val() == "" || $("#telefone_cliente").val() == null) ||
+                // ($("#cidade").val() == "" || $("#cidade").val() == null) ||
+                // ($("#estado").val() == "" || $("#estado").val() == null) ||
+                // ($("#cep_cliente").val() == "" || $("#cep_cliente").val() == null) ||
+                // ($("#id_Edita").val() == "" || $("#id_Edita").val() == null)
+
+            ) {
+                alert('Campos *nome, senha são obrigatorios');
+                return;
+            }
             $.ajax({
                 'url': "InsereDadosUsuario",
                 'dataType': "JSON",
@@ -120,39 +133,39 @@
     }
 
     function situacao_usuario(id_usuario, inativo_ativo) {
-            if (confirm('Deseja realmente executar essa ação?') === true) {
-                $.ajax({
-                    url: "situacao_usuario",
-                    type: "POST",
-                    dataType: "JSON",
-                    data: {
-                        id: id_usuario,
-                        situacao : inativo_ativo
-                    },
-                    
-                    success: function(res) {
+        if (confirm('Deseja realmente executar essa ação?') === true) {
+            $.ajax({
+                url: "situacao_usuario",
+                type: "POST",
+                dataType: "JSON",
+                data: {
+                    id: id_usuario,
+                    situacao: inativo_ativo
+                },
 
-                        if (inativo_ativo == 1 && res) {
-                            $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
-                            setTimeout(() => {
-                                $("#alerta").html("");
-                            }, 2000);
-                        } else if (inativo_ativo == 0 && res) {
-                            $("#alerta").html("<div class='alert alert-info'> Cliente reativado!</div>");
-                            setTimeout(() => {
-                                $("#alerta").html("");
-                            }, 2000);
-                        } else {
-                            $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
-                            setTimeout(() => {
-                                $("#alerta").html("");
-                            }, 2000);
-                        }
-                        $("#atualizaTable").click();
+                success: function (res) {
+
+                    if (inativo_ativo == 1 && res) {
+                        $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
+                        setTimeout(() => {
+                            $("#alerta").html("");
+                        }, 2000);
+                    } else if (inativo_ativo == 0 && res) {
+                        $("#alerta").html("<div class='alert alert-info'> Cliente reativado!</div>");
+                        setTimeout(() => {
+                            $("#alerta").html("");
+                        }, 2000);
+                    } else {
+                        $("#alerta").html("<div class='alert alert-info'> Cliente desativado!</div>");
+                        setTimeout(() => {
+                            $("#alerta").html("");
+                        }, 2000);
                     }
-                });
-            }
+                    $("#atualizaTable").click();
+                }
+            });
         }
+    }
 
 </script>
 
@@ -162,7 +175,7 @@
 <div class="main-cadastro-produto">
     <form class="row g-4 was-validated">
         <div class="col-md-3">
-            <label for="numPedido" class="form-label">Nome de Usuário</label >
+            <label for="numPedido" class="form-label">Nome de Usuário</label>
             <input type="text" id="usuario" class="form-control" id="" required>
         </div>
         <div class="col-md-3">

@@ -44,6 +44,45 @@
         text-align: end;
         margin-top: 15px;
     }
+
+    .efeitoPeds{
+        background: -webkit-linear-gradient(#B800FF 0%, #FF3D81 100%, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .nav-pedido .active{
+        color:#fff !important;
+        background: -webkit-linear-gradient(#B800FF 0%, #FF3D81 100%, #333) !important;
+    }
+
+    .nav-pedido .nav-link{
+        color:#B800FF;
+    }
+
+    .pre{
+        width: 80px;
+        height:80px;
+        background-image: url("assets/img/load.jpg");
+        background-position: center;
+        background-size: contain;
+        animation: load 2s infinite linear;
+    }
+
+    .box-load{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes load{
+        to{
+            transform: rotate(360deg)
+        }
+    }
 </style>
 <script>
 
@@ -188,6 +227,21 @@
 
 
         $("#Btncadas").on('click', function () {
+
+            if (
+                ($("#nome_cliente").val() == "" || $("#nome_cliente").val() == null) ||
+                ($("#cpf_cliente").val() == "" || $("#cpf_cliente").val() == null) ||
+                ($("#telefone_cliente").val() == "" || $("#telefone_cliente").val() == null) ||
+                ($("#cidade").val() == "" || $("#cidade").val() == null) ||
+                ($("#estado").val() == "" || $("#estado").val() == null) ||
+                ($("#cep_cliente").val() == "" || $("#cep_cliente").val() == null) ||
+                ($("#id_Edita").val() == "" || $("#id_Edita").val() == null)
+
+            ) {
+                alert('Campos *nome, *numeroPedido, *telefone são obrigatorios');
+                return;
+            }
+
             var qtd = [];
             var idProd = [];
             $.each($('input[name="qtdPrd[]"]'), function (idx, obj) {
@@ -248,6 +302,7 @@
                     }
                 }
             })
+
         });
 
         $.ajax({
@@ -269,8 +324,6 @@
             tabela.ajax.reload(null, false);
         });
 
-
-
         $("#addProduto").on('click', function () {
             $.ajax({
                 url: "CarregaProduto",
@@ -279,23 +332,34 @@
                 data: { id: $("#produto").val() },
                 success: function (res) {
                     var html = "";
-                    html += `<div class="col-4 produto-${res.id_produto}">`;
+                    // html += `<div class="box-load">`
+                    // html += `<div class="pre"> Carregando...</div`
+                    // html += `</div`
+                    html += `<div class="col-md-4 col-sm-12 produto-${res.id_produto}">`;
                     html += `<div class="card mb-3 shadow p-3 mb-5 bg-body rounded">`;
-                    html += `<small>Descrição do Produto:</small>`;
+                    html += `<div class="d-flex justify-content-between" ><small>Descrição do Produto:</small>`;
+                    html += '<a href="#" style="color:red;" onclick="excluiInput(this)" ><i class="fa-solid fa-trash"></i></a></div>';
                     html += `<div class="row g-0">`;
                     html += `<div class="col-md-4 d-flex justify-content-center align-items-center">`;
-                    html += `<img src='data:image/jpeg;base64,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' class="img-fluid rounded-start" alt="...">`;
+                    html += `<img style="width: 100%" src='data:image/jpeg;base64,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' class="img-fluid rounded-start" alt="...">`;
+                    html += `<span style="display: none;" >Carregando...</span>`;
+                    html += `<a href="#" onclick="$('.file-${res.id_produto}').click()" ><i class="fa-solid fa-pen-to-square"></i></a><input onchange="readURL(this)" class="file-${res.id_produto}" type="file" name="prodFile[]" style="visibility: hidden;" />`;
                     html += `</div>`;
-                    html += `<div class="col-md-8" style="height: 150px">`;
+                    html += `<div class="col-md-8" >`;
                     html += `<div class="card-body">`;
                     html += `<h5 class="card-title">${res.nome_produto}</h5>`;
-                    html += `<div>`;
-                    html += `<label for="qtdPrd">QTD</label>`;
+                    html += `<div class='row'>`;
+                    html += `<div class='col-12'>`;
+                    html += `<label for="qtdPrd">Quantidade</label>`;
                     html += `<input id="id_Produto" name="id_Produto[]" type="hidden" value="${res.id_produto}" />`;
                     html += `<input id="qtdPrd" name="qtdPrd[]" type="number" value="1" class="form-control qtdPrd-${res.id_produto}" />`;
                     html += `</div>`;
-                    html += `<div class="btnexclui"`;
-                    html += '<button type="button" class="btn btn-danger" style="color:red"; onclick="excluiInput(this)"><i class="fa-solid fa-trash"></i></button>';
+                    html += `<div class='col-12 pt-1'>`;
+                    html += `<label for="qtdPrd">Acréscimo</label>`;
+                    html += `<select name="acrescimo[]" id="acrescimo" class="form-select form-control" multiple>`
+                    html += `<option value="">asdasd</option>`
+                    html += `</select>`
+                    html += `</div>`;
                     html += `</div>`;
                     html += `</div>`;
                     html += `</div>`;
@@ -311,6 +375,8 @@
                         valorAt = $(".qtdPrd-" + res.id_produto).val();
                         $(".qtdPrd-" + res.id_produto).val(parseInt(valorAt) + 1);
                     }
+
+                    $("select[name='acrescimo[]']").last().selectpicker();
                 }
             });
         });
@@ -346,6 +412,7 @@
                     }
                 }
             })
+
         });
 
         $('#mymodal').on('click', function () {
@@ -356,9 +423,10 @@
             $("#exampleModal").modal('show');
         });
 
-
+        
 
     });
+
 
 
     function EditaDados(id_pedido) {
@@ -392,7 +460,7 @@
     }
 
     function excluiInput(_this) {
-        $(_this).parent().parent().parent().parent().parent().remove();
+        $(_this).parent().parent().parent().remove();
     }
 
     async function ExcluiDados(id_pedido) {
@@ -484,8 +552,39 @@
         })
     }
 
+    async function readURL(input) {
+        var parent = $(input).parent();
+        var file = input.files[0];
+        $('span', $(parent)).css('display', 'block');
+        $('img', $(parent)).css('display', 'none');    
+        if (input.files && input.files[0]) {
+            var myform = new FormData();
+                myform.append('file',file);
+                myform.append('buckt',"uploadLeet");
 
+            $.ajax({
+                url:'https://gsplanaltec.com/GerenciamentoServicos/APIControle/UploadS3',
+                type:'POST',
+                dataType:'JSON',
+                data: myform,
+                contentType: false,
+                processData: false,
+                success: function(res){
+                    console.log(res)
+                }  
+            })
 
+            var reader = new FileReader();
+
+            reader.onload = async function (e) {
+                $('span', $(parent)).css('display', 'none');
+                $('img', $(parent)).css('display', 'block');
+                $('img', $(parent)).attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 
 </script>
 <script type="text/javascript">
@@ -520,173 +619,202 @@
         return this.split('').reverse().join('');
     }
 </script>
-<div class="main-top">
-    <h1 class="corInit">Cadastro de Pedidos</h1>
-    <span id="alerta" style="text-align:center"></span>
-</div>
-<div class="main-cadastro-produto">
-    <form class="row g-4 was-validated">
-        <div class="col-md-3">
-            <label for="numPedido" class="form-label">Número de pedido</label>
-            <input type="text" class="form-control" id="numero_pedido">
-        </div>
-        <div class="col-md-3">
-            <label for="dadosClient" class="form-label">Dados do Cliente</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-plus" style="color:purple;" type="button"
-                id="mymodal" data-bs-toggle="modal" data-bs-whatever="@getbootstrap" title="Adicionar Cliente"
-                required></i>
-            <select name="" id="addCliente" class="selectpicker form-control">
-                    
-            </select>
+
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item nav-pedido" role="presentation">
+        <button class="nav-link active" style="" id="pills-lista-tab" data-bs-toggle="pill" data-bs-target="#pills-lista"
+            type="button" role="tab" aria-controls="pills-lista" aria-selected="true">Lista de Pedidos</button>
+    </li>
+    <li class="nav-item nav-pedido" role="presentation">
+        <button class="nav-link" id="pills-cadastro-tab" data-bs-toggle="pill" data-bs-target="#pills-cadastro"
+            type="button" role="tab" aria-controls="pills-cadastro" aria-selected="false">Cadastro de Pedidos</button>
+    </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-lista" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <div class="main-top">
+            <h1 class="corInit">Lista de Pedidos</h1>
         </div>
 
-        <div class="col-md-3">
-            <label for="inputAddress2" class="form-label">Telefone</label>
-            <input type="text" class="form-control" id="telefone_cliente" required>
-        </div>
-        <div class="col-md-3">
-            <label for="inputAddress2" class="form-label">Produto</label>
-            <input type="text" class="form-control" id="dados_arte" required>
-        </div>
-        <div class="col-md-3">
-            <label for="inputState" class="form-label">CEP</label>
-            <input type="text" class="form-control" onblur="getCep(this.value)" required>
-            <input type="text" hidden="true" id="id_Edita">
-            <button type="button" hidden="true" id="atualizaTable"></button>
-        </div>
-        <div class="col-md-3">
-            <label for="numPedido" class="form-label">Data do Pedido</label>
-            <input type="date" value="<?php echo date('01/m/Y') ?>" class="form-control" id="data_pedido" required>
-        </div>
-        <div class="col-md-3">
-            <label for="dadosClient" class="form-label">Data do Evento</label>
-            <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="data_evento" required>
-        </div>
-        <div class="col-md-3">
-            <label for="dadosProduto" class="form-label">Data da Entrega</label>
-            <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="data_entrega" required>
-        </div>
-        <div class="col-md-3">
-            <label for="inputAddress2" class="form-label">Valor do Frete</label>
-            <input type="text" class="form-control" id="valor_frete" onKeyUp="maskIt(this,event,'#########.##',true)"
-                required>
-        </div>
-        <div class="col-md-3">
-            <label for="inputAddress2" class="form-label">Retirada/Envio</label>
-            <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="retirada_envio" required>
-        </div>
-        <div class="col-md-3">
-            <label for="numPedido" class="form-label">Valor Unitário</label>
-            <input type="text" class="form-control" id="valor_unitario" onKeyUp="maskIt(this,event,'#########.##',true)"
-                dir="rtl" required>
-        </div>
-        <div class="col-md-3">
-            <label for="dadosClient" class="form-label">Valor Total</label>
-            <input type="text" class="form-control" id="valor_total" onKeyUp="maskIt(this,event,'#########.##',true)"
-                dir="rtl" required>
-        </div>
-        <div class="col-md-3">
-            <label for="dadosProduto" class="form-label">Valor Sinal</label>
-            <input type="text" class="form-control" id="valor_sinal" onKeyUp="maskIt(this,event,'#########.##',true)"
-                dir="rtl" required>
-        </div>
-        <div class="col-md-3">
-            <label for="inputAddress2" class="form-label">Falta Pagar</label>
-            <input type="text" class="form-control" id="falta_pagar" onKeyUp="maskIt(this,event,'#########.##',true)"
-                dir="rtl" required>
-            <input type="text" hidden="true" id="id_Edita">
-            <button type="button" hidden="true" id="atualizaTable"></button>
-        </div>
-        <div class="col-md-3">
-            <label for="produtos" class="form-label">Produtos</label>
-            <select class="form-select form-control" aria-label="Default select example" id="produto">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-primary" type="button" id="addProduto"><i
-                    class="fa-solid fa-circle-plus"></i>Adicionar</button>
-            <button type="button" id="Btncadas" class="btn btn-primary">Cadastrar</button>
-        </div>
-        <div class='row mt-3' id="produtosAdd">
-
-        </div>
-    </form>
-
-    <div class="main-top mt-5">
-        <h1 class="corInit">Lista de Pedidos</h1>
+        <table id="tb_pedido" class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Pedidos</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Número Arte</th>
+                    <!-- <th scope="col">CEP</th> -->
+                    <th scope="col">Data do Pedido</th>
+                    <th scope="col">Data do Evento</th>
+                    <th scope="col">Data da Entrega</th>
+                    <th scope="col">Valor do Frete</th>
+                    <!-- <th scope="col">Retirada/Envio</th> -->
+                    <th scope="col">Valor Unitário</th>
+                    <th scope="col">Valor Total</th>
+                    <th scope="col">Valor Sinal</th>
+                    <th scope="col">Falta Pagar</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+        </table>
     </div>
+    <div class="tab-pane fade show" id="pills-cadastro" role="tabpanel" aria-labelledby="pills-cadastro-tab"
+        tabindex="0">
+        <div class="main-top">
+            <h1 class="corInit">Cadastro de Pedidos</h1>
+            <span id="alerta" style="text-align:center"></span>
+        </div>
+        <div class="main-cadastro-produto">
+            <form class="row g-4 was-validated">
+                <div class="col-md-3">
+                    <label for="numPedido" class="form-label">Número de pedido</label>
+                    <input type="text" class="form-control" id="numero_pedido">
+                </div>
+                <div class="col-md-3">
+                    <label for="dadosClient" class="form-label">Dados do Cliente</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-plus" style="color:purple;" type="button"
+                        id="mymodal" data-bs-toggle="modal" data-bs-whatever="@getbootstrap" title="Adicionar Cliente"
+                        required></i>
+                    <select name="" id="addCliente" class="selectpicker form-control">
 
-    <table id="tb_pedido" class="table table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Pedidos</th>
-                <th scope="col">Cliente</th>
-                <th scope="col">Telefone</th>
-                <th scope="col">Produto</th>
-                <!-- <th scope="col">CEP</th> -->
-                <th scope="col">Data do Pedido</th>
-                <th scope="col">Data do Evento</th>
-                <th scope="col">Data da Entrega</th>
-                <th scope="col">Valor do Frete</th>
-                <!-- <th scope="col">Retirada/Envio</th> -->
-                <th scope="col">Valor Unitário</th>
-                <th scope="col">Valor Total</th>
-                <th scope="col">Valor Sinal</th>
-                <th scope="col">Falta Pagar</th>
-                <th scope="col">Ações</th>
-            </tr>
-        </thead>
-    </table>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cadastro de Cliente</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </select>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Nome</label>
-                            <input id="nome_cliente" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Telefone</label>
-                            <input class="form-control" id="telefone_cliente" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">CPF</label>
-                            <input class="form-control" id="cpf_cliente" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputState" class="form-label">CEP</label>
-                            <input type="text" class="form-control" id="cep_cliente" required
-                                onblur="getCep(this.value)">
-                            <input type="text" hidden="true" id="id_Edita">
-                            <button type="button" hidden="true" id="atualizaTable"></button>
-                        </div>
-                        <div class="md-3">
-                            <label for="estado" class="form-label">Estado</label>
-                            <select name="estados" id="estado" class="form-select form-control"
-                                aria-label="Default select example" onchange="cidadeporID();">
-                                <option value="">Selecione o Estado</option>
-                            </select>
-                        </div>
-                        <div class="md-3">
-                            <label for="cidade" class="form-label">Cidade</label>
-                            <select name="cidade" id="cidade" class="form-select form-control"
-                                aria-label="Default select example">
-                                <option value="">Aguardando estado</option>
-                            </select>
-                        </div>
-                    </form>
+
+                <div class="col-md-3">
+                    <label for="inputAddress2" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone_cliente" required>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" style="background-color:black"
-                        data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" id="btnEnvia" class="btn btn-primary"
-                        data-bs-dismiss="modal">Cadastrar</button>
+                <div class="col-md-3">
+                    <label for="inputAddress2" class="form-label">Produto</label>
+                    <input type="text" class="form-control" id="dados_prod" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputAddress2" class="form-label">Número Arte</label>
+                    <input type="text" class="form-control" id="dados_arte" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputState" class="form-label">CEP</label>
+                    <input type="text" class="form-control" onblur="getCep(this.value)" required>
+                    <input type="text" hidden="true" id="id_Edita">
+                    <button type="button" hidden="true" id="atualizaTable"></button>
+                </div>
+                <div class="col-md-3">
+                    <label for="numPedido" class="form-label">Data do Pedido</label>
+                    <input type="date" value="<?php echo date('01/m/Y') ?>" class="form-control" id="data_pedido"
+                        required>
+                </div>
+                <div class="col-md-3">
+                    <label for="dadosClient" class="form-label">Data do Evento</label>
+                    <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="data_evento"
+                        required>
+                </div>
+                <div class="col-md-3">
+                    <label for="dadosProduto" class="form-label">Data da Entrega</label>
+                    <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="data_entrega"
+                        required>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputAddress2" class="form-label">Valor do Frete</label>
+                    <input type="text" class="form-control" id="valor_frete"
+                        onKeyUp="maskIt(this,event,'#########.##',true)" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputAddress2" class="form-label">Retirada/Envio</label>
+                    <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="retirada_envio"
+                        required>
+                </div>
+                <div class="col-md-3">
+                    <label for="numPedido" class="form-label">Valor Unitário</label>
+                    <input type="text" class="form-control" id="valor_unitario"
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="dadosClient" class="form-label">Valor Total</label>
+                    <input type="text" class="form-control" id="valor_total"
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="dadosProduto" class="form-label">Valor Sinal</label>
+                    <input type="text" class="form-control" id="valor_sinal"
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputAddress2" class="form-label">Falta Pagar</label>
+                    <input type="text" class="form-control" id="falta_pagar"
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" required>
+                    <input type="text" hidden="true" id="id_Edita">
+                    <button type="button" hidden="true" id="atualizaTable"></button>
+                </div>
+                <div class="col-md-3">
+                    <label for="produtos" class="form-label">Produtos</label>
+                    <select class="form-select form-control" aria-label="Default select example" id="produto">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary" type="button" id="addProduto"><i
+                            class="fa-solid fa-circle-plus"></i>Adicionar</button>
+                    <button type="button" id="Btncadas" class="btn btn-primary">Cadastrar</button>
+                </div>
+                <div class='row mt-3' id="produtosAdd">
+
+                </div>
+            </form>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cadastro de Cliente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Nome</label>
+                                    <input id="nome_cliente" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Telefone</label>
+                                    <input class="form-control" id="telefone_cliente" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">CPF</label>
+                                    <input class="form-control" id="cpf_cliente" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputState" class="form-label">CEP</label>
+                                    <input type="text" class="form-control" id="cep_cliente" required
+                                        onblur="getCep(this.value)">
+                                    <input type="text" hidden="true" id="id_Edita">
+                                    <button type="button" hidden="true" id="atualizaTable"></button>
+                                </div>
+                                <div class="md-3">
+                                    <label for="estado" class="form-label">Estado</label>
+                                    <select name="estados" id="estado" class="form-select form-control"
+                                        aria-label="Default select example" onchange="cidadeporID();">
+                                        <option value="">Selecione o Estado</option>
+                                    </select>
+                                </div>
+                                <div class="md-3">
+                                    <label for="cidade" class="form-label">Cidade</label>
+                                    <select name="cidade" id="cidade" class="form-select form-control"
+                                        aria-label="Default select example">
+                                        <option value="">Aguardando estado</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" style="background-color:black"
+                                data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" id="btnEnvia" class="btn btn-primary"
+                                data-bs-dismiss="modal">Cadastrar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

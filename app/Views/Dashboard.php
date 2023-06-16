@@ -231,11 +231,6 @@
         border-bottom: 1px solid #000;
     } */
 
-    .active:hover {
-        color: #000;
-        border-bottom: 1px solid #000;
-    }
-
     .course-box .course {
         display: flex;
     }

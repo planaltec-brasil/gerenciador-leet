@@ -58,12 +58,10 @@ class CadsPedido_controller extends BaseController {
         $id = isset($_POST['id']) ? $_POST['id'] : ""; 
         $res = null;
 
-     
-
         if($id)
             $response = $this->prodPedidoModel->CarregaProduto($id);
-
-        if($response[0]['id'] == null){
+     
+        if($response == null){
             $res = $this->pedido_model->delete($id);
 
         }else{

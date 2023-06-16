@@ -81,6 +81,19 @@
 
             // envio do formulario de cadastro
             $("#btnEnvia").on('click', function () {
+                if (
+                    ($("#nome_cliente").val() == "" || $("#nome_cliente").val() == null) ||
+                    ($("#cpf_cliente").val() == "" || $("#cpf_cliente").val() == null) ||
+                    ($("#telefone_cliente").val() == "" || $("#telefone_cliente").val() == null) ||
+                    ($("#cidade").val() == "" || $("#cidade").val() == null) ||
+                    ($("#estado").val() == "" || $("#estado").val() == null) ||
+                    ($("#cep_cliente").val() == "" || $("#cep_cliente").val() == null) ||
+                    ($("#id_Edita").val() == "" || $("#id_Edita").val() == null)
+
+                ) {
+                    alert('Campos *nome, *telefone são obrigatorios');
+                    return;
+                }
                 $.ajax({
                     'url': "InsereDadosCliente",
                     'dataType': "JSON",

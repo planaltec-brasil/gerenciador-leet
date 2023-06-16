@@ -1,127 +1,137 @@
 <style>
-
-    .form-control{
+    .form-control {
         background-color: #F5f5f5;
         border-radius: 12px;
-        border:none;
+        border: none;
     }
 
-    .btn-primary{
+    .btn-primary {
         margin-top: 30px;
         border-radius: 12px;
         background-color: #B800FF;
-        border:none;
+        border: none;
     }
 
-    .btn-primary:hover{
+    .btn-primary:hover {
         margin-top: 30px;
         border-radius: 12px;
         background-color: #1B1B1B;
     }
 
-    .corInit{
+    .corInit {
         background: -webkit-linear-gradient(#B800FF 0%, #FF3D81 100%, #333);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
-
 </style>
 <script>
     $(document).ready(function () {
 
         var tabela = $('#tb_produto').DataTable({
-        dom: "<'row'<'col-sm-6 mt-3 mb-3'B>><'row'<'col-sm-6'l><'col-md-6'f>>" +
-            "<'row'<'col-sm-12'tr>>" +
-            "<'row'<'col-sm-5'i><'col-sm-7'p>>",
-        buttons: ['copy', 'excel', 'pdf'],
-        "language": {
-            "url": "<?php echo base_url(); ?>assets/media/Portuguese-Brasil.json"
-        },
-        "ajax": "getProduto",
-        columns: [
-            { data: 'nome_produto' },
-            { data: 'cor_produto' },
-            { data: 'estoque_atual' },
-            { data: 'estoque_anterior' },
-            { data: 'unidade_produto' },
-            { data: 'volume_produto' },
-            { data: 'material_produto' },
-            { data: 'fotos_produto' },
-            {
-                        data: null,
-                        defaultContent: "",
-                        render: function (data, type, row) {
-                            var html = "<button title='editar registro' type='button' onclick='EditaDadosPR(" + data.id_produto + ")'  class='btn btn-sm btn-outline'><i style='color: #00008B;' class='far fa-edit'></i></button>&nbsp;";
+            dom: "<'row'<'col-sm-6 mt-3 mb-3'B>><'row'<'col-sm-6'l><'col-md-6'f>>" +
+                "<'row'<'col-sm-12'tr>>" +
+                "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+            buttons: ['copy', 'excel', 'pdf'],
+            "language": {
+                "url": "<?php echo base_url(); ?>assets/media/Portuguese-Brasil.json"
+            },
+            "ajax": "getProduto",
+            columns: [
+                { data: 'nome_produto' },
+                { data: 'cor_produto' },
+                { data: 'estoque_atual' },
+                { data: 'estoque_anterior' },
+                { data: 'unidade_produto' },
+                { data: 'volume_produto' },
+                { data: 'material_produto' },
+                { data: 'fotos_produto' },
+                {
+                    data: null,
+                    defaultContent: "",
+                    render: function (data, type, row) {
+                        var html = "<button title='editar registro' type='button' onclick='EditaDadosPR(" + data.id_produto + ")'  class='btn btn-sm btn-outline'><i style='color: #00008B;' class='far fa-edit'></i></button>&nbsp;";
 
-                            return html;
-                        }
-                    },
+                        return html;
+                    }
+                },
 
-                ]
+            ]
         });
         $("#Enviadados").on('click', function () {
-                $.ajax({
-                    'url': "InsereDadosProduto",
-                    'dataType': "JSON",
-                    'type': "POST",
-                    data: {
-                        'nome_produto': $("#nome_produto").val(),
-                        'cor_produto': $("#cor_produto").val(),
-                        'estoque_atual': $("#estoque_atual").val(),
-                        'estoque_anterior': $("#estoque_anterior").val(),
-                        'unidade_produto': $("#unidade_produto").val(),
-                        'volume_produto': $("#volume_produto").val(),
-                        'material_produto': $("#material_produto").val(),
-                        'fotos_produto': $("#fotos_produto").val(),
-                        'id_Edita': $("#id_Edita").val() 
-                    },
-                    success: function (res) {
-                        if(res){
-                            $("#atualizaTable").click();
-                            $("#alerta").html("<div class='alert alert-success'> Sucesso ao Cadastrar!</div>");
-                            setTimeout(() => {
-                                $("#alerta").html("");
-                            }, 2000);
-                        }else{
-                            $("#alerta").html("<div class='alert alert-danger'>Erro ao inserir os dados!</div>" );
-                            setTimeout(() => {
-                                $("#alerta").html("");
-                            }, 2000);
-                        }
-                    }
-                })
-            });
+            if (
+                ($("#nome_produto").val() == "" || $("#nome_produto").val() == null) ||
+                // ($("#cpf_cliente").val() == "" || $("#cpf_cliente").val() == null) ||
+                // ($("#telefone_cliente").val() == "" || $("#telefone_cliente").val() == null) ||
+                // ($("#cidade").val() == "" || $("#cidade").val() == null) ||
+                // ($("#estado").val() == "" || $("#estado").val() == null) ||
+                // ($("#cep_cliente").val() == "" || $("#cep_cliente").val() == null) ||
+                // ($("#id_Edita").val() == "" || $("#id_Edita").val() == null)
 
-                    // atualizatable
-        $("#atualizaTable").on('click', function() {
+            ) {
+                alert('Campos *nome produto são obrigatorios');
+                return;
+            }
+            $.ajax({
+                'url': "InsereDadosProduto",
+                'dataType': "JSON",
+                'type': "POST",
+                data: {
+                    'nome_produto': $("#nome_produto").val(),
+                    'cor_produto': $("#cor_produto").val(),
+                    'estoque_atual': $("#estoque_atual").val(),
+                    'estoque_anterior': $("#estoque_anterior").val(),
+                    'unidade_produto': $("#unidade_produto").val(),
+                    'volume_produto': $("#volume_produto").val(),
+                    'material_produto': $("#material_produto").val(),
+                    'fotos_produto': $("#fotos_produto").val(),
+                    'id_Edita': $("#id_Edita").val()
+                },
+                success: function (res) {
+                    if (res) {
+                        $("#atualizaTable").click();
+                        $("#alerta").html("<div class='alert alert-success'> Sucesso ao Cadastrar!</div>");
+                        setTimeout(() => {
+                            $("#alerta").html("");
+                        }, 2000);
+                    } else {
+                        $("#alerta").html("<div class='alert alert-danger'>Erro ao inserir os dados!</div>");
+                        setTimeout(() => {
+                            $("#alerta").html("");
+                        }, 2000);
+                    }
+                }
+            })
+        });
+
+        // atualizatable
+        $("#atualizaTable").on('click', function () {
             tabela.ajax.reload(null, false);
         });
     });
 
     function EditaDadosPR(id_produto) {
-            $.ajax({
-                url: "CarregaProduto",
-                type: "POST",
-                dataType: "JSON",
-                data: {
-                    id: id_produto
-                },
-                success: function (res) {
-                    if (res) {
-                        $("#nome_produto").val(res.nome_produto);
-                        $("#cor_produto").val(res.cor_produto);
-                        $("#estoque_atual").val(res.estoque_atual);
-                        $("#estoque_anterior").val(res.estoque_anterior);
-                        $("#unidade_produto").val(res.unidade_produto);
-                        $("#volume_produto").val(res.volume_produto);
-                        $("#material_produto").val(res.material_produto);
-                        $("#fotos_produto").val(res.fotos_produto);
-                        $("#id_Edita").val(res.id_produto);
-                    }
+        $.ajax({
+            url: "CarregaProduto",
+            type: "POST",
+            dataType: "JSON",
+            data: {
+                id: id_produto
+            },
+            success: function (res) {
+                if (res) {
+                    $("#nome_produto").val(res.nome_produto);
+                    $("#cor_produto").val(res.cor_produto);
+                    $("#estoque_atual").val(res.estoque_atual);
+                    $("#estoque_anterior").val(res.estoque_anterior);
+                    $("#unidade_produto").val(res.unidade_produto);
+                    $("#volume_produto").val(res.volume_produto);
+                    $("#material_produto").val(res.material_produto);
+                    $("#fotos_produto").val(res.fotos_produto);
+                    $("#id_Edita").val(res.id_produto);
                 }
-            });
-        }
+            }
+        });
+    }
 
 </script>
 
@@ -148,7 +158,7 @@
         </div>
         <div class="col-md-3">
             <label for="inputCity" class="form-label">Unidade</label>
-            <input type="text" id="unidade_produto" class="form-control" id="inputCity"required>
+            <input type="text" id="unidade_produto" class="form-control" id="inputCity" required>
         </div>
         <div class="col-md-3">
             <label for="inputState" class="form-label">Volume</label>
