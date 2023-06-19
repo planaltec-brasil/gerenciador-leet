@@ -7,7 +7,12 @@ class pdfLeet_controller extends BaseController{
 
     public function pdfLeet(){
         $mpdf = new MeuPDF();
-		$html = view('html_to_pdf');
+
+        $ids = $_POST['idsPedidos'];
+
+        $data['list'] = $this->carregameupau->carregameupau($ids);
+
+		$html = view('html_to_pdf', $data);
 		$this->response->setHeader('Content-Type', 'application/pdf');
 		$mpdf->GerarPDF($html);
     }

@@ -5,7 +5,7 @@ namespace App\Libraries;
 use Mpdf\Mpdf;
 
 class MeuPDF {
-    function GerarPDF($html) {
+    function GerarPDF($html, $nomePersonalizado = 'meudoc') {
         $mpdf = new Mpdf([
             'mode' => 'utf-8',
             // 'format' => 'A4-L',
@@ -28,6 +28,6 @@ class MeuPDF {
         ]);
         
         $mpdf->WriteHTML($html);
-		$mpdf->Output('arjun.pdf','I');
+		$mpdf->Output($nomePersonalizado . '.pdf','I');
     }
 }

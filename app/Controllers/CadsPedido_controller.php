@@ -33,10 +33,16 @@ class CadsPedido_controller extends BaseController {
 		 	$arrayProduto = array(
                 'pedidos' => $id,
 		 		'produtos_pedido' => $prodpedidos,
-		 		'qtd' => $formDados['qtdPrd'][$key]
+		 		'qtd' => $formDados['qtdPrd'][$key],
+		 		'foto' => $formDados['fotos'][$key],
 		 	);
-
-            $this->prodPedidoModel->save($arrayProduto);
+            
+            if($formDados['id_produto_pedido'][$key] == '') {
+                unset($formDados["id_produto_pedido"]);
+                $this->prodPedidoModel->save($arrayProduto);
+            } else {
+                $this->prodPedidoModel->update([ 'id' => $formDados['id_produto_pedido'][$key] ], $arrayProduto);
+            }
         }
        
         echo json_encode($id);
@@ -44,13 +50,15 @@ class CadsPedido_controller extends BaseController {
 
 
     public function getPedido() {
-        $res = $this->pedido_model->getPedido();
+        $res = $this->pedido_model->listaPedidos();
         echo json_encode(['data' => $res]);
     }
 
     public function CarregaEditaPedido(){
         $id = isset($_POST['id']) ? $_POST['id'] : "";
         $res = $this->pedido_model->getPedido($id);
+        $res['pedidos'] = $this->pedido_model->getPedido($id);
+        $res['produtos'] = $this->pedido_model->listaProdutosPedido($id);
         echo json_encode($res);
     }
 

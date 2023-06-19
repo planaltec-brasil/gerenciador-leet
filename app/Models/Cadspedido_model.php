@@ -14,9 +14,7 @@ class Cadspedido_model extends Model {
     protected $useSoftDeletes = false;
 
     protected $allowedFields = [ 
-        'numero_pedido',
-        'dados_cliente',
-        'dados_produto',
+        'cliente',
         'dados_arte',
         'data_pedido',
         'data_evento',
@@ -29,6 +27,25 @@ class Cadspedido_model extends Model {
         'valor_sinal',
         'falta_pagar',
         ];
+
+
+
+    public function listaPedidos() {
+        $db = db_connect();
+        $query =  $db->query("SELECT TP.*, TC.nome_cliente FROM tb_pedido TP LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente");
+        return $query->getResult();
+    }
+
+    public function listaProdutosPedido($idPedido) {
+        $db = db_connect();
+        $sql = "SELECT TP.*, TPP.qtd, TPP.foto, TPP.id FROM tb_produto TP
+                    JOIN tb_produtos_pedido TPP ON TPP.produtos_pedido = TP.id_produto
+                WHERE TPP.pedidos = $idPedido
+                GROUP BY TP.id_produto";
+
+        $query =  $db->query($sql);
+        return $query->getResult();
+    }
 
     public function getPedido($id = false) {
         if ($id === false) {
@@ -58,6 +75,13 @@ class Cadspedido_model extends Model {
         $db = db_connect();
         $query =  $db->query("SELECT * FROM servico_bd.estados where sigla = '$sigla' ");
         return $query->getResult();
+    }
+
+    function carregaDadosSinistro($id){
+        $db = db_connect();
+        $sql = "SELECT * FROM bd_leet WHERE IZ.id = $id";
+        $query = $db->query($sql);
+        return $query->row(0);
     }
     
 
