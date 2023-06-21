@@ -58,18 +58,10 @@
             ]
         });
         $("#Enviadados").on('click', function () {
-            if (
-                ($("#nome_produto").val() == "" || $("#nome_produto").val() == null) ||
-                // ($("#cpf_cliente").val() == "" || $("#cpf_cliente").val() == null) ||
-                // ($("#telefone_cliente").val() == "" || $("#telefone_cliente").val() == null) ||
-                // ($("#cidade").val() == "" || $("#cidade").val() == null) ||
-                // ($("#estado").val() == "" || $("#estado").val() == null) ||
-                // ($("#cep_cliente").val() == "" || $("#cep_cliente").val() == null) ||
-                // ($("#id_Edita").val() == "" || $("#id_Edita").val() == null)
-
-            ) {
-                alert('Campos *nome produto são obrigatorios');
+            if ($("#nome_produto").val() == "" || $("#fotos_produto").val() == "") {
+                alert('Telefone e nome do cliente são obrigatórios');
                 return;
+            }
             }
             $.ajax({
                 'url': "InsereDadosProduto",
@@ -142,34 +134,34 @@
     <form class="row g-4 was-validated">
         <div class="col-md-3">
             <label for="numPedido" class="form-label">Nome do Produto</label>
-            <input type="text" id="nome_produto" class="form-control" id="" required>
+            <input type="text" id="nome_produto" class="form-control" id="">
         </div>
         <div class="col-md-3">
             <label for="dadosClient" class="form-label">Cor</label>
-            <input type="text-color" id="cor_produto" class="form-control" id="" required>
+            <input type="text-color" id="cor_produto" class="form-control" id="">
         </div>
         <div class="col-md-3">
             <label for="dadosProduto" class="form-label">Estoque Atual</label>
-            <input type="text" id="estoque_atual" class="form-control" id="" required>
+            <input type="text" id="estoque_atual" class="form-control" id="">
         </div>
         <div class="col-md-3">
             <label for="inputAddress2" class="form-label">Estoque anterior</label>
-            <input type="text" id="estoque_anterior" class="form-control" id="inputAddress" required>
+            <input type="text" id="estoque_anterior" class="form-control" >
         </div>
         <div class="col-md-3">
             <label for="inputCity" class="form-label">Unidade</label>
-            <input type="text" id="unidade_produto" class="form-control" id="inputCity" required>
+            <input type="text" id="unidade_produto" class="form-control" >
         </div>
         <div class="col-md-3">
             <label for="inputState" class="form-label">Volume</label>
-            <input type="text" id="volume_produto" class="form-control" id="" required>
+            <input type="text" id="volume_produto" class="form-control" id="">
         </div>
         <div class="col-md-3">
             <label for="inputState" class="form-label">Material</label>
-            <input type="text" id="material_produto" class="form-control" id="" required>
+            <input type="text" id="material_produto" class="form-control" id="">
         </div>
         <div class="col-md-3">
-            <label for="inputState" class="form-label">Fotos do produto</label required>
+            <label for="inputState" class="form-label">Fotos do produto</label>
             <input type="file" id="fotos_produto" class="form-control" id="">
             <input type="text" hidden="true" id="id_Edita">
             <button type="button" hidden="true" id="atualizaTable"></button>

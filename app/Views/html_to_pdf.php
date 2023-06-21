@@ -60,7 +60,7 @@
         <p>PEDIDO DE VENDA | LEET PERSONALIZADOS</p>
     </div>
     <div class="divContent" style="width: 54%;">
-        <div>?Número OS</div>
+        <div>Número OS <?php echo $teste[0]->id_pedido;?></div>
         <div style="float: left; width: 30%;">Cliente: <span>José</span></div>
         <div>Data do pedido: <span>06/06 Terça-feira</span></div>
         <br />

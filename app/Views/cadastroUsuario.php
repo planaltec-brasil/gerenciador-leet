@@ -66,17 +66,8 @@
             ]
         });
         $("#Enviabtn").on('click', function () {
-            if (
-                ($("#usuario").val() == "" || $("#usuario").val() == null) ||
-                ($("#senha").val() == "" || $("#senha").val() == null) ||
-                // ($("#telefone_cliente").val() == "" || $("#telefone_cliente").val() == null) ||
-                // ($("#cidade").val() == "" || $("#cidade").val() == null) ||
-                // ($("#estado").val() == "" || $("#estado").val() == null) ||
-                // ($("#cep_cliente").val() == "" || $("#cep_cliente").val() == null) ||
-                // ($("#id_Edita").val() == "" || $("#id_Edita").val() == null)
-
-            ) {
-                alert('Campos *nome, senha são obrigatorios');
+            if ($("#usuario").val() == "" || $("#senha").val() == "") {
+                alert('Telefone e nome do cliente são obrigatórios');
                 return;
             }
             $.ajax({
@@ -176,11 +167,11 @@
     <form class="row g-4 was-validated">
         <div class="col-md-3">
             <label for="numPedido" class="form-label">Nome de Usuário</label>
-            <input type="text" id="usuario" class="form-control" id="" required>
+            <input type="text" id="usuario" class="form-control" id="">
         </div>
         <div class="col-md-3">
             <label for="dadosClient" class="form-label">Senha</label>
-            <input type="text" id="senha" class="form-control" id="" required>
+            <input type="text" id="senha" class="form-control" id="">
         </div>
         <div class="col-md-3">
             <label for="inputAddress2" class="form-label">Cargo/Permissões</label>

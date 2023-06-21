@@ -255,11 +255,13 @@
             var idProd = [];
             var fotos = [];
             var id_produto_pedido = [];
+            var acrescimos = [];
             $.each($('input[name="qtdPrd[]"]'), function (idx, obj) {
                 qtd.push($(obj).val());
                 idProd.push($("input[name='id_Produto[]']").eq(idx).val());
                 id_produto_pedido.push($("input[name='id_produto_pedido[]']").eq(idx).val());
-                fotos.push($(".myfile")[idx].files[0].name);
+                fotos.push('');//$(".myfile")[idx].files[0].name
+                acrescimos.push($("select[name='acrescimo[]']").eq(idx).val().join());
             });
             
             $.ajax({
@@ -283,6 +285,7 @@
                     'id_Produto': idProd,
                     'id_produto_pedido': id_produto_pedido,
                     'fotos': fotos,
+                    'id_Acrescimo': acrescimos,
                     'id_Edita': $("#id_Edita").val()
                 },
                 success: function (res) {
@@ -389,9 +392,8 @@
                     html += `<input id="qtdPrd" name="qtdPrd[]" type="number" value="1" class="form-control qtdPrd-${res.id_produto}" />`;
                     html += `</div>`;
                     html += `<div class='col-12 pt-1'>`;
-                    html += `<label for="qtdPrd">Acréscimo</label>`;
-                    html += `<select name="acrescimo[]" id="acrescimo" class="form-select form-control" multiple>`
-                    html += `<option value="">asdasd</option>`
+                    html += `<label for="acrescimo">Acréscimo</label>`;
+                    html += `<select name="acrescimo[]" id="acrescimo" class="acrescimo form-select form-control" multiple>`
                     html += `</select>`
                     html += `</div>`;
                     html += `</div>`;
@@ -410,7 +412,7 @@
                         $(".qtdPrd-" + res.id_produto).val(parseInt(valorAt) + 1);
                     }
 
-                    $("select[name='acrescimo[]']").last().selectpicker();
+                    ListaAcrescimo();
                 }
             });
         });
@@ -465,9 +467,8 @@
 
     });
 
-
-
     function EditaDados(id_pedido) {
+        $("#pills-cadastro-tab").click();
         $.ajax({
             url: "CarregaPedido",
             type: "POST",
@@ -496,7 +497,7 @@
                     $("#id_Edita").val(res.id_pedido);
 
                     $("#produtosAdd").html('');
-                    for(var i = 0; i < resProdutos.length; i++) {
+                    for (var i = 0; i < resProdutos.length; i++) {
                         var html = "";
                         html += `<div class="col-md-4 col-sm-12 produto-${resProdutos[i].id_produto}">`;
                         html += `<div class="card mb-3 shadow p-3 mb-5 bg-body rounded">`;
@@ -504,7 +505,7 @@
                         html += '<a href="#" style="color:red;" onclick="excluiInput(this)" ><i class="fa-solid fa-trash"></i></a></div>';
                         html += `<div class="row g-0">`;
                         html += `<div class="col-md-4 d-flex justify-content-center align-items-center">`;
-                        html += `<img style="width: 100%" src='${ (resProdutos[i].foto != '' && resProdutos[i].foto != null ? resProdutos[i].foto : 'assets/img/image.png') }' class="img-fluid rounded-start" alt="...">`;
+                        html += `<img style="width: 100%" src='${(resProdutos[i].foto != '' && resProdutos[i].foto != null ? resProdutos[i].foto : 'assets/img/image.png')}' class="img-fluid rounded-start" alt="...">`;
                         html += `<span style="display: none;" >Carregando...</span>`;
                         html += `<a href="#" onclick="$('.file-${resProdutos[i].id_produto}').click()" ><i class="fa-solid fa-pen-to-square"></i></a><input onchange="readURL(this)" class="file-${resProdutos[i].id_produto} myfile" type="file" name="prodFile[]" style="visibility: hidden;" />`;
                         html += `</div>`;
@@ -519,9 +520,8 @@
                         html += `<input id="qtdPrd" name="qtdPrd[]" type="number" value="${resProdutos[i].qtd}" class="form-control qtdPrd-${resProdutos[i].id_produto}" />`;
                         html += `</div>`;
                         html += `<div class='col-12 pt-1'>`;
-                        html += `<label for="qtdPrd">Acréscimo</label>`;
-                        html += `<select name="acrescimo[]" id="acrescimo" class="form-select form-control" multiple>`
-                        html += `<option value="">asdasd</option>`
+                        html += `<label for="acrescimo">Acréscimo</label>`;
+                        html += `<select name="acrescimo[]" id="acrescimo" class="acrescimo form-select form-control" multiple>`
                         html += `</select>`
                         html += `</div>`;
                         html += `</div>`;
@@ -531,16 +531,60 @@
                         html += `</div>`;
                         html += `</div>`;
 
-                        let teste = $(".produto-" + res.id_produto);
+                        let teste = $(".produto-" + resProdutos[i].id_produto);
 
                         if (teste.length < 1) {
                             $("#produtosAdd").append(html);
                         } else {
-                            valorAt = $(".qtdPrd-" + res.id_produto).val();
-                            $(".qtdPrd-" + res.id_produto).val(parseInt(valorAt) + 1);
+                            valorAt = $(".qtdPrd-" + resProdutos[i].id_produto).val();
+                            $(".qtdPrd-" + resProdutos[i].id_produto).val(parseInt(valorAt) + 1);
                         }
+
+                        ListaAcrescimo(res.id_pedido, resProdutos[i].id_produto);
                     }
                 }
+            }
+        });
+    }
+
+    async function ListaAcrescimo(idPedido = null, idProduto = null) {
+        var acrescimos = null;
+        if(idPedido != null && idProduto != null) {
+            acrescimos = await fetch('CarregaAcrescimosProduto', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    idPedido: idPedido,
+                    idProduto: idProduto
+                }),
+            })
+            .then(res => {
+                return res;
+            })
+            .then(res => {
+                return res;
+            });
+
+            console.log('acrescimos: ', acrescimos);
+        }
+        
+        $.ajax({
+            url: "ListaAcrescimo",
+            type: "POST",
+            dataType: "JSON",
+            data: {
+            },
+            success: function (res) {
+                $("select[name='acrescimo[]']").last().empty();
+                $.each(res, function (idx, obj) {
+                    var html = `<option value="${obj.id_acrescimo}" >${obj.nome_acrescimo}</option>`;
+                    $("select[name='acrescimo[]']").last().append(html);
+                });
+
+                $("select[name='acrescimo[]']").last().selectpicker();
             }
         });
     }
@@ -611,7 +655,6 @@
     }
 
     function getCep(cep) {
-        // url: "https://viacep.com.br/ws/"+$('#cep').val,
         $.ajax({
             url: `https://viacep.com.br/ws/${cep}/json/`,
             type: "GET",

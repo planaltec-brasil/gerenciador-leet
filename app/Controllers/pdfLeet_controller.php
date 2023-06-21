@@ -7,13 +7,33 @@ class pdfLeet_controller extends BaseController{
 
     public function pdfLeet(){
         $mpdf = new MeuPDF();
-
-        $ids = $_POST['idsPedidos'];
-
-        $data['list'] = $this->carregameupau->carregameupau($ids);
-
-		$html = view('html_to_pdf', $data);
+        $data = [
+            'teste' => $this->pdfzinModel->funcaopuxaostrem()
+        ];
+		$html = view('pdforcamentoleet', $data);
 		$this->response->setHeader('Content-Type', 'application/pdf');
-		$mpdf->GerarPDF($html);
+
+        $config = [
+            'mode' => 'utf-8',
+            // 'format' => 'A4-L',
+            // 'orientation' => 'L',
+            'setAutoTopMargin' => false,
+            'setAutoBottomMargin' => false,
+            'autoMarginPadding' => 0,
+            'bleedMargin' => 0,
+            'crossMarkMargin' => 0,
+            'cropMarkMargin' => 0,
+            'nonPrintMargin' => 0,
+            'margBuffer' => 0,
+            'collapseBlockMargins' => false,
+            'margin_left' => 10,
+            'margin_right' => 10,
+            'margin_top' => 10,
+            'margin_bottom' => 3,
+            'margin_header' => 3,
+            'margin_footer' => 3,
+        ];
+
+		$mpdf->GerarPDF($html, 'meudoc', $config);
     }
 }
