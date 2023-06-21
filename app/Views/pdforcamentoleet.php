@@ -63,7 +63,7 @@
         </div>
         <div class="divContent" style="text-align: right;">
             <span style="font-weight: bold">#ID</span>
-            <div style="text-align: right; padding-bottom: 20px;">
+            <div style="text-align: right;">
                 Data do pedido:<span> 16/06/2023</span>
             </div>
         </div>
@@ -198,11 +198,17 @@
     </table>
 
     <div class="linha">
-        <div class="linha">
+        <div class="espaco">
             Valor Frete: <span>R$ 66,34</span>
         </div>
+        <div class="espaco">
+            Valor Total: <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ 292,00</span>
+        </div>
+        <div class="espaco">
+            Valor do Sinal: <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+        </div>
         <div>
-            Valor Total: <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp; R$ 292,00</span>
+            Valor Restante: <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
         </div>
     </div>
 </body>
