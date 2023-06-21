@@ -161,54 +161,58 @@
             RS 6,19
         </div>
     </div> -->
-
-    <table class="linha">
-        <thead>
-            <tr>
-                <td>
-                    Qtde.
-                </td>
-                <td>
-                    Produto
-                </td>
-                <td>
-                    Personalização
-                </td>
-                <td>
-                    Valor un.
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>25</td>
-                <td>Taça de Gin 450ml</td>
-                <td>Transparente + Borda Metalizada (Dourada)</td>
-                <td>R$ 6,19</td>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td>25</td>
-                <td>Taça de whisky 330ml</td>
-                <td>Transparente + Borda Metalizada (Dourada)</td>
-                <td>R$ 6,19</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="linha">
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        Qtde.
+                    </td>
+                    <td>
+                        Produto
+                    </td>
+                    <td>
+                        Personalização
+                    </td>
+                    <td>
+                        Valor un.
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de Gin 450ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de whisky 330ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <div class="linha">
         <div class="espaco">
             Valor Frete: <span>R$ 66,34</span>
         </div>
         <div class="espaco">
-            Valor Total: <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ 292,00</span>
+            Valor Total: <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$
+                292,00</span>
         </div>
         <div class="espaco">
-            Valor do Sinal: <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            Valor do Sinal: <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$
+                179,17</span>
         </div>
         <div>
-            Valor Restante: <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            Valor Restante: <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$
+                112,83</span>
         </div>
     </div>
 </body>
