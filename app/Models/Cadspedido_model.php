@@ -22,7 +22,6 @@ class Cadspedido_model extends Model {
         'retirada_envio',
         'cep_pedido',
         'valor_frete',
-        'valor_unitario',
         'valor_total',
         'valor_sinal',
         'falta_pagar',
@@ -38,7 +37,7 @@ class Cadspedido_model extends Model {
 
     public function listaProdutosPedido($idPedido) {
         $db = db_connect();
-        $sql = "SELECT TP.*, TPP.qtd, TPP.foto, TPP.id FROM tb_produto TP
+        $sql = "SELECT TP.*, TPP.qtd, TPP.foto, TPP.id, TPP.valor_produto FROM tb_produto TP
                     JOIN tb_produtos_pedido TPP ON TPP.produtos_pedido = TP.id_produto
                 WHERE TPP.pedidos = $idPedido
                 GROUP BY TP.id_produto";

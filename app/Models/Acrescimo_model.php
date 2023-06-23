@@ -13,11 +13,18 @@ class Acrescimo_model extends Model {
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = [ 
-        'id_acrescimo',
+    protected $allowedFields = [
         'nome_acrescimo',
         'valor',
     ];
+
+    public function getAcrescimo($id = false) {
+        if ($id === false) {
+            return $this->findAll();
+        }
+
+        return $this->where(['id_acrescimo' => $id])->first();
+    }
 
     function ListaAcrescimo(){
         $db = db_connect();

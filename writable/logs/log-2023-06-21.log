@@ -141,3 +141,1204 @@ INFO - 2023-06-21 13:51:37 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-06-21 13:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-21 13:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-21 13:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 18:44:58 --> Undefined array key -1
+in VENDORPATH\mpdf\mpdf\src\Tag\BlockTag.php on line 117.
+ 1 VENDORPATH\mpdf\mpdf\src\Tag\BlockTag.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key -1', 'C:\\wamp64\\www\\gerenciador-leet\\vendor\\mpdf\\mpdf\\src\\Tag\\BlockTag.php', 117)
+ 2 VENDORPATH\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\BlockTag->open([], [...], 521)
+ 3 VENDORPATH\mpdf\mpdf\src\Mpdf.php(13875): Mpdf\Tag->OpenTag('DIV', [], [...], 521)
+ 4 APPPATH\Libraries\MeuPDF.php(35): Mpdf\Mpdf->WriteHTML(' <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <span><img src="assets/img/vector (5).png"></span> </div> <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;"> <span style="font-size:large; font-weight: bold">Pedido de Venda</span> </div> <div class="divContent" style="text-align: right;"> <span style="font-weight: bold">#1</span> <div style="text-align: right;"> <b>Data do pedido:</b><span> 2023-06-19</span> </div> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Nome:</b><span> 37</span> </div> <div class="divContent" style="width: 40%; text-align: center;"> <b>Celular:</b> <span>+55 (31) 0000-0000</span> </div> </div> <div class="espaco"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Cep:</b> <span>14785-96</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Rua:</b> <span>Maria Gomes de Almeida</span> </div> <div class="divContent" style="width: 18%; text-align: right;"> <b>N°:</b> <span>29</span> </div> <div class="divContent" style="width: 20%; text-align: right;"> <b>Complemento:</b> <span>A</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Bairro:</b> <span>Planalto</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Cidade:</b> <span>Belo-Horizonte</span> </div> <div class="divContent" style="width: 18%; text-align: right;"> <b>Estado:</b> <span>MG</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span> </div> <div class="divContent" style="width: 40%; text-align: right;"> <b>Localizador:</b> <span>Junho. 02 63 (nome)</span> </div> </div> <div class="linha"> <table> <thead> <tr> <td> <b>Qtde.</b></td> <td> <b>Produto</b></td> <td> <b>Personalização</b></td> <td> <b>Valor un.</b></td> </tr></thead> <tbody> <tr> <td>25</td> <td>Taça de Gin 450ml</td> <td>Transparente + Borda Metalizada (Dourada)</td> <td>R$ 6,19</td> </tr> </tbody> <tbody> <tr> <td>25</td> <td>Taça de whisky 330ml</td> <td>Transparente + Borda Metalizada (Dourada)</td> <td>R$ 6,19</td> </tr> </tbody> </table> </div> <div class="linha"> <div class="divContent" style="width: 40%; text-align: left;"> <div class="espaco"> <b>Valor Frete:</b> <span>R$ 66,34</span> </div> <div class="espaco"> <b>Valor Total:</b> <span style="visibility: hidden">Valor</span><span>----------</span><span>  R$ 292,00</span> </div> <div class="espaco"> <b>Valor do Sinal:</b> <span style="visibility: hidden">va</span><span>----------</span><span>  R$ 179,17</span> </div> <div class="espaco"> <b>Valor Restante:</b> <span style="visibility: hidden">V</span><span>----------</span><span>  R$ 112,83</span> </div> <div style="color: red;"> <u><b>Data da Entrega:</b></u> <span>20/06</span> </div> </div> <div class="divContent" style="width: 60%;"> <div class="linha"> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> </div> </div> </div> <hr /> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <span><img src="assets/img/vector (5).png"></span> </div> <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;"> <span style="font-size:large; font-weight: bold">Pedido de Venda</span> </div> <div class="divContent" style="text-align: right;"> <span style="font-weight: bold">#1</span> <div style="text-align: right;"> <b>Data do pedido:</b><span> 2023-06-19</span> </div> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Nome:</b><span>37</span> </div> <div class="divContent" style="width: 30%; text-align: left;"> <b>Celular:</b> <span>+55 (31) 0000-0000</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span> </div> </div> <div class="linha"> <table> <thead> <div> <b>Qtde.</b> <b>Produto</b> <b>Personalização</b> </div> <div> <b>25</b> <b>Taça de Gin 450ml</b> <b>Transparente + Borda Metalizada (Dourada)</b> </div> <div> <b>25</b> <b>Taça de whisky 330ml</b> <b>Transparente + Borda Metalizada (Dourada)</b> </div> </div> <div class="linha"> <div class="divContent" style="width: 40%; text-align: left;"> <div class="espaco"> <b>Valor Frete:</b> <span>R$ 66,34</span> </div> <div class="espaco" style="color: red;"> <u><b>Data da Entrega:</b> <span>20/06</span></u> </div> </div> <div class="divContent" style="width: 60%;"> <div class="linha"> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> </div> </div> </div> ')
+ 5 APPPATH\Controllers\pdfLeet_controller.php(37): App\Libraries\MeuPDF->GerarPDF('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\pdforcamentoleet.php -->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Leet</title>
+</head>
+<style>
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    body {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .divContent {
+        float: left;
+    }
+
+    .linha {
+        margin-bottom: 25px;
+    }
+
+    .espaco {
+        margin-bottom: 10px;
+    }
+
+    .tabeliznha {
+        float: left;
+        border: solid 1px black;
+        padding: 5px;
+    }
+
+    .eborder {
+        border-left: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    table,
+    td,
+    th {
+        border: 1px solid;
+        padding: 8px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .img-prod {
+        width: 93px;
+        height: 93px;
+    }
+</style>
+
+<body>
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <span><img src="assets/img/vector (5).png"></span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
+            <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
+        </div>
+        <div class="divContent" style="text-align: right;">
+            <span style="font-weight: bold">#1</span>
+            <div style="text-align: right;">
+                <b>Data do pedido:</b><span>  2023-06-19</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Nome:</b><span> 37</span>
+        </div>
+        <div class="divContent" style="width: 40%; text-align: center;">
+            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+        </div>
+    </div>
+
+    <div class="espaco">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Cep:</b> <span>14785-96</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+           <b>Rua:</b> <span>Maria Gomes de Almeida</span>
+        </div>
+        <div class="divContent" style="width: 18%; text-align: right;">
+            <b>N°:</b> <span>29</span>
+        </div>
+        <div class="divContent" style="width: 20%; text-align: right;">
+            <b>Complemento:</b> <span>A</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Bairro:</b> <span>Planalto</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Cidade:</b> <span>Belo-Horizonte</span>
+        </div>
+        <div class="divContent" style="width: 18%; text-align: right;">
+            <b>Estado:</b> <span>MG</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+        </div>
+        <div class="divContent" style="width: 40%; text-align: right;">
+            <b>Localizador:</b> <span>Junho. 02 63 (nome)</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <b>Qtde.</b>
+                    </td>
+                    <td>
+                        <b>Produto</b>
+                    </td>
+                    <td>
+                        <b>Personalização</b>
+                    </td>
+                    <td>
+                        <b>Valor un.</b>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de Gin 450ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de whisky 330ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 40%; text-align: left;">
+            <div class="espaco">
+                <b>Valor Frete:</b> <span>R$ 66,34</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Total:</b> <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ 292,00</span>
+            </div>
+            <div class="espaco">
+                <b>Valor do Sinal:</b> <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Restante:</b> <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            </div>
+            <div style="color: red;">
+                <u><b>Data da Entrega:</b></u> <span>20/06</span>
+            </div>
+        </div>
+        <div class="divContent" style="width: 60%;">
+            <div class="linha">
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <span><img src="assets/img/vector (5).png"></span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
+            <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
+        </div>
+        <div class="divContent" style="text-align: right;">
+            <span style="font-weight: bold">#1</span>
+            <div style="text-align: right;">
+                <b>Data do pedido:</b><span> 2023-06-19</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Nome:</b><span>37</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <table>
+            <thead>
+        <div>
+            <b>Qtde.</b>
+            <b>Produto</b>     
+            <b>Personalização</b>    
+        </div>
+
+        <div>
+            <b>25</b>
+            <b>Taça de Gin 450ml</b>
+            <b>Transparente + Borda Metalizada (Dourada)</b>
+        </div>
+        <div>
+            <b>25</b>
+            <b>Taça de whisky 330ml</b>
+            <b>Transparente + Borda Metalizada (Dourada)</b>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 40%; text-align: left;">
+            <div class="espaco">
+                <b>Valor Frete:</b> <span>R$ 66,34</span>
+            </div>
+            <div class="espaco" style="color: red;">
+                <u><b>Data da Entrega:</b> <span>20/06</span></u>
+            </div>
+            <!-- <div class="espaco">
+                Valor do Sinal: <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            </div>
+            <div>
+                Valor Restante: <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            </div> -->
+        </div>
+        <div class="divContent" style="width: 60%;">
+            <div class="linha">
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\pdforcamentoleet.php -->
+', 'meudoc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 18:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 18:45:00 --> Undefined array key -1
+in VENDORPATH\mpdf\mpdf\src\Tag\BlockTag.php on line 117.
+ 1 VENDORPATH\mpdf\mpdf\src\Tag\BlockTag.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key -1', 'C:\\wamp64\\www\\gerenciador-leet\\vendor\\mpdf\\mpdf\\src\\Tag\\BlockTag.php', 117)
+ 2 VENDORPATH\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\BlockTag->open([], [...], 521)
+ 3 VENDORPATH\mpdf\mpdf\src\Mpdf.php(13875): Mpdf\Tag->OpenTag('DIV', [], [...], 521)
+ 4 APPPATH\Libraries\MeuPDF.php(35): Mpdf\Mpdf->WriteHTML(' <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <span><img src="assets/img/vector (5).png"></span> </div> <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;"> <span style="font-size:large; font-weight: bold">Pedido de Venda</span> </div> <div class="divContent" style="text-align: right;"> <span style="font-weight: bold">#1</span> <div style="text-align: right;"> <b>Data do pedido:</b><span> 2023-06-19</span> </div> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Nome:</b><span> 37</span> </div> <div class="divContent" style="width: 40%; text-align: center;"> <b>Celular:</b> <span>+55 (31) 0000-0000</span> </div> </div> <div class="espaco"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Cep:</b> <span>14785-96</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Rua:</b> <span>Maria Gomes de Almeida</span> </div> <div class="divContent" style="width: 18%; text-align: right;"> <b>N°:</b> <span>29</span> </div> <div class="divContent" style="width: 20%; text-align: right;"> <b>Complemento:</b> <span>A</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Bairro:</b> <span>Planalto</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Cidade:</b> <span>Belo-Horizonte</span> </div> <div class="divContent" style="width: 18%; text-align: right;"> <b>Estado:</b> <span>MG</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span> </div> <div class="divContent" style="width: 40%; text-align: right;"> <b>Localizador:</b> <span>Junho. 02 63 (nome)</span> </div> </div> <div class="linha"> <table> <thead> <tr> <td> <b>Qtde.</b></td> <td> <b>Produto</b></td> <td> <b>Personalização</b></td> <td> <b>Valor un.</b></td> </tr></thead> <tbody> <tr> <td>25</td> <td>Taça de Gin 450ml</td> <td>Transparente + Borda Metalizada (Dourada)</td> <td>R$ 6,19</td> </tr> </tbody> <tbody> <tr> <td>25</td> <td>Taça de whisky 330ml</td> <td>Transparente + Borda Metalizada (Dourada)</td> <td>R$ 6,19</td> </tr> </tbody> </table> </div> <div class="linha"> <div class="divContent" style="width: 40%; text-align: left;"> <div class="espaco"> <b>Valor Frete:</b> <span>R$ 66,34</span> </div> <div class="espaco"> <b>Valor Total:</b> <span style="visibility: hidden">Valor</span><span>----------</span><span>  R$ 292,00</span> </div> <div class="espaco"> <b>Valor do Sinal:</b> <span style="visibility: hidden">va</span><span>----------</span><span>  R$ 179,17</span> </div> <div class="espaco"> <b>Valor Restante:</b> <span style="visibility: hidden">V</span><span>----------</span><span>  R$ 112,83</span> </div> <div style="color: red;"> <u><b>Data da Entrega:</b></u> <span>20/06</span> </div> </div> <div class="divContent" style="width: 60%;"> <div class="linha"> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> </div> </div> </div> <hr /> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <span><img src="assets/img/vector (5).png"></span> </div> <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;"> <span style="font-size:large; font-weight: bold">Pedido de Venda</span> </div> <div class="divContent" style="text-align: right;"> <span style="font-weight: bold">#1</span> <div style="text-align: right;"> <b>Data do pedido:</b><span> 2023-06-19</span> </div> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Nome:</b><span>37</span> </div> <div class="divContent" style="width: 30%; text-align: left;"> <b>Celular:</b> <span>+55 (31) 0000-0000</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span> </div> </div> <div class="linha"> <table> <thead> <div> <b>Qtde.</b> <b>Produto</b> <b>Personalização</b> </div> <div> <b>25</b> <b>Taça de Gin 450ml</b> <b>Transparente + Borda Metalizada (Dourada)</b> </div> <div> <b>25</b> <b>Taça de whisky 330ml</b> <b>Transparente + Borda Metalizada (Dourada)</b> </div> </div> <div class="linha"> <div class="divContent" style="width: 40%; text-align: left;"> <div class="espaco"> <b>Valor Frete:</b> <span>R$ 66,34</span> </div> <div class="espaco" style="color: red;"> <u><b>Data da Entrega:</b> <span>20/06</span></u> </div> </div> <div class="divContent" style="width: 60%;"> <div class="linha"> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> </div> </div> </div> ')
+ 5 APPPATH\Controllers\pdfLeet_controller.php(37): App\Libraries\MeuPDF->GerarPDF('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\pdforcamentoleet.php -->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Leet</title>
+</head>
+<style>
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    body {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .divContent {
+        float: left;
+    }
+
+    .linha {
+        margin-bottom: 25px;
+    }
+
+    .espaco {
+        margin-bottom: 10px;
+    }
+
+    .tabeliznha {
+        float: left;
+        border: solid 1px black;
+        padding: 5px;
+    }
+
+    .eborder {
+        border-left: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    table,
+    td,
+    th {
+        border: 1px solid;
+        padding: 8px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .img-prod {
+        width: 93px;
+        height: 93px;
+    }
+</style>
+
+<body>
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <span><img src="assets/img/vector (5).png"></span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
+            <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
+        </div>
+        <div class="divContent" style="text-align: right;">
+            <span style="font-weight: bold">#1</span>
+            <div style="text-align: right;">
+                <b>Data do pedido:</b><span>  2023-06-19</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Nome:</b><span> 37</span>
+        </div>
+        <div class="divContent" style="width: 40%; text-align: center;">
+            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+        </div>
+    </div>
+
+    <div class="espaco">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Cep:</b> <span>14785-96</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+           <b>Rua:</b> <span>Maria Gomes de Almeida</span>
+        </div>
+        <div class="divContent" style="width: 18%; text-align: right;">
+            <b>N°:</b> <span>29</span>
+        </div>
+        <div class="divContent" style="width: 20%; text-align: right;">
+            <b>Complemento:</b> <span>A</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Bairro:</b> <span>Planalto</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Cidade:</b> <span>Belo-Horizonte</span>
+        </div>
+        <div class="divContent" style="width: 18%; text-align: right;">
+            <b>Estado:</b> <span>MG</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+        </div>
+        <div class="divContent" style="width: 40%; text-align: right;">
+            <b>Localizador:</b> <span>Junho. 02 63 (nome)</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <b>Qtde.</b>
+                    </td>
+                    <td>
+                        <b>Produto</b>
+                    </td>
+                    <td>
+                        <b>Personalização</b>
+                    </td>
+                    <td>
+                        <b>Valor un.</b>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de Gin 450ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de whisky 330ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 40%; text-align: left;">
+            <div class="espaco">
+                <b>Valor Frete:</b> <span>R$ 66,34</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Total:</b> <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ 292,00</span>
+            </div>
+            <div class="espaco">
+                <b>Valor do Sinal:</b> <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Restante:</b> <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            </div>
+            <div style="color: red;">
+                <u><b>Data da Entrega:</b></u> <span>20/06</span>
+            </div>
+        </div>
+        <div class="divContent" style="width: 60%;">
+            <div class="linha">
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <span><img src="assets/img/vector (5).png"></span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
+            <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
+        </div>
+        <div class="divContent" style="text-align: right;">
+            <span style="font-weight: bold">#1</span>
+            <div style="text-align: right;">
+                <b>Data do pedido:</b><span> 2023-06-19</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Nome:</b><span>37</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <table>
+            <thead>
+        <div>
+            <b>Qtde.</b>
+            <b>Produto</b>     
+            <b>Personalização</b>    
+        </div>
+
+        <div>
+            <b>25</b>
+            <b>Taça de Gin 450ml</b>
+            <b>Transparente + Borda Metalizada (Dourada)</b>
+        </div>
+        <div>
+            <b>25</b>
+            <b>Taça de whisky 330ml</b>
+            <b>Transparente + Borda Metalizada (Dourada)</b>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 40%; text-align: left;">
+            <div class="espaco">
+                <b>Valor Frete:</b> <span>R$ 66,34</span>
+            </div>
+            <div class="espaco" style="color: red;">
+                <u><b>Data da Entrega:</b> <span>20/06</span></u>
+            </div>
+            <!-- <div class="espaco">
+                Valor do Sinal: <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            </div>
+            <div>
+                Valor Restante: <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            </div> -->
+        </div>
+        <div class="divContent" style="width: 60%;">
+            <div class="linha">
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\pdforcamentoleet.php -->
+', 'meudoc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 18:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 18:45:04 --> Undefined array key -1
+in VENDORPATH\mpdf\mpdf\src\Tag\BlockTag.php on line 117.
+ 1 VENDORPATH\mpdf\mpdf\src\Tag\BlockTag.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key -1', 'C:\\wamp64\\www\\gerenciador-leet\\vendor\\mpdf\\mpdf\\src\\Tag\\BlockTag.php', 117)
+ 2 VENDORPATH\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\BlockTag->open([], [...], 521)
+ 3 VENDORPATH\mpdf\mpdf\src\Mpdf.php(13875): Mpdf\Tag->OpenTag('DIV', [], [...], 521)
+ 4 APPPATH\Libraries\MeuPDF.php(35): Mpdf\Mpdf->WriteHTML(' <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <span><img src="assets/img/vector (5).png"></span> </div> <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;"> <span style="font-size:large; font-weight: bold">Pedido de Venda</span> </div> <div class="divContent" style="text-align: right;"> <span style="font-weight: bold">#1</span> <div style="text-align: right;"> <b>Data do pedido:</b><span> 2023-06-19</span> </div> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Nome:</b><span> 37</span> </div> <div class="divContent" style="width: 40%; text-align: center;"> <b>Celular:</b> <span>+55 (31) 0000-0000</span> </div> </div> <div class="espaco"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Cep:</b> <span>14785-96</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Rua:</b> <span>Maria Gomes de Almeida</span> </div> <div class="divContent" style="width: 18%; text-align: right;"> <b>N°:</b> <span>29</span> </div> <div class="divContent" style="width: 20%; text-align: right;"> <b>Complemento:</b> <span>A</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Bairro:</b> <span>Planalto</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Cidade:</b> <span>Belo-Horizonte</span> </div> <div class="divContent" style="width: 18%; text-align: right;"> <b>Estado:</b> <span>MG</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span> </div> <div class="divContent" style="width: 40%; text-align: right;"> <b>Localizador:</b> <span>Junho. 02 63 (nome)</span> </div> </div> <div class="linha"> <table> <thead> <tr> <td> <b>Qtde.</b></td> <td> <b>Produto</b></td> <td> <b>Personalização</b></td> <td> <b>Valor un.</b></td> </tr></thead> <tbody> <tr> <td>25</td> <td>Taça de Gin 450ml</td> <td>Transparente + Borda Metalizada (Dourada)</td> <td>R$ 6,19</td> </tr> </tbody> <tbody> <tr> <td>25</td> <td>Taça de whisky 330ml</td> <td>Transparente + Borda Metalizada (Dourada)</td> <td>R$ 6,19</td> </tr> </tbody> </table> </div> <div class="linha"> <div class="divContent" style="width: 40%; text-align: left;"> <div class="espaco"> <b>Valor Frete:</b> <span>R$ 66,34</span> </div> <div class="espaco"> <b>Valor Total:</b> <span style="visibility: hidden">Valor</span><span>----------</span><span>  R$ 292,00</span> </div> <div class="espaco"> <b>Valor do Sinal:</b> <span style="visibility: hidden">va</span><span>----------</span><span>  R$ 179,17</span> </div> <div class="espaco"> <b>Valor Restante:</b> <span style="visibility: hidden">V</span><span>----------</span><span>  R$ 112,83</span> </div> <div style="color: red;"> <u><b>Data da Entrega:</b></u> <span>20/06</span> </div> </div> <div class="divContent" style="width: 60%;"> <div class="linha"> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> </div> </div> </div> <hr /> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <span><img src="assets/img/vector (5).png"></span> </div> <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;"> <span style="font-size:large; font-weight: bold">Pedido de Venda</span> </div> <div class="divContent" style="text-align: right;"> <span style="font-weight: bold">#1</span> <div style="text-align: right;"> <b>Data do pedido:</b><span> 2023-06-19</span> </div> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Nome:</b><span>37</span> </div> <div class="divContent" style="width: 30%; text-align: left;"> <b>Celular:</b> <span>+55 (31) 0000-0000</span> </div> </div> <div class="linha"> <div class="divContent" style="width: 30%; text-align: left;"> <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span> </div> <div class="divContent" style="width: 30%; text-align: center;"> <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span> </div> </div> <div class="linha"> <table> <thead> <div> <b>Qtde.</b> <b>Produto</b> <b>Personalização</b> </div> <div> <b>25</b> <b>Taça de Gin 450ml</b> <b>Transparente + Borda Metalizada (Dourada)</b> </div> <div> <b>25</b> <b>Taça de whisky 330ml</b> <b>Transparente + Borda Metalizada (Dourada)</b> </div> </div> <div class="linha"> <div class="divContent" style="width: 40%; text-align: left;"> <div class="espaco"> <b>Valor Frete:</b> <span>R$ 66,34</span> </div> <div class="espaco" style="color: red;"> <u><b>Data da Entrega:</b> <span>20/06</span></u> </div> </div> <div class="divContent" style="width: 60%;"> <div class="linha"> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> <div class="divContent" style="width: 50%; text-align: center;"> <img class="img-prod" src="assets/img/vector (5).png"> </div> </div> </div> </div> ')
+ 5 APPPATH\Controllers\pdfLeet_controller.php(37): App\Libraries\MeuPDF->GerarPDF('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\pdforcamentoleet.php -->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Leet</title>
+</head>
+<style>
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    body {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .divContent {
+        float: left;
+    }
+
+    .linha {
+        margin-bottom: 25px;
+    }
+
+    .espaco {
+        margin-bottom: 10px;
+    }
+
+    .tabeliznha {
+        float: left;
+        border: solid 1px black;
+        padding: 5px;
+    }
+
+    .eborder {
+        border-left: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    table,
+    td,
+    th {
+        border: 1px solid;
+        padding: 8px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .img-prod {
+        width: 93px;
+        height: 93px;
+    }
+</style>
+
+<body>
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <span><img src="assets/img/vector (5).png"></span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
+            <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
+        </div>
+        <div class="divContent" style="text-align: right;">
+            <span style="font-weight: bold">#1</span>
+            <div style="text-align: right;">
+                <b>Data do pedido:</b><span>  2023-06-19</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Nome:</b><span> 37</span>
+        </div>
+        <div class="divContent" style="width: 40%; text-align: center;">
+            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+        </div>
+    </div>
+
+    <div class="espaco">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Cep:</b> <span>14785-96</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+           <b>Rua:</b> <span>Maria Gomes de Almeida</span>
+        </div>
+        <div class="divContent" style="width: 18%; text-align: right;">
+            <b>N°:</b> <span>29</span>
+        </div>
+        <div class="divContent" style="width: 20%; text-align: right;">
+            <b>Complemento:</b> <span>A</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Bairro:</b> <span>Planalto</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Cidade:</b> <span>Belo-Horizonte</span>
+        </div>
+        <div class="divContent" style="width: 18%; text-align: right;">
+            <b>Estado:</b> <span>MG</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+        </div>
+        <div class="divContent" style="width: 40%; text-align: right;">
+            <b>Localizador:</b> <span>Junho. 02 63 (nome)</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <b>Qtde.</b>
+                    </td>
+                    <td>
+                        <b>Produto</b>
+                    </td>
+                    <td>
+                        <b>Personalização</b>
+                    </td>
+                    <td>
+                        <b>Valor un.</b>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de Gin 450ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>Taça de whisky 330ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 40%; text-align: left;">
+            <div class="espaco">
+                <b>Valor Frete:</b> <span>R$ 66,34</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Total:</b> <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ 292,00</span>
+            </div>
+            <div class="espaco">
+                <b>Valor do Sinal:</b> <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Restante:</b> <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            </div>
+            <div style="color: red;">
+                <u><b>Data da Entrega:</b></u> <span>20/06</span>
+            </div>
+        </div>
+        <div class="divContent" style="width: 60%;">
+            <div class="linha">
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <span><img src="assets/img/vector (5).png"></span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
+            <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
+        </div>
+        <div class="divContent" style="text-align: right;">
+            <span style="font-weight: bold">#1</span>
+            <div style="text-align: right;">
+                <b>Data do pedido:</b><span> 2023-06-19</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Nome:</b><span>37</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Data Evento:</b> <span style="color:#9747FF">2023-06-19</span>
+        </div>
+        <div class="divContent" style="width: 30%; text-align: center;">
+            <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <table>
+            <thead>
+        <div>
+            <b>Qtde.</b>
+            <b>Produto</b>     
+            <b>Personalização</b>    
+        </div>
+
+        <div>
+            <b>25</b>
+            <b>Taça de Gin 450ml</b>
+            <b>Transparente + Borda Metalizada (Dourada)</b>
+        </div>
+        <div>
+            <b>25</b>
+            <b>Taça de whisky 330ml</b>
+            <b>Transparente + Borda Metalizada (Dourada)</b>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 40%; text-align: left;">
+            <div class="espaco">
+                <b>Valor Frete:</b> <span>R$ 66,34</span>
+            </div>
+            <div class="espaco" style="color: red;">
+                <u><b>Data da Entrega:</b> <span>20/06</span></u>
+            </div>
+            <!-- <div class="espaco">
+                Valor do Sinal: <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            </div>
+            <div>
+                Valor Restante: <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            </div> -->
+        </div>
+        <div class="divContent" style="width: 60%;">
+            <div class="linha">
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\pdforcamentoleet.php -->
+', 'meudoc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 18:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 18:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -18,6 +18,7 @@ class ProdPedidoModel extends Model {
         'produtos_pedido',
         'qtd',
         'foto',
+        'valor_produto',
     ];
 
 

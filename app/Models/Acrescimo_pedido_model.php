@@ -17,6 +17,7 @@ class Acrescimo_pedido_model extends Model {
         'id_produto',
         'id_pedido',
         'id_acrescimo',
+        'valor_acrescimo'
     ];
 
     public function verificaExisteAcrescimoPedido($id = false) {

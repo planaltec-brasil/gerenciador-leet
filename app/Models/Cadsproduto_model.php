@@ -21,8 +21,8 @@ class Cadsproduto_model extends Model {
         'unidade_produto',
         'volume_produto',
         'material_produto',
-        'fotos_produto',
-        'qtdPrd',
+        'valor_compra',
+        'valor_venda',
     ];
 
     public function getProduto($id = false) {

@@ -26,7 +26,11 @@
     }
 
     .espaco {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    .espaco p {
+        margin: 0;
     }
 
     .tabeliznha {
@@ -51,7 +55,17 @@
         width: 100%;
         border-collapse: collapse;
     }
+
+    .img-prod {
+        width: 200px;
+        height: 200px;
+
+    }
 </style>
+
+<script>
+
+</script>
 
 <body>
     <div class="linha">
@@ -62,127 +76,93 @@
             <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
         </div>
         <div class="divContent" style="text-align: right;">
-            <span style="font-weight: bold">#ID</span>
+            <span style="font-weight: bold">#
+                <?php echo $teste[0]->id_pedido; ?>
+            </span>
             <div style="text-align: right;">
-                Data do pedido:<span> 16/06/2023</span>
+                <b>Data do pedido:</b><span>
+                    <?php echo $teste[0]->data_pedido; ?>
+                </span>
             </div>
         </div>
     </div>
 
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
-            Nome:<span> Nome completo do cliente</span>
+            <b>Nome:</b><span>
+                <?php echo $teste[0]->cliente; ?>
+            </span>
         </div>
-        <div class="divContent" style="width: 40%; text-align: center;">
-            Celular: <span>+55 (31) 0000-0000</span>
+        <div class="divContent" style="width: 70%; text-align: right;">
+            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
         </div>
     </div>
 
     <div class="espaco">
         <div class="divContent" style="width: 30%; text-align: left;">
-            Cep: <span>00000-00</span>
+            <b>Lg:</b> <span>Maria Gomes de Almeida</span>
         </div>
-        <div class="divContent" style="width: 30%; text-align: center;">
-            Rua: <span>Maria Gomes de Almeida</span>
+        <div class="divContent" style="width: 23%; text-align: center;">
+            <b>N°:</b> <span>29</span>
         </div>
-        <div class="divContent" style="width: 18%; text-align: right;">
-            N°: <span>29</span>
+        <div class="divContent" style="width: 23%; text-align: right;">
+            <b>Complemento:</b> <span>A</span>
         </div>
-        <div class="divContent" style="width: 20%; text-align: right;">
-            Complemento: <span>A</span>
-        </div>
-    </div>
-
-    <div class="linha">
-        <div class="divContent" style="width: 30%; text-align: left;">
-            Bairro: <span>Planalto</span>
-        </div>
-        <div class="divContent" style="width: 30%; text-align: center;">
-            Cidade: <span>Belo-Horizonte</span>
-        </div>
-        <div class="divContent" style="width: 18%; text-align: right;">
-            Estado: <span>MG</span>
+        <div class="divContent" style="width: 23%; text-align: right;">
+            <b>CEP:</b> <span>
+                <?php echo $teste[0]->cep_pedido; ?>
+            </span>
         </div>
     </div>
 
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
-            Data Evento: <span style="color:#9747FF">16/06/2023</span>
+            <b>Bairro:</b> <span>Planalto</span>
+        </div>
+        <div class="divContent" style="width: 35%; text-align: center;">
+            <b>Cidade:</b> <span>Belo-Horizonte</span>
+        </div>
+        <div class="divContent" style="width: 35%; text-align: right;">
+            <b>Estado:</b> <span>MG</span>
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="divContent" style="width: 30%; text-align: left;">
+            <b>Data Evento:</b> <span style="color:#9747FF">
+                <?php echo $teste[0]->data_evento ?>
+            </span>
         </div>
         <div class="divContent" style="width: 30%; text-align: center;">
-            Data Postagem: <span style="color:#9747FF">Belo-Horizonte</span>
+            <b>Data Postagem:</b> <span style="color:#9747FF">20/06</span>
         </div>
-        <div class="divContent" style="width: 30%; text-align: right;">
-            Localizador: <span>Junho. 02 63 (nome)</span>
-        </div>
-    </div>
-
-    <!-- <div class="tabeliznha">
-        <div class="divContent" style="width: 10%; text-align: left;">
-            Qtde.
-        </div>
-        <div class="eborder divContent" style="width: 30%; text-align: center;">
-            Produto
-        </div>
-        <div class="eborder divContent" style="width: 40%; text-align: center;">
-            Personalização
-        </div>
-        <div class="eborder divContent" style="width: 10%; text-align: right;">
-            Valor un.
+        <div class="divContent" style="width: 40%; text-align: right;">
+            <b>Localizador:</b> <span>Junho. 02 63 (nome)</span>
         </div>
     </div>
 
-    <div class="tabeliznha">
-        <div class="divContent" style="width: 10%; text-align: left;">
-            25
-        </div>
-        <div class="eborder divContent" style="width: 30%; text-align: center;">
-            Taça de Gin 450ml
-        </div>
-        <div class="eborder divContent" style="width: 40%; text-align: center;">
-            Transparente + Borda Metalizada (Dourada)
-        </div>
-        <div class="eborder divContent" style="width: 10%; text-align: right;">
-            RS 6,19
-        </div>
-    </div>
-
-    <div class="tabeliznha">
-        <div class="divContent" style="width: 10%; text-align: left;">
-            25
-        </div>
-        <div class="eborder divContent" style="width: 30%; text-align: center;">
-            Taça de Gin 450ml
-        </div>
-        <div class="eborder divContent" style="width: 40%; text-align: center;">
-            Transparente + Borda Metalizada (Dourada)
-        </div>
-        <div class="eborder divContent" style="width: 10%; text-align: right;">
-            RS 6,19
-        </div>
-    </div> -->
     <div class="linha">
         <table>
             <thead>
                 <tr>
                     <td>
-                        Qtde.
+                        <b>Qtde.</b>
                     </td>
                     <td>
-                        Produto
+                        <b>Produto</b>
                     </td>
                     <td>
-                        Personalização
+                        <b>Personalização</b>
                     </td>
                     <td>
-                        Valor un.
+                        <b>Valor UN.</b>
                     </td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>25</td>
-                    <td>Taça de Gin 450ml</td>
+                    <td style="text-align:left">Taça de Gin 450ml</td>
                     <td>Transparente + Borda Metalizada (Dourada)</td>
                     <td>R$ 6,19</td>
                 </tr>
@@ -190,7 +170,39 @@
             <tbody>
                 <tr>
                     <td>25</td>
-                    <td>Taça de whisky 330ml</td>
+                    <td style="text-align:left">Taça de whisky 330ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td style="text-align:left">Taça de Gin 450ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td style="text-align:left">Taça de whisky 330ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td style="text-align:left">Taça de Gin 450ml</td>
+                    <td>Transparente + Borda Metalizada (Dourada)</td>
+                    <td>R$ 6,19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td style="text-align:left">Taça de whisky 330ml</td>
                     <td>Transparente + Borda Metalizada (Dourada)</td>
                     <td>R$ 6,19</td>
                 </tr>
@@ -199,22 +211,131 @@
     </div>
 
     <div class="linha">
-        <div class="espaco">
-            Valor Frete: <span>R$ 66,34</span>
+        <div class="divContent" style="width: 40%; text-align: left;">
+            <div class="espaco">
+                <b>Acrescimos:</b>
+                <p>150 x Borda Metalizada (Dourada) R$ 900,00</p>
+            </div>
+            <div class="espaco">
+                <b>Valor Frete:</b> <span>R$ 66,34</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Total:</b> <span
+                    style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ 292,00</span>
+            </div>
+            <div class="espaco">
+                <b>Valor do Sinal:</b> <span
+                    style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+            </div>
+            <div class="espaco">
+                <b>Valor Restante:</b> <span
+                    style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+            </div>
         </div>
-        <div class="espaco">
-            Valor Total: <span style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$
-                292,00</span>
-        </div>
-        <div class="espaco">
-            Valor do Sinal: <span style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$
-                179,17</span>
-        </div>
-        <div>
-            Valor Restante: <span style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$
-                112,83</span>
+        <div class="divContent" style="width: 60%;">
+            <div class="linha">
+                <div class="divContent" style="text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <!-- <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div>
+                <div class="divContent" style="width: 50%; text-align: center;">
+                    <img class="img-prod" src="assets/img/vector (5).png">
+                </div> -->
+            </div>
         </div>
     </div>
+
+    <hr />
+
+    <!-- <pagebreak /> -->
+    <div style="font-size:10px;">
+
+        <div class="linha">
+            <div class="divContent" style="width: 30%; text-align: left;">
+                <span><img src="assets/img/vector (5).png"></span>
+            </div>
+            <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
+                <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
+            </div>
+            <div class="divContent" style="text-align: right;">
+                <span style="font-weight: bold">#
+                    <?php echo $teste[0]->id_pedido; ?>
+                </span>
+                <div style="text-align: right;">
+                    <b>Data do pedido:</b><span>
+                        <?php echo $teste[0]->data_pedido; ?>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="divContent" style="width: 50%; text-align: left;" >
+
+                <div class="linha">
+                    <div class="divContent" style="width: 50%; text-align: left;">
+                        <b>Nome: </b><span>
+                            <?php echo $teste[0]->cliente; ?>
+                        </span>
+                    </div>
+                    <div class="divContent" style="width: 50%; text-align: left;">
+                        <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="divContent" style="width: 50%; text-align: left;">
+                        <b>Data Evento:</b> <span style="color:#9747FF">
+                            <?php echo $teste[0]->data_evento ?>
+                        </span>
+                    </div>
+                    <div class="divContent" style="width: 50%; text-align: center;">
+                        <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="divContent" style="width: 100%; text-align: left;">
+                        <p>
+                            <b>25</b>
+                            <b>Taça de Gin 450ml</b>
+                            <b>Transparente + Borda Metalizada (Dourada)</b>
+                        </p>
+
+                        <p>
+                            <b>25</b>
+                            <b>Taça de whisky 330ml</b>
+                            <b>Transparente + Borda Metalizada (Dourada)</b>
+                        </p>
+
+                        <p>
+                            <b>Valor Frete:</b> <span>R$ 66,34</span>
+                        </p>
+
+                        <p style="color: red;">
+                            <u><b>Data da Entrega:</b></u> <span>20/06</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="divContent" style="width: 50%; text-align: center;">
+                <img class="img-prod" src="assets/img/vector (5).png">
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

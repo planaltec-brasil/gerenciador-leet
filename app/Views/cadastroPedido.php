@@ -256,14 +256,16 @@
             var fotos = [];
             var id_produto_pedido = [];
             var acrescimos = [];
+            var valorProd = [];
             $.each($('input[name="qtdPrd[]"]'), function (idx, obj) {
                 qtd.push($(obj).val());
                 idProd.push($("input[name='id_Produto[]']").eq(idx).val());
                 id_produto_pedido.push($("input[name='id_produto_pedido[]']").eq(idx).val());
                 fotos.push('');//$(".myfile")[idx].files[0].name
+                valorProd.push($("input[name='valorProd[]']").eq(idx).val());
                 acrescimos.push($("select[name='acrescimo[]']").eq(idx).val().join());
             });
-            
+
             $.ajax({
                 'url': "InsereDadosPedido",
                 'dataType': "JSON",
@@ -277,7 +279,6 @@
                     'cep_pedido': $("#cep_pedido").val(),
                     'valor_frete': $("valor_frete").val(),
                     'retirada_envio': $("#retirada_envio").val(),
-                    'valor_unitario': $("#valor_unitario").val(),
                     'valor_total': $("#valor_total").val(),
                     'valor_sinal': $("#valor_sinal").val(),
                     'falta_pagar': $("#falta_pagar").val(),
@@ -285,6 +286,7 @@
                     'id_Produto': idProd,
                     'id_produto_pedido': id_produto_pedido,
                     'fotos': fotos,
+                    'valorProd': valorProd,
                     'id_Acrescimo': acrescimos,
                     'id_Edita': $("#id_Edita").val()
                 },
@@ -345,11 +347,11 @@
         });
 
         $("#cep_cliente").keypress(function () {
-            $(this).mask('00.000-000');
+            $(this).mask('00000-000');
         });
 
         $("#cep_pedido").keypress(function () {
-            $(this).mask('00.000-000');
+            $(this).mask('00000-000');
         });
 
         $("#telefone_cliente").keypress(function () {
@@ -389,11 +391,15 @@
                     html += `<label for="qtdPrd">Quantidade</label>`;
                     html += `<input id="id_produto_pedido" name="id_produto_pedido[]" type="hidden" />`;
                     html += `<input id="id_Produto" name="id_Produto[]" type="hidden" value="${res.id_produto}" />`;
-                    html += `<input id="qtdPrd" name="qtdPrd[]" type="number" value="1" class="form-control qtdPrd-${res.id_produto}" />`;
+                    html += `<input id="qtdPrd" name="qtdPrd[]" type="text" value="1" oninput="calculaTotalPedido()" class="form-control qtdPrd-${res.id_produto}" />`;
+                    html += `</div>`;
+                    html += `<div class='col-12 pt-1'>`;
+                    html += `<label for="valorProd">Valor</label>`;
+                    html += `<input id="valorProd" name="valorProd[]" oninput="calculaTotalPedido()" type="text" value="${res.valor_venda}" class="form-control valorProd-${res.id_produto}" />`;
                     html += `</div>`;
                     html += `<div class='col-12 pt-1'>`;
                     html += `<label for="acrescimo">Acréscimo</label>`;
-                    html += `<select name="acrescimo[]" id="acrescimo" class="acrescimo form-select form-control" multiple>`
+                    html += `<select name="acrescimo[]" id="acrescimo" class="acrescimo form-select form-control" multiple onchange="calculaTotalPedido()">`
                     html += `</select>`
                     html += `</div>`;
                     html += `</div>`;
@@ -464,8 +470,22 @@
         });
 
 
-
     });
+
+    function calculaTotalPedido() {
+        var total = 0;
+        $.each($('input[name="valorProd[]"]'), function (idx, obj) {
+            var qtd = Number($('input[name="qtdPrd[]"]').eq(idx).val());
+            total += (Number($(obj).val()) * qtd);
+            
+            $.each($('option:selected', $("select[name='acrescimo[]']").eq(idx)), function (idx2, obj2) {
+                var acrescimo = Number($(obj2).attr("data-subtext").toString().replace('R$', ''));
+                total += qtd * acrescimo;
+            });
+        });
+
+        $("#valor_total").val(total);
+    }
 
     function EditaDados(id_pedido) {
         $("#pills-cadastro-tab").click();
@@ -482,7 +502,6 @@
 
                 if (res) {
                     $("#addCliente").selectpicker('val', res.cliente);
-                    $("#dados_cliente").val(res.dados_cliente);
                     $("#dados_arte").val(res.dados_arte);
                     $("#data_pedido").val(res.data_pedido);
                     $("#data_evento").val(res.data_evento);
@@ -490,7 +509,6 @@
                     $("#cep_pedido").val(res.cep_pedido);
                     $("#valor_frete").val(res.valor_frete);
                     $("#retirada_envio").val(res.retirada_envio);
-                    $("#valor_unitario").val(res.valor_unitario);
                     $("#valor_total").val(res.valor_total);
                     $("#valor_sinal").val(res.valor_sinal);
                     $("#falta_pagar").val(res.falta_pagar);
@@ -517,11 +535,15 @@
                         html += `<label for="qtdPrd">Quantidade</label>`;
                         html += `<input id="id_produto_pedido" name="id_produto_pedido[]" type="hidden" value="${resProdutos[i].id}" />`;
                         html += `<input id="id_Produto" name="id_Produto[]" type="hidden" value="${resProdutos[i].id_produto}" />`;
-                        html += `<input id="qtdPrd" name="qtdPrd[]" type="number" value="${resProdutos[i].qtd}" class="form-control qtdPrd-${resProdutos[i].id_produto}" />`;
+                        html += `<input id="qtdPrd" name="qtdPrd[]" type="text" oninput="calculaTotalPedido()" value="${resProdutos[i].qtd}" class="form-control qtdPrd-${resProdutos[i].id_produto}" />`;
+                        html += `</div>`;
+                        html += `<div class='col-12 pt-1'>`;
+                        html += `<label for="valorProd">Valor</label>`;
+                        html += `<input id="valorProd" name="valorProd[]" type="text" oninput="calculaTotalPedido()" value="${resProdutos[i].valor_produto}" class="form-control valorProd-${res.id_produto}" />`;
                         html += `</div>`;
                         html += `<div class='col-12 pt-1'>`;
                         html += `<label for="acrescimo">Acréscimo</label>`;
-                        html += `<select name="acrescimo[]" id="acrescimo" class="acrescimo form-select form-control" multiple>`
+                        html += `<select name="acrescimo[]" id="acrescimo" class="acrescimo form-select form-control" multiple onchange="calculaTotalPedido()">`
                         html += `</select>`
                         html += `</div>`;
                         html += `</div>`;
@@ -548,39 +570,30 @@
     }
 
     async function ListaAcrescimo(idPedido = null, idProduto = null) {
-        var acrescimos = null;
-        if(idPedido != null && idProduto != null) {
-            acrescimos = await fetch('CarregaAcrescimosProduto', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    idPedido: idPedido,
-                    idProduto: idProduto
-                }),
-            })
-            .then(res => {
-                return res;
-            })
-            .then(res => {
-                return res;
-            });
-
-            console.log('acrescimos: ', acrescimos);
-        }
-        
         $.ajax({
             url: "ListaAcrescimo",
             type: "POST",
             dataType: "JSON",
             data: {
+                idPedido: idPedido,
+                idProduto: idProduto
             },
             success: function (res) {
+                var acrescimos = [];
+                if (idPedido != null && idProduto != null) {
+                    var _acrescimos = res['acrescimosUpd'];
+                    for(var i = 0; i < _acrescimos.length; i++) {
+                        acrescimos.push(_acrescimos[i]['id_acrescimo']);
+                    }
+                }
+
+                console.log(acrescimos);
+
+                res = res['acrescimos'];
+
                 $("select[name='acrescimo[]']").last().empty();
                 $.each(res, function (idx, obj) {
-                    var html = `<option value="${obj.id_acrescimo}" >${obj.nome_acrescimo}</option>`;
+                    var html = `<option data-subtext="R$${obj.valor}" value="${obj.id_acrescimo}" ${ acrescimos.indexOf(obj.id_acrescimo) != -1 ? 'selected' : '' } >${obj.nome_acrescimo}</option>`;
                     $("select[name='acrescimo[]']").last().append(html);
                 });
 
@@ -621,19 +634,53 @@
         }
     }
 
+    function cidadeporIDPedido(idestado, nomeCidade) {
+        var idEstado = ($('#estadoProd').val() == "" || $('#estadoProd').val() == null) ? idestado : $('#estadoProd').val();
+        $.ajax({
+            url: "cidadeporID",
+            type: "POST",
+            dataType: "JSON",
+            data: {
+                idEstado: idEstado
+            },
+            success: function (res) {
+                $('#cidadeProd').empty();
+                var html = "";
+                $.each(res, function (idx, obj) {
+                    html += `<option value="${obj.id}" ${(obj.nome == nomeCidade) ? 'selected' : ''}>${obj.nome}</option>`;
+                });
+                $('#cidadeProd').append(html);
+            }
+        })
+    }
 
+    function getCepPedido(cep) {
+        cep = cep.toString().replace('-', '');
+        $.ajax({
+            url: `https://viacep.com.br/ws/${cep}/json/`,
+            type: "GET",
+            dataType: "JSON",
+            headers: { 'content-type': 'application/json;charset=utf-8' },
+            data: {},
+            success: function (res) {
+                $.post("listaEstado", function (data) {
+                    var listEst = JSON.parse(data);
+                    var html = "";
+                    $.each(listEst, function (idx, obj) {
+                        html += `<option value="${obj.id}" ${(obj.sigla == res.uf) ? 'selected' : ""}>${obj.nome + " - " + obj.sigla}</option>`;
+                    });
+                    $('#estadoProd').append(html);
+                });
 
+                $.post("pegaId", { sigla: res.uf }, function (data) {
+                    var idEst = JSON.parse(data);
+                    cidadeporIDPedido(idEst[0].id, res.localidade);
+                });
 
-
-    var add_button = $(".add_field_button"); //Add button ID
-    $(add_button).click(function (e) {
-        $(add_button).click(function (e) {
-
-        });
-    });
-
-
-
+            }
+        })
+    }
+    
     function cidadeporID(idestado, nomeCidade) {
         var idEstado = ($('#estado').val() == "" || $('#estado').val() == null) ? idestado : $('#estado').val();
         $.ajax({
@@ -655,6 +702,7 @@
     }
 
     function getCep(cep) {
+        cep = cep.toString().replace('-', '');
         $.ajax({
             url: `https://viacep.com.br/ws/${cep}/json/`,
             type: "GET",
@@ -673,7 +721,6 @@
 
                 $.post("pegaId", { sigla: res.uf }, function (data) {
                     var idEst = JSON.parse(data);
-                    console.log(idEst)
                     cidadeporID(idEst[0].id, res.localidade);
                 });
 
@@ -813,7 +860,11 @@
             <span id="alerta" style="text-align:center"></span>
         </div>
         <div class="main-cadastro-produto">
-            <form class="row g-4 was-validated">
+            <div class="row g-4 was-validated">
+                <div class="">
+                    <h5>Dados Gerais</h5>
+                    <hr>
+                </div>
                 <div class="col-md-3">
                     <label for="dadosClient" class="form-label">Dados do Cliente</label>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -821,10 +872,8 @@
                         data-bs-toggle="modal" data-bs-whatever="@getbootstrap" title="Adicionar Cliente"></i>
                     <select name="" id="addCliente" class="selectpicker form-control" data-live-search="true"
                         title="SELECIONE UM CLIENTE">
-
                     </select>
                 </div>
-
                 <div class="col-md-3">
                     <label for="inputAddress2" class="form-label">Telefone</label>
                     <input type="text" class="form-control" id="telefone_pedido" readonly>
@@ -833,37 +882,55 @@
                     <label for="inputAddress2" class="form-label">Número Arte</label>
                     <input type="text" class="form-control" id="dados_arte">
                 </div>
+
                 <div class="col-md-3">
                     <label for="inputState" class="form-label">CEP</label>
-                    <input type="text" class="form-control" id="cep_pedido" onblur="getCep(this.value)">
+                    <input type="text" class="form-control" id="cep_pedido" onblur="getCepPedido(this.value)">
                     <input type="text" hidden="true" id="id_Edita">
                     <button type="button" hidden="true" id="atualizaTable"></button>
                 </div>
                 <div class="col-md-3">
+                    <label for="estado" class="form-label">Estado</label>
+                    <select name="estados" id="estadoProd" class="form-select form-control"
+                        aria-label="Default select example" onchange="cidadeporIDPedido();">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <select name="cidade" id="cidadeProd" class="form-select form-control"
+                        aria-label="Default select example">
+                        <option value="">Aguardando estado</option>
+                    </select>
+                </div>
+                <div>
+                    <h5>Datas e Prazos</h5>
+                    <hr>
+                </div>
+                <div class="col-md-3">
                     <label for="numPedido" class="form-label">Data do Pedido</label>
-                    <input type="date" value="<?php echo date('01/m/Y') ?>" class="form-control" id="data_pedido">
+                    <input type="date" value="<?php echo date('Y-m-01') ?>" class="form-control" id="data_pedido">
                 </div>
                 <div class="col-md-3">
                     <label for="dadosClient" class="form-label">Data do Evento</label>
-                    <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="data_evento">
+                    <input type="date" class="form-control" value="<?php echo date('Y-m-01') ?>" id="data_evento">
                 </div>
                 <div class="col-md-3">
                     <label for="dadosProduto" class="form-label">Data da Entrega</label>
-                    <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="data_entrega">
+                    <input type="date" class="form-control" value="<?php echo date('Y-m-01') ?>" id="data_entrega">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputAddress2" class="form-label">Retirada/Envio</label>
+                    <input type="date" class="form-control" value="<?php echo date('Y-m-01') ?>" id="retirada_envio">
+                </div>
+                <div>
+                    <h5>Dados de Valores e Produto</h5>
+                    <hr>
                 </div>
                 <div class="col-md-3">
                     <label for="inputAddress2" class="form-label">Valor do Frete</label>
                     <input type="text" class="form-control" id="valor_frete"
                         onKeyUp="maskIt(this,event,'#########.##',true)">
-                </div>
-                <div class="col-md-3">
-                    <label for="inputAddress2" class="form-label">Retirada/Envio</label>
-                    <input type="date" class="form-control" value="<?php echo date('01/m/Y') ?>" id="retirada_envio">
-                </div>
-                <div class="col-md-3">
-                    <label for="numPedido" class="form-label">Valor Unitário</label>
-                    <input type="text" class="form-control" id="valor_unitario"
-                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl">
                 </div>
                 <div class="col-md-3">
                     <label for="dadosClient" class="form-label">Valor Total</label>
@@ -872,8 +939,8 @@
                 </div>
                 <div class="col-md-3">
                     <label for="dadosProduto" class="form-label">Valor Sinal</label>
-                    <input type="text" class="form-control" id="valor_sinal"
-                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl">
+                    <input type="text" class="form-control" id="valor_sinal" oninput="$('#falta_pagar').val( Number($('#valor_total').val()) - Number($(this).val()) )" 
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" >
                 </div>
                 <div class="col-md-3">
                     <label for="inputAddress2" class="form-label">Falta Pagar</label>
@@ -900,7 +967,7 @@
                 <div class='row mt-3' id="produtosAdd">
 
                 </div>
-            </form>
+            </div>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">

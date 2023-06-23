@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\Acrescimo_model;
 
 class CadsPedido_controller extends BaseController {
 
@@ -35,15 +36,14 @@ class CadsPedido_controller extends BaseController {
 		 		'produtos_pedido' => $prodpedidos,
 		 		'qtd' => $formDados['qtdPrd'][$key],
 		 		'foto' => $formDados['fotos'][$key],
+                'valor_produto' => $formDados['valorProd'][$key],
 		 	);
             
             if($formDados['id_produto_pedido'][$key] == '') {
                 unset($formDados["id_produto_pedido"]);
                 $this->prodPedidoModel->save($arrayProduto);
-                $idProduto = $this->prodPedidoModel->insertID();
             } else {
                 $this->prodPedidoModel->update([ 'id' => $formDados['id_produto_pedido'][$key] ], $arrayProduto);
-                $idProduto = $formDados['id_produto_pedido'][$key];
             }
 
             $acrescimos = isset($formDados['id_Acrescimo']) ? explode(',', $formDados['id_Acrescimo'][$key]) : null;
@@ -51,14 +51,17 @@ class CadsPedido_controller extends BaseController {
             $this->acrescimoPedidoModel->delete(['id_pedido' => $id]);
             
             foreach($acrescimos as $key => $acrescimo) {
+                $acrsm = $this->acrescimoModel->getAcrescimo($acrescimo);
                 $arrayAcrescimo = array(
                     'id_pedido' => $id,
-                    'id_acrescimo' => $acrescimo,
-                    'id_produto' => $idProduto,
+                    'id_acrescimo' => (int) $acrsm['id_acrescimo'],
+                    'id_produto' => $prodpedidos,
+                    'valor_acrescimo' => $acrsm['valor']
                 );
-
+                
                 $this->acrescimoPedidoModel->save($arrayAcrescimo);
             }
+            
         }
        
         echo json_encode($id);
@@ -126,16 +129,8 @@ class CadsPedido_controller extends BaseController {
     }
 
     function acrescimoProd(){
-        $res = $this->acrescimoModel->ListaAcrescimo();
-        echo json_encode($res);
-    }
-
-    function CarregaAcrescimosProduto(){
-        header("Access-Control-Allow-Origin: *");
-		header("Content-Type: text/html; charset=utf-8");
-        $_POST = $_POST ? $_POST : json_decode(file_get_contents("php://input"), true);
-
-        $res = $this->acrescimoPedidoModel->CarregaAcrescimosProduto($_POST['idPedido'], $_POST['idProduto']);
+        $res['acrescimos'] = $this->acrescimoModel->ListaAcrescimo();
+        $res['acrescimosUpd'] = $_POST['idPedido'] != "" && $_POST['idProduto'] != "" ? $this->acrescimoPedidoModel->CarregaAcrescimosProduto($_POST['idPedido'], $_POST['idProduto']) : [];
         echo json_encode($res);
     }
 

@@ -44,7 +44,8 @@
                 { data: 'unidade_produto' },
                 { data: 'volume_produto' },
                 { data: 'material_produto' },
-                { data: 'fotos_produto' },
+                { data: 'valor_compra' },
+                { data: 'valor_venda' },
                 {
                     data: null,
                     defaultContent: "",
@@ -58,11 +59,11 @@
             ]
         });
         $("#Enviadados").on('click', function () {
-            if ($("#nome_produto").val() == "" || $("#fotos_produto").val() == "") {
+            if ($("#nome_produto").val() == "") {
                 alert('Telefone e nome do cliente são obrigatórios');
                 return;
             }
-            }
+
             $.ajax({
                 'url': "InsereDadosProduto",
                 'dataType': "JSON",
@@ -75,7 +76,8 @@
                     'unidade_produto': $("#unidade_produto").val(),
                     'volume_produto': $("#volume_produto").val(),
                     'material_produto': $("#material_produto").val(),
-                    'fotos_produto': $("#fotos_produto").val(),
+                    'valor_compra': $("#valor_compra").val(),
+                    'valor_venda': $("#valor_venda").val(),
                     'id_Edita': $("#id_Edita").val()
                 },
                 success: function (res) {
@@ -118,7 +120,8 @@
                     $("#unidade_produto").val(res.unidade_produto);
                     $("#volume_produto").val(res.volume_produto);
                     $("#material_produto").val(res.material_produto);
-                    $("#fotos_produto").val(res.fotos_produto);
+                    $("#valor_compra").val(res.valor_compra);
+                    $("#valor_venda").val(res.valor_venda);
                     $("#id_Edita").val(res.id_produto);
                 }
             }
@@ -154,17 +157,21 @@
         </div>
         <div class="col-md-3">
             <label for="inputState" class="form-label">Volume</label>
-            <input type="text" id="volume_produto" class="form-control" id="">
+            <input type="text" id="volume_produto" class="form-control" >
         </div>
         <div class="col-md-3">
             <label for="inputState" class="form-label">Material</label>
-            <input type="text" id="material_produto" class="form-control" id="">
+            <input type="text" id="material_produto" class="form-control">
         </div>
         <div class="col-md-3">
-            <label for="inputState" class="form-label">Fotos do produto</label>
-            <input type="file" id="fotos_produto" class="form-control" id="">
+            <label for="valor_compra" class="form-label">Valor de compra</label>
+            <input type="text" id="valor_compra" class="form-control" >
             <input type="text" hidden="true" id="id_Edita">
             <button type="button" hidden="true" id="atualizaTable"></button>
+        </div>
+        <div class="col-md-3">
+            <label for="valor_venda" class="form-label">Valor de venda</label>
+            <input type="text" id="valor_venda" class="form-control" >
         </div>
         <!-- <div class="mb-3">
             <label for="formFile" class="form-label">Fotos do produto</label>
@@ -188,7 +195,7 @@
                 <th scope="col">Unidade</th>
                 <th scope="col">Volume</th>
                 <th scope="col">Material</th>
-                <th scope="col">Fotos</th>
+                <th scope="col">Valor Produto</th>
                 <th scope="col">Ações</th>
             </tr>
         </thead>
