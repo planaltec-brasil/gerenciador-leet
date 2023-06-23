@@ -78,6 +78,10 @@
         align-items: center;
     }
 
+    #tempPedidoFoto{
+        width: 60%;
+    }
+
     @keyframes load {
         to {
             transform: rotate(360deg)
@@ -251,74 +255,116 @@
         });
 
         $("#Btncadas").on('click', function () {
-            var qtd = [];
-            var idProd = [];
-            var fotos = [];
-            var id_produto_pedido = [];
-            var acrescimos = [];
-            var valorProd = [];
-            $.each($('input[name="qtdPrd[]"]'), function (idx, obj) {
-                qtd.push($(obj).val());
-                idProd.push($("input[name='id_Produto[]']").eq(idx).val());
-                id_produto_pedido.push($("input[name='id_produto_pedido[]']").eq(idx).val());
-                fotos.push('');//$(".myfile")[idx].files[0].name
-                valorProd.push($("input[name='valorProd[]']").eq(idx).val());
-                acrescimos.push($("select[name='acrescimo[]']").eq(idx).val().join());
-            });
+            if (
+                $("#addCliente").val() == "" ||
+                $("#fotos").val() == "" ||
+                $("#telefone_pedido").val() == "" ||
+                $("#dados_arte").val() == "" ||
+                $("#estadoProd").val() == "" ||
+                $("#data_pedido").val() == "" ||
+                $("#data_evento").val() == "" ||
+                $("#data_entrega").val() == "" ||
+                $("#retirada_envio").val() == "" ||
+                $("#valor_frete").val() == "" ||
+                $("#valor_total").val() == "" ||
+                $("#valor_sinal").val() == "" ||
+                $("#falta_pagar").val() == "" ||
+                $("#produtosAdd").html() == ""
+                // $("#qtdPrd").val() == "" ||
+                // $("#valorProd").val() == "" ||
+                // $("#acrescimo").val() == ""
 
-            $.ajax({
-                'url': "InsereDadosPedido",
-                'dataType': "JSON",
-                'type': "POST",
-                data: {
-                    'cliente': $("#addCliente").val(),
-                    'dados_arte': $("#dados_arte").val(),
-                    'data_pedido': $("#data_pedido").val(),
-                    'data_evento': $("#data_evento").val(),
-                    'data_entrega': $("#data_entrega").val(),
-                    'cep_pedido': $("#cep_pedido").val(),
-                    'valor_frete': $("valor_frete").val(),
-                    'retirada_envio': $("#retirada_envio").val(),
-                    'valor_total': $("#valor_total").val(),
-                    'valor_sinal': $("#valor_sinal").val(),
-                    'falta_pagar': $("#falta_pagar").val(),
-                    'qtdPrd': qtd,
-                    'id_Produto': idProd,
-                    'id_produto_pedido': id_produto_pedido,
-                    'fotos': fotos,
-                    'valorProd': valorProd,
-                    'id_Acrescimo': acrescimos,
-                    'id_Edita': $("#id_Edita").val()
-                },
-                success: function (res) {
-                    if (res) {
-                        fazUpload();
-                        $("#alerta").html("<div class='alert alert-success'> Sucesso ao Cadastrar!</div>");
-                        setTimeout(() => {
-                            $("#alerta").html("");
-                        }, 2000);
-                        $("#atualizaTable").click();
-                        $("#dados_cliente").val("")
-                        $("#dados_arte").val("")
-                        $("#data_pedido").val("")
-                        $("#data_evento").val("")
-                        $("#data_entrega").val("")
-                        $("#cep_pedido").val("")
-                        $("valor_frete").val("")
-                        $("#retirada_envio").val("")
-                        $("#valor_unitario").val("")
-                        $("#valor_total").val("")
-                        $("#valor_sinal").val("")
-                        $("#falta_pagar").val("")
-                        $("#id_Edita").val("")
-                    } else {
-                        $("#alerta").html("<div class='alert alert-danger'>Erro ao inserir os dados!</div>");
-                        setTimeout(() => {
-                            $("#alerta").html("");
-                        }, 2000);
+            ) {
+                alert(' Todos os campos são obrigatórios ');
+                return;
+            } else {
+
+                var qtd = [];
+                var idProd = [];
+                var fotos = [];
+                var id_produto_pedido = [];
+                var acrescimos = [];
+                var valorProd = [];
+
+                var files = $("#fotos")[0].files[0];
+                var date = $("#data_pedido").val().split('-').reverse().join('_');
+                var ext = files.type.split('/');
+
+                var myNewFile = new File([files], 'DOCLEET_' + date + '_<?php echo date('His'); ?>' + '.' + ext[1], { type: files.type });
+
+                $.each($('input[name="qtdPrd[]"]'), function (idx, obj) {
+                    qtd.push($(obj).val());
+                    idProd.push($("input[name='id_Produto[]']").eq(idx).val());
+                    id_produto_pedido.push($("input[name='id_produto_pedido[]']").eq(idx).val());
+                    valorProd.push($("input[name='valorProd[]']").eq(idx).val());
+                    acrescimos.push($("select[name='acrescimo[]']").eq(idx).val().join());
+                });
+
+                $.ajax({
+                    'url': "InsereDadosPedido",
+                    'dataType': "JSON",
+                    'type': "POST",
+                    data: {
+                        'cliente': $("#addCliente").val(),
+                        'dados_arte': $("#dados_arte").val(),
+                        'data_pedido': $("#data_pedido").val(),
+                        'data_evento': $("#data_evento").val(),
+                        'data_entrega': $("#data_entrega").val(),
+                        'cep_pedido': $("#cep_pedido").val(),
+                        'valor_frete': $("#valor_frete").val(),
+                        'retirada_envio': $("#retirada_envio").val(),
+                        'valor_total': $("#valor_total").val(),
+                        'valor_sinal': $("#valor_sinal").val(),
+                        'falta_pagar': $("#falta_pagar").val(),
+                        'foto_pedido': myNewFile.name,
+                        'qtdPrd': qtd,
+                        'id_Produto': idProd,
+                        'id_produto_pedido': id_produto_pedido,
+                        // 'fotos': fotos,
+                        'valorProd': valorProd,
+                        'id_Acrescimo': acrescimos,
+                        'cidade_pedido': $("#cidadeProd").val(),
+                        'estado_pedido': $("#estadoProd").val(),
+                        'logradouro_pedido': $("#Logradouro").val(),
+                        'bairro_pedido': $("#bairro").val(),
+                        'complemento_pedido': $("#complemento").val(),
+                        'id_Edita': $("#id_Edita").val()
+                    },
+                    success: function (res) {
+                        if (res) {
+                            fazUpload(myNewFile);
+                            $("#produtosAdd").html('');
+                            alert('Cadastrado com sucesso');
+                            // $("#alerta").html("<div class='alert alert-success'> Sucesso ao Cadastrar!</div>");
+                            // setTimeout(() => {
+                            //     $("#alerta").html("");
+                            // }, 2000);
+                            $("#atualizaTable").click();
+                            $("#addCliente").val("")
+                            $("#dados_arte").val("")
+                            $("#data_pedido").val("")
+                            $("#data_evento").val("")
+                            $("#data_entrega").val("")
+                            $("#cep_pedido").val("")
+                            $("#valor_frete").val("")
+                            $("#retirada_envio").val("")
+                            $("#valor_unitario").val("")
+                            $("#valor_total").val("")
+                            $("#valor_sinal").val("")
+                            $("#falta_pagar").val("")
+                            $("#estadoProd").val("")
+                            $("#cidadeProd").val("")
+                            $("#id_Edita").val("")
+                        } else {
+                            alert('Erro ao Cadastrar');
+                            $("#alerta").html("<div class='alert alert-danger'>Erro ao inserir os dados!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        }
                     }
-                }
-            })
+                })
+            }
 
         });
 
@@ -362,13 +408,13 @@
             $(this).mask('000.000.000-00');
         });
 
-        $("#addProduto").on('click', function () {
+        $("#addProduto").on('click', async function () {
             $.ajax({
                 url: "CarregaProduto",
                 dataType: "json",
                 type: "post",
                 data: { id: $("#produto").val() },
-                success: function (res) {
+                success: async function (res) {
                     var html = "";
                     // html += `<div class="box-load">`
                     // html += `<div class="pre"> Carregando...</div`
@@ -378,12 +424,13 @@
                     html += `<div class="d-flex justify-content-between" ><small>Descrição do Produto:</small>`;
                     html += '<a href="#" style="color:red;" onclick="excluiInput(this)" ><i class="fa-solid fa-trash"></i></a></div>';
                     html += `<div class="row g-0">`;
-                    html += `<div class="col-md-4 d-flex justify-content-center align-items-center">`;
-                    html += `<img style="width: 100%" src='assets/img/image.png' class="img-fluid rounded-start" alt="...">`;
-                    html += `<span style="display: none;" >Carregando...</span>`;
-                    html += `<a href="#" onclick="$('.file-${res.id_produto}').click()" ><i class="fa-solid fa-pen-to-square"></i></a><input onchange="readURL(this)" class="file-${res.id_produto} myfile" type="file" name="prodFile[]" style="visibility: hidden;" />`;
-                    html += `</div>`;
-                    html += `<div class="col-md-8" >`;
+                    // html += `<div class="col-md-4 d-flex justify-content-center align-items-center">`;
+                    // html += `<img style="width: 100%" src='assets/img/image.png' class="img-fluid rounded-start" alt="...">`;
+                    // html += `<span style="display: none;" >Carregando...</span>`;
+                    // html += `<a href="#" onclick="$('.file-${res.id_produto}').click()" ><i class="fa-solid fa-pen-to-square"></i></a>`
+                    // html += `<input onchange="readURL(this)" class="file-${res.id_produto} myfile" type="file" name="prodFile[]" style="visibility: hidden;" />`;
+                    // html += `</div>`;
+                    html += `<div class="col-md-12" >`;
                     html += `<div class="card-body">`;
                     html += `<h5 class="card-title">${res.nome_produto}</h5>`;
                     html += `<div class='row'>`;
@@ -418,16 +465,13 @@
                         $(".qtdPrd-" + res.id_produto).val(parseInt(valorAt) + 1);
                     }
 
-                    ListaAcrescimo();
+                    await ListaAcrescimo();
+                    calculaTotalPedido();
                 }
             });
         });
 
         $("#btnEnvia").on('click', function () {
-            if ($("#nome_cliente").val() == "" || $("#telefone_cliente").val() == "") {
-                alert('Telefone e nome do cliente são obrigatórios');
-                return;
-            }
             $.ajax({
                 'url': "InsereDadosCliente",
                 'dataType': "JSON",
@@ -469,22 +513,33 @@
             $("#exampleModal").modal('show');
         });
 
-
     });
+
+    async function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = async function (e) {
+                $('#tempPedidoFoto').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 
     function calculaTotalPedido() {
         var total = 0;
         $.each($('input[name="valorProd[]"]'), function (idx, obj) {
             var qtd = Number($('input[name="qtdPrd[]"]').eq(idx).val());
             total += (Number($(obj).val()) * qtd);
-            
+
             $.each($('option:selected', $("select[name='acrescimo[]']").eq(idx)), function (idx2, obj2) {
                 var acrescimo = Number($(obj2).attr("data-subtext").toString().replace('R$', ''));
                 total += qtd * acrescimo;
             });
         });
 
-        $("#valor_total").val(total);
+        $("#valor_total").val(total.toFixed(2));
+
+        $('#falta_pagar').val((Number($('#valor_total').val()) - Number($("#valor_sinal").val())).toFixed(2))
     }
 
     function EditaDados(id_pedido) {
@@ -496,17 +551,16 @@
             data: {
                 id: id_pedido
             },
-            success: function (res) {
+            success: async function (res) {
                 var resProdutos = res['produtos'];
                 var res = res['pedidos'];
-
                 if (res) {
-                    $("#addCliente").selectpicker('val', res.cliente);
+                    $("#addCliente").selectpicker('val', res.cliente).change();
                     $("#dados_arte").val(res.dados_arte);
                     $("#data_pedido").val(res.data_pedido);
                     $("#data_evento").val(res.data_evento);
                     $("#data_entrega").val(res.data_entrega);
-                    $("#cep_pedido").val(res.cep_pedido);
+                    $("#cep_pedido").val(res.cep_pedido).blur();
                     $("#valor_frete").val(res.valor_frete);
                     $("#retirada_envio").val(res.retirada_envio);
                     $("#valor_total").val(res.valor_total);
@@ -522,12 +576,13 @@
                         html += `<div class="d-flex justify-content-between" ><small>Descrição do Produto:</small>`;
                         html += '<a href="#" style="color:red;" onclick="excluiInput(this)" ><i class="fa-solid fa-trash"></i></a></div>';
                         html += `<div class="row g-0">`;
-                        html += `<div class="col-md-4 d-flex justify-content-center align-items-center">`;
-                        html += `<img style="width: 100%" src='${(resProdutos[i].foto != '' && resProdutos[i].foto != null ? resProdutos[i].foto : 'assets/img/image.png')}' class="img-fluid rounded-start" alt="...">`;
-                        html += `<span style="display: none;" >Carregando...</span>`;
-                        html += `<a href="#" onclick="$('.file-${resProdutos[i].id_produto}').click()" ><i class="fa-solid fa-pen-to-square"></i></a><input onchange="readURL(this)" class="file-${resProdutos[i].id_produto} myfile" type="file" name="prodFile[]" style="visibility: hidden;" />`;
-                        html += `</div>`;
-                        html += `<div class="col-md-8" >`;
+                        // html += `<div class="col-md-4 d-flex justify-content-center align-items-center">`;
+                        // html += `<img style="width: 100%" src='${(resProdutos[i].foto != '' && resProdutos[i].foto != null ? resProdutos[i].foto : 'assets/img/image.png')}' class="img-fluid rounded-start" alt="...">`;
+                        // html += `<span style="display: none;" >Carregando...</span>`;
+                        // html += `<a href="#" onclick="$('.file-${resProdutos[i].id_produto}').click()" ><i class="fa-solid fa-pen-to-square"></i></a>`;
+                        // html += `<input onchange="readURL(this)" class="file-${resProdutos[i].id_produto} myfile" type="file" name="prodFile[]" style="visibility: hidden;" />`;
+                        // html += `</div>`;
+                        html += `<div class="col-md-12" >`;
                         html += `<div class="card-body">`;
                         html += `<h5 class="card-title">${resProdutos[i].nome_produto}</h5>`;
                         html += `<div class='row'>`;
@@ -562,11 +617,14 @@
                             $(".qtdPrd-" + resProdutos[i].id_produto).val(parseInt(valorAt) + 1);
                         }
 
-                        ListaAcrescimo(res.id_pedido, resProdutos[i].id_produto);
+                        await ListaAcrescimo(res.id_pedido, resProdutos[i].id_produto);
                     }
+
+                    // calculaTotalPedido();
                 }
             }
         });
+
     }
 
     async function ListaAcrescimo(idPedido = null, idProduto = null) {
@@ -582,22 +640,23 @@
                 var acrescimos = [];
                 if (idPedido != null && idProduto != null) {
                     var _acrescimos = res['acrescimosUpd'];
-                    for(var i = 0; i < _acrescimos.length; i++) {
+                    for (var i = 0; i < _acrescimos.length; i++) {
                         acrescimos.push(_acrescimos[i]['id_acrescimo']);
                     }
                 }
 
-                console.log(acrescimos);
-
                 res = res['acrescimos'];
 
-                $("select[name='acrescimo[]']").last().empty();
+                var select = idProduto == null ? $("select[name='acrescimo[]']") : $("select[name='acrescimo[]']", $(".produto-" + idProduto));//idProduto == null ? $("select[name='acrescimo[]']", $(".produto-" + idProduto)) : $("select[name='acrescimo[]']");
+
+                console.log(res, select);
+                select.last().empty();
                 $.each(res, function (idx, obj) {
-                    var html = `<option data-subtext="R$${obj.valor}" value="${obj.id_acrescimo}" ${ acrescimos.indexOf(obj.id_acrescimo) != -1 ? 'selected' : '' } >${obj.nome_acrescimo}</option>`;
-                    $("select[name='acrescimo[]']").last().append(html);
+                    var html = `<option data-subtext="R$${obj.valor}" value="${obj.id_acrescimo}" ${acrescimos.indexOf(obj.id_acrescimo) != -1 ? 'selected' : ''} >${obj.nome_acrescimo}</option>`;
+                    select.last().append(html);
                 });
 
-                $("select[name='acrescimo[]']").last().selectpicker();
+                select.last().selectpicker();
             }
         });
     }
@@ -609,19 +668,13 @@
     async function ExcluiDados(id_pedido) {
         if (confirm('Deseja realmente executar essa ação?') === true) {
             await $.ajax({
-                url: "excluiProdPedido",
+                url: "excluiPedido",
                 type: "POST",
                 dataType: "JSON",
                 data: {
                     id: id_pedido
                 },
                 success: function (res) {
-                    $.ajax({
-                        url: "excluiPedido",
-                        type: "POST",
-                        dataType: "JSON",
-                        data: { id: id_pedido },
-                    });
                     if (res) {
                         $("#atualizaTable").click();
                         $("#alerta").html("<div class='alert alert-info'> Sucesso ao Deletar!</div>");
@@ -663,6 +716,8 @@
             headers: { 'content-type': 'application/json;charset=utf-8' },
             data: {},
             success: function (res) {
+                $('#Logradouro').val(res.logradouro)
+                $('#bairro').val(res.bairro)
                 $.post("listaEstado", function (data) {
                     var listEst = JSON.parse(data);
                     var html = "";
@@ -680,7 +735,7 @@
             }
         })
     }
-    
+
     function cidadeporID(idestado, nomeCidade) {
         var idEstado = ($('#estado').val() == "" || $('#estado').val() == null) ? idestado : $('#estado').val();
         $.ajax({
@@ -710,6 +765,7 @@
             headers: { 'content-type': 'application/json;charset=utf-8' },
             data: {},
             success: function (res) {
+                console.log(res);
                 $.post("listaEstado", function (data) {
                     var listEst = JSON.parse(data);
                     var html = "";
@@ -717,6 +773,7 @@
                         html += `<option value="${obj.id}" ${(obj.sigla == res.uf) ? 'selected' : ""}>${obj.nome + " - " + obj.sigla}</option>`;
                     });
                     $('#estado').append(html);
+
                 });
 
                 $.post("pegaId", { sigla: res.uf }, function (data) {
@@ -728,31 +785,9 @@
         })
     }
 
-    async function readURL(input) {
-        var parent = $(input).parent();
-        $('span', $(parent)).css('display', 'block');
-        $('img', $(parent)).css('display', 'none');
-        if (input.files && input.files[0]) {
-
-
-            var reader = new FileReader();
-
-            reader.onload = async function (e) {
-                $('span', $(parent)).css('display', 'none');
-                $('img', $(parent)).css('display', 'block');
-                $('img', $(parent)).attr('src', e.target.result);
-            }
-
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-
-    function fazUpload() {
+    function fazUpload(file) {
         var myform = new FormData();
-        var files = "";
-        $(".myfile").each(function (index) {
-            myform.append('file[]', $(this)[0].files[0]);
-        });
+        myform.append('file', file);
         myform.append('buckt', "uploadLeet");
         myform.append('leet', true);
 
@@ -865,44 +900,74 @@
                     <h5>Dados Gerais</h5>
                     <hr>
                 </div>
-                <div class="col-md-3">
-                    <label for="dadosClient" class="form-label">Dados do Cliente</label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa-solid fa-circle-plus" style="color:purple;" type="button" id="mymodal"
-                        data-bs-toggle="modal" data-bs-whatever="@getbootstrap" title="Adicionar Cliente"></i>
-                    <select name="" id="addCliente" class="selectpicker form-control" data-live-search="true"
-                        title="SELECIONE UM CLIENTE">
-                    </select>
+
+                <div class="col-md-8">
+                    <div class="row g-4">
+
+                        <div class="col-md-4">
+                            <label for="dadosClient" class="form-label">Dados do Cliente</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa-solid fa-circle-plus" style="color:purple;" type="button" id="mymodal"
+                                data-bs-toggle="modal" data-bs-whatever="@getbootstrap" title="Adicionar Cliente"></i>
+                            <select name="" id="addCliente" class="selectpicker form-control" data-live-search="true"
+                                title="SELECIONE UM CLIENTE">
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputAddress2" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="telefone_pedido" readonly>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputAddress2" class="form-label">Número Arte</label>
+                            <input type="text" class="form-control" id="dados_arte">
+                        </div>
+    
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="cep_pedido" onblur="getCepPedido(this.value)">
+                            <input type="text" hidden="true" id="id_Edita">
+                            <button type="button" hidden="true" id="atualizaTable"></button>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="estado" class="form-label">Estado</label>
+                            <select name="estados" id="estadoProd" class="form-select form-control"
+                                aria-label="Default select example" onchange="cidadeporIDPedido();">
+                                <option value="">Selecione o Estado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <select name="cidade" id="cidadeProd" class="form-select form-control"
+                                aria-label="Default select example">
+                                <option value="">Aguardando estado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputAddress2" class="form-label"> Logradouro</label>
+                            <input type="text" class="form-control" id="Logradouro">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputAddress2" class="form-label"> Bairro</label>
+                            <input type="text" class="form-control" id="bairro">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputAddress2" class="form-label"> Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputAddress2" class="form-label">Foto do pedido</label>
+                            <input type="file" placeholder="" class="form-control" id="fotos" onchange="readURL(this)">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <label for="inputAddress2" class="form-label">Telefone</label>
-                    <input type="text" class="form-control" id="telefone_pedido" readonly>
-                </div>
-                <div class="col-md-3">
-                    <label for="inputAddress2" class="form-label">Número Arte</label>
-                    <input type="text" class="form-control" id="dados_arte">
+                <div class="col-md-4">
+                    <div class="row g-4" >
+                        <div class="col-md-12 text-center">
+                            <img class="img-resposive" src="assets/img/image.png" id="tempPedidoFoto" />
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-3">
-                    <label for="inputState" class="form-label">CEP</label>
-                    <input type="text" class="form-control" id="cep_pedido" onblur="getCepPedido(this.value)">
-                    <input type="text" hidden="true" id="id_Edita">
-                    <button type="button" hidden="true" id="atualizaTable"></button>
-                </div>
-                <div class="col-md-3">
-                    <label for="estado" class="form-label">Estado</label>
-                    <select name="estados" id="estadoProd" class="form-select form-control"
-                        aria-label="Default select example" onchange="cidadeporIDPedido();">
-                        <option value="">Selecione o Estado</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="cidade" class="form-label">Cidade</label>
-                    <select name="cidade" id="cidadeProd" class="form-select form-control"
-                        aria-label="Default select example">
-                        <option value="">Aguardando estado</option>
-                    </select>
-                </div>
                 <div>
                     <h5>Datas e Prazos</h5>
                     <hr>
@@ -939,13 +1004,14 @@
                 </div>
                 <div class="col-md-3">
                     <label for="dadosProduto" class="form-label">Valor Sinal</label>
-                    <input type="text" class="form-control" id="valor_sinal" oninput="$('#falta_pagar').val( Number($('#valor_total').val()) - Number($(this).val()) )" 
-                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" >
+                    <input type="text" class="form-control" id="valor_sinal"
+                        onblur="$('#falta_pagar').val( (Number($('#valor_total').val()) - Number($(this).val())).toFixed(2) )"
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl">
                 </div>
                 <div class="col-md-3">
                     <label for="inputAddress2" class="form-label">Falta Pagar</label>
                     <input type="text" class="form-control" id="falta_pagar"
-                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl">
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" readonly>
                     <input type="text" hidden="true" id="id_Edita">
                     <button type="button" hidden="true" id="atualizaTable"></button>
                 </div>
@@ -957,7 +1023,7 @@
                 </div>
                 <div class="col-md-3">
                     <button class="btn btn-primary" type="button" id="addProduto"><i
-                            class="fa-solid fa-circle-plus"></i>Adicionar</button>
+                            class="fa-solid fa-circle-plus"></i> Adicionar</button>
                 </div>
                 <div>
                     <button type="button" id="Btncadas" class="btn btn-primary">Cadastrar</button>
@@ -1016,7 +1082,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" style="background-color:black"
                                 data-bs-dismiss="modal">Fechar</button>
-                            <button type="button" id="btnEnvia" class="btn btn-primary"
+                            <button type="submit" id="btnEnvia" class="btn btn-primary"
                                 data-bs-dismiss="modal">Cadastrar</button>
                         </div>
                     </div>

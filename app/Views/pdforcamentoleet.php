@@ -77,11 +77,11 @@
         </div>
         <div class="divContent" style="text-align: right;">
             <span style="font-weight: bold">#
-                <?php echo $teste[0]->id_pedido; ?>
+                <?php echo $pedido[0]->id_pedido; ?>
             </span>
             <div style="text-align: right;">
                 <b>Data do pedido:</b><span>
-                    <?php echo $teste[0]->data_pedido; ?>
+                    <?php echo $pedido[0]->data_pedido; ?>
                 </span>
             </div>
         </div>
@@ -90,7 +90,7 @@
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
             <b>Nome:</b><span>
-                <?php echo $teste[0]->cliente; ?>
+                <?php echo $pedido[0]->cliente; ?>
             </span>
         </div>
         <div class="divContent" style="width: 70%; text-align: right;">
@@ -100,17 +100,17 @@
 
     <div class="espaco">
         <div class="divContent" style="width: 30%; text-align: left;">
-            <b>Lg:</b> <span>Maria Gomes de Almeida</span>
+            <b>Lg:</b> <span><?php echo $pedido[0]->logradouro_pedido; ?></span>
         </div>
-        <div class="divContent" style="width: 23%; text-align: center;">
+        <!-- <div class="divContent" style="width: 23%; text-align: center;">
             <b>N°:</b> <span>29</span>
-        </div>
+        </div> -->
         <div class="divContent" style="width: 23%; text-align: right;">
-            <b>Complemento:</b> <span>A</span>
+            <b>Complemento:</b> <span><?php echo $pedido[0]->complemento_pedido; ?></span>
         </div>
-        <div class="divContent" style="width: 23%; text-align: right;">
+        <div class="divContent" style="width: 47%; text-align: right;">
             <b>CEP:</b> <span>
-                <?php echo $teste[0]->cep_pedido; ?>
+                <?php echo $pedido[0]->cep_pedido; ?>
             </span>
         </div>
     </div>
@@ -120,24 +120,24 @@
             <b>Bairro:</b> <span>Planalto</span>
         </div>
         <div class="divContent" style="width: 35%; text-align: center;">
-            <b>Cidade:</b> <span>Belo-Horizonte</span>
+            <b>Cidade:</b> <span><?php echo $pedido[0]->nome_cidade; ?></span>
         </div>
         <div class="divContent" style="width: 35%; text-align: right;">
-            <b>Estado:</b> <span>MG</span>
+            <b>Estado:</b> <span><?php echo $pedido[0]->sigla; ?></span>
         </div>
     </div>
 
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
             <b>Data Evento:</b> <span style="color:#9747FF">
-                <?php echo $teste[0]->data_evento ?>
+                <?php echo $pedido[0]->data_evento ?>
             </span>
         </div>
         <div class="divContent" style="width: 30%; text-align: center;">
-            <b>Data Postagem:</b> <span style="color:#9747FF">20/06</span>
+            <b>Data Postagem:</b> <span style="color:#9747FF"> <?php echo $pedido[0]->data_entrega ?></span>
         </div>
         <div class="divContent" style="width: 40%; text-align: right;">
-            <b>Localizador:</b> <span>Junho. 02 63 (nome)</span>
+            <b>Localizador:</b> <span><?php echo $pedido[0]->dados_arte ?></span>
         </div>
     </div>
 
@@ -214,22 +214,22 @@
         <div class="divContent" style="width: 40%; text-align: left;">
             <div class="espaco">
                 <b>Acrescimos:</b>
-                <p>150 x Borda Metalizada (Dourada) R$ 900,00</p>
+                <p>150 x Borda Metalizada (Dourada) </p>
             </div>
             <div class="espaco">
-                <b>Valor Frete:</b> <span>R$ 66,34</span>
+                <b>Valor Frete:</b> <span>R$ <?php echo $pedido[0]->valor_frete ?></span>
             </div>
             <div class="espaco">
                 <b>Valor Total:</b> <span
-                    style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ 292,00</span>
+                    style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[0]->valor_total ?></span>
             </div>
             <div class="espaco">
                 <b>Valor do Sinal:</b> <span
-                    style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ 179,17</span>
+                    style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[0]->valor_sinal ?></span>
             </div>
             <div class="espaco">
                 <b>Valor Restante:</b> <span
-                    style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ 112,83</span>
+                    style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[0]->falta_pagar ?></span>
             </div>
         </div>
         <div class="divContent" style="width: 60%;">
@@ -270,11 +270,11 @@
             </div>
             <div class="divContent" style="text-align: right;">
                 <span style="font-weight: bold">#
-                    <?php echo $teste[0]->id_pedido; ?>
+                    <?php echo $pedido[0]->id_pedido; ?>
                 </span>
                 <div style="text-align: right;">
                     <b>Data do pedido:</b><span>
-                        <?php echo $teste[0]->data_pedido; ?>
+                        <?php echo $pedido[0]->data_pedido; ?>
                     </span>
                 </div>
             </div>
@@ -286,7 +286,7 @@
                 <div class="linha">
                     <div class="divContent" style="width: 50%; text-align: left;">
                         <b>Nome: </b><span>
-                            <?php echo $teste[0]->cliente; ?>
+                            <?php echo $pedido[0]->cliente; ?>
                         </span>
                     </div>
                     <div class="divContent" style="width: 50%; text-align: left;">
@@ -297,11 +297,11 @@
                 <div class="linha">
                     <div class="divContent" style="width: 50%; text-align: left;">
                         <b>Data Evento:</b> <span style="color:#9747FF">
-                            <?php echo $teste[0]->data_evento ?>
+                            <?php echo $pedido[0]->data_evento ?>
                         </span>
                     </div>
                     <div class="divContent" style="width: 50%; text-align: center;">
-                        <b>Data Postagem:</b> <span style="color:#9747FF">Belo-Horizonte</span>
+                        <b>Data Postagem:</b> <span style="color:#9747FF"><?php echo $pedido[0]->data_entrega ?></span>
                     </div>
                 </div>
 
@@ -320,11 +320,11 @@
                         </p>
 
                         <p>
-                            <b>Valor Frete:</b> <span>R$ 66,34</span>
+                            <b>Valor Frete:</b> <span>R$  <?php echo $pedido[0]->valor_frete ?></span>
                         </p>
 
                         <p style="color: red;">
-                            <u><b>Data da Entrega:</b></u> <span>20/06</span>
+                            <u><b>Data da Entrega:</b></u> <span><?php echo $pedido[0]->data_entrega ?></span>
                         </p>
                     </div>
                 </div>

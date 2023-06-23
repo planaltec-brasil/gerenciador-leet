@@ -5,11 +5,19 @@ use App\Libraries\MeuPDF;
 
 class pdfLeet_controller extends BaseController{
 
-    public function pdfLeet(){
+    public function pdfLeet($pedidos){
         $mpdf = new MeuPDF();
         $data = [
-            'teste' => $this->pdfzinModel->funcaopuxaostrem()
+            'pedido' => $this->pdfzinModel->carregaPedidos($pedidos)
         ];
+
+        foreach($data['pedido'] as $pedido) {
+            $pedido->produtos = $this->pdfzinModel->carregaProdutosPedidos($pedido->id_pedido);
+            foreach($pedido->produtos as $produto) {
+                $produto->acrescimos = $this->pdfzinModel->carregaAcrescimosProdutosPedidos($pedido->id_pedido, $produto->produtos_pedido);
+            }
+        }
+
 		$html = view('pdforcamentoleet', $data);
 		$this->response->setHeader('Content-Type', 'application/pdf');
 

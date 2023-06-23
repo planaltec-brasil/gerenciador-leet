@@ -25,6 +25,12 @@ class Cadspedido_model extends Model {
         'valor_total',
         'valor_sinal',
         'falta_pagar',
+        'foto_pedido',
+        'cidade_pedido',
+        'estado_pedido',
+        'logradouro_pedido',
+        'bairro_pedido',
+        'complemento_pedido'
         ];
 
 

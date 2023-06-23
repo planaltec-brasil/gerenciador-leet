@@ -29,17 +29,19 @@ class CadsPedido_controller extends BaseController {
         }
 
         $produtos = isset($formDados['id_Produto']) ? $formDados['id_Produto'] : null;
+        
+        $this->acrescimoPedidoModel->deletaPorPedido($id);
 
         foreach ($produtos as $key => $prodpedidos){
 		 	$arrayProduto = array(
                 'pedidos' => $id,
 		 		'produtos_pedido' => $prodpedidos,
 		 		'qtd' => $formDados['qtdPrd'][$key],
-		 		'foto' => $formDados['fotos'][$key],
+		 		// 'foto' => $formDados['fotos'][$key],
                 'valor_produto' => $formDados['valorProd'][$key],
 		 	);
             
-            if($formDados['id_produto_pedido'][$key] == '') {
+            if(!isset($formDados['id_produto_pedido']) || $formDados['id_produto_pedido'][$key] == '') {
                 unset($formDados["id_produto_pedido"]);
                 $this->prodPedidoModel->save($arrayProduto);
             } else {
@@ -47,8 +49,6 @@ class CadsPedido_controller extends BaseController {
             }
 
             $acrescimos = isset($formDados['id_Acrescimo']) ? explode(',', $formDados['id_Acrescimo'][$key]) : null;
-            
-            $this->acrescimoPedidoModel->delete(['id_pedido' => $id]);
             
             foreach($acrescimos as $key => $acrescimo) {
                 $acrsm = $this->acrescimoModel->getAcrescimo($acrescimo);
@@ -103,7 +103,14 @@ class CadsPedido_controller extends BaseController {
     }
 
     function ExcluiPedido(){
-        $res = $this->pedido_model->delete($_POST['id']);
+        $acres = $this->acrescimoPedidoModel->deletaPorPedido($_POST['id']);
+        if($acres) {
+            $prod = $this->prodPedidoModel->deleta($_POST['id']);
+            if($prod)
+                $res = $this->pedido_model->delete($_POST['id']);
+        } else {
+            $res = false;
+        }
         echo json_encode($res);
     }
 

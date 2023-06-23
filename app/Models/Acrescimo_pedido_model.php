@@ -32,4 +32,8 @@ class Acrescimo_pedido_model extends Model {
         $query =  $db->query("SELECT * FROM tb_acrescimos_produto_pedido WHERE id_pedido = $idPedido AND id_produto = $idProduto;");
         return $query->getResult();
     }
+
+    function deletaPorPedido($id){
+        return $this->where(['id_pedido' => $id])->delete();
+    }
 }
