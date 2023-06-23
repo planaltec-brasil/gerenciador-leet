@@ -90,11 +90,11 @@
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
             <b>Nome:</b><span>
-                <?php echo $pedido[0]->cliente; ?>
+                <?php echo $pedido[0]->nome_cliente; ?>
             </span>
         </div>
         <div class="divContent" style="width: 70%; text-align: right;">
-            <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+            <b>Celular:</b> <span><?php echo $pedido[0]->telefone_cliente; ?></span>
         </div>
     </div>
 
@@ -160,52 +160,16 @@
                 </tr>
             </thead>
             <tbody>
+                <?php foreach($pedido[0]->produtos as $produto) { ?>
                 <tr>
-                    <td>25</td>
-                    <td style="text-align:left">Taça de Gin 450ml</td>
-                    <td>Transparente + Borda Metalizada (Dourada)</td>
-                    <td>R$ 6,19</td>
+                    <td><?php echo $produto->qtd; ?></td>
+                    <td><?php echo $produto->nome_produto; ?></td>
+                    <td>
+                        <?php foreach($produto->acrescimos as $k => $acrescimo) { echo $acrescimo->nome_acrescimo . ($k+1 < count($produto->acrescimos) ? ' + ' : ''); } ?>
+                    </td>
+                    <td><?php echo "R$" . number_format($produto->valor_produto, 2, ',', ''); ?></td>
                 </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>25</td>
-                    <td style="text-align:left">Taça de whisky 330ml</td>
-                    <td>Transparente + Borda Metalizada (Dourada)</td>
-                    <td>R$ 6,19</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>25</td>
-                    <td style="text-align:left">Taça de Gin 450ml</td>
-                    <td>Transparente + Borda Metalizada (Dourada)</td>
-                    <td>R$ 6,19</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>25</td>
-                    <td style="text-align:left">Taça de whisky 330ml</td>
-                    <td>Transparente + Borda Metalizada (Dourada)</td>
-                    <td>R$ 6,19</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>25</td>
-                    <td style="text-align:left">Taça de Gin 450ml</td>
-                    <td>Transparente + Borda Metalizada (Dourada)</td>
-                    <td>R$ 6,19</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>25</td>
-                    <td style="text-align:left">Taça de whisky 330ml</td>
-                    <td>Transparente + Borda Metalizada (Dourada)</td>
-                    <td>R$ 6,19</td>
-                </tr>
+                <?php } ?>
             </tbody>
         </table>
     </div>
@@ -286,11 +250,11 @@
                 <div class="linha">
                     <div class="divContent" style="width: 50%; text-align: left;">
                         <b>Nome: </b><span>
-                            <?php echo $pedido[0]->cliente; ?>
+                            <?php echo $pedido[0]->nome_cliente; ?>
                         </span>
                     </div>
                     <div class="divContent" style="width: 50%; text-align: left;">
-                        <b>Celular:</b> <span>+55 (31) 0000-0000</span>
+                        <b>Celular:</b> <span><?php echo $pedido[0]->telefone_cliente; ?></span>
                     </div>
                 </div>
 
