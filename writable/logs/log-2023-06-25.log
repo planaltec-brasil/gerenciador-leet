@@ -1,0 +1,497 @@
+INFO - 2023-06-25 14:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 14:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 14:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 14:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 14:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 14:55:28 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\Cadsproduto_model.php(30): CodeIgniter\BaseModel->findAll()
+#7 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(26): App\Models\Cadsproduto_model->getProduto()
+#8 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->getAllProd()
+#9 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#10 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\wamp64\www\GitHub\gerenciador-leet\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\Cadsproduto_model.php(30): CodeIgniter\BaseModel->findAll()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cadsproduto_controller.php(26): App\Models\Cadsproduto_model->getProduto()
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->getAllProd()
+#8 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+#9 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-25 14:55:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_produto`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Cadsproduto_model.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Cadsproduto_controller.php(26): App\Models\Cadsproduto_model->getProduto()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cadsproduto_controller->getAllProd()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadsproduto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 14:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 14:55:38 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(62): App\Models\Clientes_model->getClientes()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getAllCliente()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(62): App\Models\Clientes_model->getClientes()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getAllCliente()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 14:55:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SBE.nome as nomeEstado, SBC.nome as nomeCidade  FROM bd_leet.tb_cliente TC
+        LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
+        LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente')
+ 3 APPPATH\Controllers\Cliente_controller.php(62): App\Models\Clientes_model->getClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getAllCliente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 14:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 14:55:48 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 14:55:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servico_bd.estados')
+ 3 APPPATH\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 14:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 14:55:58 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\Cadspedido_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT TP.*, TC...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\CadsPedido_controller.php(72): App\Models\Cadspedido_model->listaPedidos()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->getPedido()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\Cadspedido_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT TP.*, TC...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\CadsPedido_controller.php(72): App\Models\Cadspedido_model->listaPedidos()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->getPedido()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 14:55:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Cadspedido_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT TP.*, TC.nome_cliente FROM tb_pedido TP LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente')
+ 3 APPPATH\Controllers\CadsPedido_controller.php(72): App\Models\Cadspedido_model->listaPedidos()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CadsPedido_controller->getPedido()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadsPedido_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 14:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 14:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 14:56:19 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 14:56:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servico_bd.estados')
+ 3 APPPATH\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 14:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 14:56:29 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 14:56:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SBE.nome as nomeEstado, SBC.nome as nomeCidade  FROM bd_leet.tb_cliente TC
+        LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
+        LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente')
+ 3 APPPATH\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 15:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 15:12:46 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 15:12:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servico_bd.estados')
+ 3 APPPATH\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 15:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 15:12:56 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 15:12:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SBE.nome as nomeEstado, SBC.nome as nomeCidade  FROM bd_leet.tb_cliente TC
+        LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
+        LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente')
+ 3 APPPATH\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 15:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 15:13:19 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 15:13:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM servico_bd.estados')
+ 3 APPPATH\Controllers\Cliente_controller.php(41): App\Models\Clientes_model->ListaEstado()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getEstado()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 15:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 15:13:29 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SB...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 15:13:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\clientes_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT TC.*, SBE.nome as nomeEstado, SBC.nome as nomeCidade  FROM bd_leet.tb_cliente TC
+        LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
+        LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente')
+ 3 APPPATH\Controllers\Cliente_controller.php(21): App\Models\Clientes_model->getClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cliente_controller->getClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 15:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 15:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 15:23:56 --> Error connecting to the database: mysqli_sql_exception: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('26.50.179.158', 'devs', '', 'bd_leet', 3306, '', 0)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\Pdf_model.php(46): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\pdfLeet_controller.php(11): App\Models\Pdf_model->carregaPedidos('56')
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+#7 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu in E:\wamp64\www\GitHub\gerenciador-leet\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\wamp64\www\GitHub\gerenciador-leet\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\wamp64\www\GitHub\gerenciador-leet\app\Models\Pdf_model.php(46): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#3 E:\wamp64\www\GitHub\gerenciador-leet\app\Controllers\pdfLeet_controller.php(11): App\Models\Pdf_model->carregaPedidos('56')
+#4 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+#5 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+#6 E:\wamp64\www\GitHub\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp64\www\GitHub\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 15:23:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Pdf_model.php(46): CodeIgniter\Database\BaseConnection->query('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56
+        ')
+ 3 APPPATH\Controllers\pdfLeet_controller.php(11): App\Models\Pdf_model->carregaPedidos('56')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
