@@ -177,15 +177,15 @@
                     <div class="titulo">
                         <h1>Acesse sua conta</h1>
                     </div>
-                    <form class="form-row d-grid gap-3" id="formLogin" method="POST" action="#">
+                    <div class="form-row d-grid gap-3">
                         <div class="form-group col-12 d-grid gap-3">
                             <label for="username">Login</label>
-                            <input id="logNome" name="usuario" type="text" class="form-control" />
+                            <input id="usuario" name="usuario" type="text" class="form-control" />
                         </div>
 
                         <div class="form-group col-12 d-grid gap-3">
                             <label for="username">Senha</label>
-                            <input id="logSenha" name="senha" type="password" class="form-control"
+                            <input id="senha" name="senha" type="password" class="form-control"
                                 style="height: 50px; border-radius: 12px;" />
                         </div>
 
@@ -199,9 +199,9 @@
                         </div>
 
                         <div class="form-group col-12 d-flex justify-content-center mt-5">
-                            <button type="submit" class="btn btn-lg glow-on-hover" href="Dashboard">Entrar</button>
+                            <button type="button" class="btn btn-lg glow-on-hover" id="btnEnvia" >Entrar</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 corzinha">
@@ -210,31 +210,32 @@
         </div>
     </div>
     <script>
-        $(document).ready(function () {
-            $("#formLogin").submit(function (e) {
-                e.preventDefault();//cancela o Submit
-
-                // envia o formulario utilizando o AJAX
+        $(document).ready(function() {
+            $("#btnEnvia").on('click', function () {
                 $.ajax({
-                    url: "verificaLogin",
-                    type: "POST",
-                    dataType: "JSON",
+                    'url': "verificaLogin",
+                    'dataType': "JSON",
+                    'type': "POST",
                     data: {
-                        usuario: $("#logNome").val(),
-                        senha: $("#logSenha").val(),
+                        'usuario': $("#usuario").val(),
+                        'senha': $("#senha").val()
                     },
                     success: function (res) {
-                    success: function (res) {
-                        res = JSON.parse(res);
-
-                        if(res == true){
-                            window.reload;
+                        if(res){
+                        window.location.href='Dashboard';
+                        }else{
+                            $("#alerta").html(
+                                "<div class='alert alert-danger'> Usuário ou senha incorretos</div>"
+                            );
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 4000);
                         }
                     }
-
-                });
+                })
             });
         });
+
     </script>
 </body>
 

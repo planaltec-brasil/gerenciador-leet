@@ -48,4 +48,13 @@ class Dash_controller extends BaseController{
  
          return view('Dashboard', $data);
      }
+
+     function CadsAcrescimo(){
+
+        $data = [
+             'pagina' => 'CadsAcrescimo'
+         ];
+ 
+         return view('Dashboard', $data);
+     }
 }

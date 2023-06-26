@@ -167,7 +167,7 @@
                     data: null,
                     defaultContent: "",
                     render: function (data, type, row) {
-                        return "<input class='selectCheck' type='checkbox' />";
+                        return "<input class='selectCheck' type='checkbox' value='" + row.id_pedido + "' />";
                     }
                 },
                 { data: 'id_pedido', defaultContent: "", },
@@ -388,8 +388,17 @@
         });
 
         $('#geraPdf').on('click', function () {
-            var id = $('#idOScs').val();
-            window.open('<?php echo base_url(); ?>pdfLeet_controllers/html_to_pdf/' + id, target = '_blank');
+            var arr = [];
+            $.each($('.selectCheck:checked'), function (idx, obj) {
+                arr.push($(obj).val());
+            });
+
+            if(arr.length == 0) {
+                alert('Selecione pelo menos um registro!'); 
+                return;
+            }
+
+            window.location = 'pdfLeet?ids=' + arr.join(',');
         });
 
         $("#cep_cliente").keypress(function () {
@@ -995,7 +1004,7 @@
                 <div class="col-md-3">
                     <label for="inputAddress2" class="form-label">Valor do Frete</label>
                     <input type="text" class="form-control" id="valor_frete"
-                        onKeyUp="maskIt(this,event,'#########.##',true)">
+                        onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl">
                 </div>
                 <div class="col-md-3">
                     <label for="dadosClient" class="form-label">Valor Total</label>

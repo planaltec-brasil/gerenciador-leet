@@ -27,11 +27,21 @@ class Clientes_model extends Model {
         'ativo_inativo'
         ];
 
-    public function getClientes() {
+    public function getClientes($id = null) {
         $db = db_connect();
-        $query =  $db->query("SELECT TC.*, SBE.nome as nomeEstado, SBC.nome as nomeCidade  FROM bd_leet.tb_cliente TC
-        LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
-        LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente");
+
+        $sql = "SELECT
+                    TC.*,
+                    SBE.nome as nomeEstado,
+                    SBC.nome as nomeCidade 
+                FROM bd_leet.tb_cliente TC
+                    LEFT JOIN servico_bd.estados SBE ON SBE.id = TC.estado_cliente
+                    LEFT JOIN servico_bd.cidades SBC ON SBC.id = TC.cidade_cliente ";
+
+        if($id)
+            $sql .= "WHERE TC.id_cliente = $id";
+
+        $query =  $db->query($sql);
         return $query->getResult();
     }
 

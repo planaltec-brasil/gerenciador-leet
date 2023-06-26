@@ -25,7 +25,7 @@ class Cliente_controller extends BaseController {
     public function CarregaEditaCliente(){
         $id = isset($_POST['id']) ? $_POST['id'] : "";
         $res = $this->Cliente_model->getClientes($id);
-        echo json_encode($res);
+        echo json_encode($res[0]);
     }
 
     function Situacao_cliente(){

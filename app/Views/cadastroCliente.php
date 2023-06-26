@@ -82,9 +82,9 @@
             // envio do formulario de cadastro
             $("#btnEnvia").on('click', function () {
                 if ($("#nome_cliente").val() == "" || $("#telefone_cliente").val() == "") {
-                alert('Telefone e nome do cliente são obrigatórios');
-                return;
-            }
+                    alert('Telefone e nome do cliente são obrigatórios');
+                    return;
+                }
                 $.ajax({
                     'url': "InsereDadosCliente",
                     'dataType': "JSON",
@@ -115,6 +115,18 @@
                 })
             });
 
+            $("#cep_cliente").keypress(function () {
+                $(this).mask('00000-000');
+            });
+
+            $("#telefone_cliente").keypress(function () {
+                $(this).mask('(00)0 0000-0000');
+            });
+
+            $("#cpf_cliente").keypress(function () {
+                $(this).mask('000.000.000-00');
+            });
+
             $.ajax({
                 url: "listaEstado",
                 type: "POST",
@@ -134,7 +146,7 @@
                 tabela.ajax.reload(null, false);
             });
 
-        })
+        });
 
         function EditaDadosCL(id_cliente) {
             $.ajax({
@@ -146,6 +158,7 @@
                 },
                 success: function (res) {
                     if (res) {
+                        console.log(id_cliente);
                         $("#nome_cliente").val(res.nome_cliente);
                         $("#cpf_cliente").val(res.cpf_cliente);
                         $("#telefone_cliente").val(res.telefone_cliente);
@@ -249,22 +262,22 @@
         <h1 class="corInit">Cadastro de Clientes</h1>
     </div>
     <div class="main-cadastro-produto">
-        <form class="row g-4 was-validated">
+        <form class="row g-4 ">
             <div class="col-md-3">
                 <label for="numPedido" class="form-label">Nome</label>
-                <input type="text" id="nome_cliente" class="form-control" id="" >
+                <input type="text" id="nome_cliente" class="form-control" id="">
             </div>
             <div class="col-md-3">
                 <label for="dadosClient" class="form-label">CPF</label>
-                <input type="text" id="cpf_cliente" class="form-control" id="" >
+                <input type="text" id="cpf_cliente" class="form-control" id="">
             </div>
             <div class="col-md-3">
                 <label for="dadosProduto" class="form-label">Telefone</label>
-                <input type="text" id="telefone_cliente" class="form-control" id="" >
+                <input type="text" id="telefone_cliente" class="form-control" id="">
             </div>
             <div class="col-md-3">
                 <label for="inputState" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="cep_cliente" onblur="getCep(this.value)" >
+                <input type="text" class="form-control" id="cep_cliente" onblur="getCep(this.value)">
                 <input type="text" hidden="true" id="id_Edita">
                 <button type="button" hidden="true" id="atualizaTable"></button>
             </div>

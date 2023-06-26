@@ -63,7 +63,6 @@
                 alert('Telefone e nome do cliente são obrigatórios');
                 return;
             }
-
             $.ajax({
                 'url': "InsereDadosProduto",
                 'dataType': "JSON",
@@ -129,7 +128,38 @@
     }
 
 </script>
+<script type="text/javascript">
+    function maskIt(w, e, m, r, a) {
+        // Cancela se o evento for Backspace
+        if (!e) var e = window.event
+        if (e.keyCode) code = e.keyCode;
+        else if (e.which) code = e.which;
+        // Variáveis da função
+        var txt = (!r) ? w.value.replace(/[^\d]+/gi, '') : w.value.replace(/[^\d]+/gi, '').reverse();
+        var mask = (!r) ? m : m.reverse();
+        var pre = (a) ? a.pre : "";
+        var pos = (a) ? a.pos : "";
+        var ret = "";
+        if (code == 9 || code == 8 || txt.length == mask.replace(/[^#]+/g, '').length) return false;
+        // Loop na máscara para aplicar os caracteres
+        for (var x = 0, y = 0, z = mask.length; x < z && y < txt.length;) {
+            if (mask.charAt(x) != '#') {
+                ret += mask.charAt(x); x++;
+            }
+            else {
+                ret += txt.charAt(y); y++; x++;
+            }
+        }
+        // Retorno da função
+        ret = (!r) ? ret : ret.reverse()
+        w.value = pre + ret + pos;
+    }
 
+    // Novo método para o objeto 'String'
+    String.prototype.reverse = function () {
+        return this.split('').reverse().join('');
+    }
+</script>
 <div class="main-top">
     <h1 class="corInit">Cadastro de Produtos</h1>
 </div>
@@ -165,13 +195,13 @@
         </div>
         <div class="col-md-3">
             <label for="valor_compra" class="form-label">Valor de compra</label>
-            <input type="text" id="valor_compra" class="form-control" >
+            <input type="text" id="valor_compra" class="form-control"  onKeyUp="maskIt(this,event,'#########.##',true)" dir="rtl" >
             <input type="text" hidden="true" id="id_Edita">
             <button type="button" hidden="true" id="atualizaTable"></button>
         </div>
         <div class="col-md-3">
             <label for="valor_venda" class="form-label">Valor de venda</label>
-            <input type="text" id="valor_venda" class="form-control" >
+            <input type="text" id="valor_venda" class="form-control"  onKeyUp="maskIt(this,event,'#########.##',true)"  dir="rtl" >
         </div>
         <!-- <div class="mb-3">
             <label for="formFile" class="form-label">Fotos do produto</label>
@@ -196,6 +226,7 @@
                 <th scope="col">Volume</th>
                 <th scope="col">Material</th>
                 <th scope="col">Valor Produto</th>
+                <th scope="col">Valor Venda</th>
                 <th scope="col">Ações</th>
             </tr>
         </thead>

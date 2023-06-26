@@ -6,7 +6,8 @@ use App\Libraries\MeuPDF;
 class pdfLeet_controller extends BaseController{
 
     public function pdfLeet(){
-        $pedidos = implode(',', [ 56,57 ]);
+        $pedidos = $_GET['ids'];//implode(',', [ 56,57 ]);
+        
         $mpdf = new MeuPDF();
         $data = [
             'pedido' => $this->pdfzinModel->carregaPedidos($pedidos)

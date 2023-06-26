@@ -8,6 +8,13 @@ class Login_Controller extends BaseController {
         return view('login');
     }
 
+    
+    private function _checkLogin($post) {
+        $usuario = $post['usuario'];
+        $senha = SHA1(MD5($post['senha']));
+        return $this->usuarioModel->checkLogin($usuario, $senha);
+    }
+
     public function verificaLogin() {
         $retorno = false;
 
@@ -32,7 +39,10 @@ class Login_Controller extends BaseController {
     }
 
     public function logout() {
-        return false;
+        session()->destroy();
+    
+        return redirect()->route('login');
     }
+
 
 }

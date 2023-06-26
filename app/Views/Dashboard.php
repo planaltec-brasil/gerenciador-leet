@@ -303,6 +303,7 @@
                                 <img src="<?= base_url(); ?>assets/img/Leet Logo.png" />
                                 <span class="navBar-daniel">DashBoard</span>
                             </a></li>
+                                <h3 style="color: white; text-align: center; font-size: 20px;">Bem vindo :  <?php echo $_SESSION['usuario'];  ?></h3>
                         <li class="navBar-daniel">
                             <a href="Dashboard">
                                 <i class="fas fa-home"></i> Home
@@ -332,13 +333,13 @@
                                 <i class="fas fa-solid fa-clipboard-user"></i> Cadastro de Usuários
                             </a>
                         </li>
-                        <!-- <li class="navBar-daniel">
-                            <a href="">
-                                <i class="fas fa-cog"></i> Settings
-                            </a>
-                        </li> -->
                         <li class="navBar-daniel">
-                            <a href="login" class="logout">
+                            <a href="CadsAcrescimo">
+                                <i class="fas fa-solid fa-calculator"></i> Acrescimos
+                            </a>
+                        </li>
+                        <li class="navBar-daniel">
+                            <a href="logout" class="logout">
                                 <i class="fas fa-sign-out-alt"></i> Sair
                             </a>
                         </li>
