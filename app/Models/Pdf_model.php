@@ -43,7 +43,7 @@ class Pdf_model extends Model {
             LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
             LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
             LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
-        WHERE TP.id_pedido = $id
+        WHERE TP.id_pedido IN ($id)
         ");
         return $query->getResult();
     }

@@ -68,6 +68,7 @@
 </script>
 
 <body>
+    <?php for($p = 0; $p < count($pedido);$p++) { ?>
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
             <span><img src="assets/img/vector (5).png"></span>
@@ -77,11 +78,11 @@
         </div>
         <div class="divContent" style="text-align: right;">
             <span style="font-weight: bold">#
-                <?php echo $pedido[0]->id_pedido; ?>
+                <?php echo $pedido[$p]->id_pedido; ?>
             </span>
             <div style="text-align: right;">
                 <b>Data do pedido:</b><span>
-                    <?php echo $pedido[0]->data_pedido; ?>
+                    <?php echo implode('/', array_reverse(explode('-', $pedido[$p]->data_pedido))); ?>
                 </span>
             </div>
         </div>
@@ -90,54 +91,54 @@
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
             <b>Nome:</b><span>
-                <?php echo $pedido[0]->nome_cliente; ?>
+                <?php echo $pedido[$p]->nome_cliente; ?>
             </span>
         </div>
         <div class="divContent" style="width: 70%; text-align: right;">
-            <b>Celular:</b> <span><?php echo $pedido[0]->telefone_cliente; ?></span>
+            <b>Celular:</b> <span><?php echo $pedido[$p]->telefone_cliente; ?></span>
         </div>
     </div>
 
     <div class="espaco">
         <div class="divContent" style="width: 30%; text-align: left;">
-            <b>Lg:</b> <span><?php echo $pedido[0]->logradouro_pedido; ?></span>
+            <b>Lg:</b> <span><?php echo $pedido[$p]->logradouro_pedido; ?></span>
         </div>
         <!-- <div class="divContent" style="width: 23%; text-align: center;">
             <b>N°:</b> <span>29</span>
         </div> -->
         <div class="divContent" style="width: 23%; text-align: right;">
-            <b>Complemento:</b> <span><?php echo $pedido[0]->complemento_pedido; ?></span>
+            <b>Complemento:</b> <span><?php echo $pedido[$p]->complemento_pedido; ?></span>
         </div>
         <div class="divContent" style="width: 47%; text-align: right;">
             <b>CEP:</b> <span>
-                <?php echo $pedido[0]->cep_pedido; ?>
+                <?php echo $pedido[$p]->cep_pedido; ?>
             </span>
         </div>
     </div>
 
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
-            <b>Bairro:</b> <span>Planalto</span>
+            <b>Bairro:</b> <span><?php echo $pedido[$p]->bairro_pedido; ?></span>
         </div>
         <div class="divContent" style="width: 35%; text-align: center;">
-            <b>Cidade:</b> <span><?php echo $pedido[0]->nome_cidade; ?></span>
+            <b>Cidade:</b> <span><?php echo $pedido[$p]->nome_cidade; ?></span>
         </div>
         <div class="divContent" style="width: 35%; text-align: right;">
-            <b>Estado:</b> <span><?php echo $pedido[0]->sigla; ?></span>
+            <b>Estado:</b> <span><?php echo $pedido[$p]->sigla; ?></span>
         </div>
     </div>
 
     <div class="linha">
         <div class="divContent" style="width: 30%; text-align: left;">
             <b>Data Evento:</b> <span style="color:#9747FF">
-                <?php echo $pedido[0]->data_evento ?>
+                <?php echo implode('/', array_reverse(explode('-', $pedido[$p]->data_evento))); ?>
             </span>
         </div>
         <div class="divContent" style="width: 30%; text-align: center;">
-            <b>Data Postagem:</b> <span style="color:#9747FF"> <?php echo $pedido[0]->data_entrega ?></span>
+            <b>Data Postagem:</b> <span style="color:#9747FF"> <?php echo implode('/', array_reverse(explode('-', $pedido[$p]->data_entrega))); ?></span>
         </div>
         <div class="divContent" style="width: 40%; text-align: right;">
-            <b>Localizador:</b> <span><?php echo $pedido[0]->dados_arte ?></span>
+            <b>Localizador:</b> <span><?php echo implode('/', array_reverse(explode('-', $pedido[$p]->dados_arte))); ?></span>
         </div>
     </div>
 
@@ -160,12 +161,12 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($pedido[0]->produtos as $produto) { ?>
+                <?php $acrescimosArr = []; foreach($pedido[$p]->produtos as $produto) { ?>
                 <tr>
                     <td><?php echo $produto->qtd; ?></td>
                     <td><?php echo $produto->nome_produto; ?></td>
                     <td>
-                        <?php foreach($produto->acrescimos as $k => $acrescimo) { echo $acrescimo->nome_acrescimo . ($k+1 < count($produto->acrescimos) ? ' + ' : ''); } ?>
+                        <?php foreach($produto->acrescimos as $k => $acrescimo) { array_push($acrescimosArr, $acrescimo->nome_acrescimo); echo $acrescimo->nome_acrescimo . ($k+1 < count($produto->acrescimos) ? ' + ' : ''); } ?>
                     </td>
                     <td><?php echo "R$" . number_format($produto->valor_produto, 2, ',', ''); ?></td>
                 </tr>
@@ -178,22 +179,24 @@
         <div class="divContent" style="width: 40%; text-align: left;">
             <div class="espaco">
                 <b>Acrescimos:</b>
-                <p>150 x Borda Metalizada (Dourada) </p>
+                <?php foreach(array_unique($acrescimosArr) as $arItem) { ?>
+                    <p><?php echo array_count_values($acrescimosArr)[$arItem] . 'x ' . $arItem; ?></p>
+                <?php } ?>
             </div>
             <div class="espaco">
-                <b>Valor Frete:</b> <span>R$ <?php echo $pedido[0]->valor_frete ?></span>
+                <b>Valor Frete:</b> <span>R$ <?php echo $pedido[$p]->valor_frete ?></span>
             </div>
             <div class="espaco">
                 <b>Valor Total:</b> <span
-                    style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[0]->valor_total ?></span>
+                    style="visibility: hidden">Valor</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[$p]->valor_total ?></span>
             </div>
             <div class="espaco">
                 <b>Valor do Sinal:</b> <span
-                    style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[0]->valor_sinal ?></span>
+                    style="visibility: hidden">va</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[$p]->valor_sinal ?></span>
             </div>
             <div class="espaco">
                 <b>Valor Restante:</b> <span
-                    style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[0]->falta_pagar ?></span>
+                    style="visibility: hidden">V</span><span>----------</span><span>&nbsp;&nbsp;R$ <?php echo $pedido[$p]->falta_pagar ?></span>
             </div>
         </div>
         <div class="divContent" style="width: 60%;">
@@ -234,11 +237,11 @@
             </div>
             <div class="divContent" style="text-align: right;">
                 <span style="font-weight: bold">#
-                    <?php echo $pedido[0]->id_pedido; ?>
+                    <?php echo $pedido[$p]->id_pedido; ?>
                 </span>
                 <div style="text-align: right;">
                     <b>Data do pedido:</b><span>
-                        <?php echo $pedido[0]->data_pedido; ?>
+                        <?php echo implode('/', array_reverse(explode('-', $pedido[$p]->data_pedido))); ?>
                     </span>
                 </div>
             </div>
@@ -250,45 +253,43 @@
                 <div class="linha">
                     <div class="divContent" style="width: 50%; text-align: left;">
                         <b>Nome: </b><span>
-                            <?php echo $pedido[0]->nome_cliente; ?>
+                            <?php echo $pedido[$p]->nome_cliente; ?>
                         </span>
                     </div>
                     <div class="divContent" style="width: 50%; text-align: left;">
-                        <b>Celular:</b> <span><?php echo $pedido[0]->telefone_cliente; ?></span>
+                        <b>Celular:</b> <span><?php echo $pedido[$p]->telefone_cliente; ?></span>
                     </div>
                 </div>
 
                 <div class="linha">
                     <div class="divContent" style="width: 50%; text-align: left;">
                         <b>Data Evento:</b> <span style="color:#9747FF">
-                            <?php echo $pedido[0]->data_evento ?>
+                            <?php echo implode('/', array_reverse(explode('-', $pedido[$p]->data_evento))); ?>
                         </span>
                     </div>
                     <div class="divContent" style="width: 50%; text-align: center;">
-                        <b>Data Postagem:</b> <span style="color:#9747FF"><?php echo $pedido[0]->data_entrega ?></span>
+                        <b>Data Postagem:</b> <span style="color:#9747FF"><?php echo implode('/', array_reverse(explode('-', $pedido[$p]->data_entrega))); ?></span>
                     </div>
                 </div>
 
                 <div class="linha">
                     <div class="divContent" style="width: 100%; text-align: left;">
+                        <?php foreach($pedido[$p]->produtos as $produto) { ?>
                         <p>
-                            <b>25</b>
-                            <b>Taça de Gin 450ml</b>
-                            <b>Transparente + Borda Metalizada (Dourada)</b>
+                            <b><?php echo $produto->qtd; ?></b>
+                            <b><?php echo $produto->nome_produto; ?></b>
+                            <b>
+                                <?php foreach($produto->acrescimos as $k => $acrescimo) { echo $acrescimo->nome_acrescimo . ($k+1 < count($produto->acrescimos) ? ' + ' : ''); } ?>
+                            </b>
                         </p>
+                        <?php } ?>
 
                         <p>
-                            <b>25</b>
-                            <b>Taça de whisky 330ml</b>
-                            <b>Transparente + Borda Metalizada (Dourada)</b>
-                        </p>
-
-                        <p>
-                            <b>Valor Frete:</b> <span>R$  <?php echo $pedido[0]->valor_frete ?></span>
+                            <b>Valor Frete:</b> <span>R$  <?php echo $pedido[$p]->valor_frete ?></span>
                         </p>
 
                         <p style="color: red;">
-                            <u><b>Data da Entrega:</b></u> <span><?php echo $pedido[0]->data_entrega ?></span>
+                            <u><b>Data da Entrega:</b></u> <span><?php echo implode('/', array_reverse(explode('-', $pedido[$p]->data_entrega))); ?></span>
                         </p>
                     </div>
                 </div>
@@ -299,7 +300,7 @@
         </div>
 
     </div>
-
+    <?php echo ($p+1) < count($pedido) ? '<pagebreak />' : ''; } ?>
 </body>
 
 </html>

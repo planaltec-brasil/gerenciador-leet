@@ -1,0 +1,266 @@
+INFO - 2023-06-26 13:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 13:14:28 --> Undefined property: stdClass::$bairro
+in APPPATH\Views\pdforcamentoleet.php on line 120.
+ 1 APPPATH\Views\pdforcamentoleet.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$bairro', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php', 120)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdforcamentoleet', [], true)
+ 5 APPPATH\Controllers\pdfLeet_controller.php(21): view('pdforcamentoleet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 13:17:04 --> array_count_values(): Argument #1 ($array) must be of type array, string given
+in APPPATH\Views\pdforcamentoleet.php on line 182.
+ 1 APPPATH\Views\pdforcamentoleet.php(182): array_count_values('teste 3')
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdforcamentoleet', [], true)
+ 5 APPPATH\Controllers\pdfLeet_controller.php(21): view('pdforcamentoleet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 13:17:30 --> Array to string conversion
+in APPPATH\Views\pdforcamentoleet.php on line 182.
+ 1 APPPATH\Views\pdforcamentoleet.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php', 182)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdforcamentoleet', [], true)
+ 5 APPPATH\Controllers\pdfLeet_controller.php(21): view('pdforcamentoleet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 13:26:01 --> Undefined array key 1
+in APPPATH\Views\pdforcamentoleet.php on line 81.
+ 1 APPPATH\Views\pdforcamentoleet.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdforcamentoleet', [], true)
+ 5 APPPATH\Controllers\pdfLeet_controller.php(21): view('pdforcamentoleet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 13:27:38 --> Undefined array key 1
+in APPPATH\Views\pdforcamentoleet.php on line 81.
+ 1 APPPATH\Views\pdforcamentoleet.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\wamp64\\www\\gerenciador-leet\\app\\Views\\pdforcamentoleet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdforcamentoleet', [], true)
+ 5 APPPATH\Controllers\pdfLeet_controller.php(21): view('pdforcamentoleet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet('56')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 13:29:12 --> Array to string conversion
+in APPPATH\Models\Pdf_model.php on line 46.
+ 1 APPPATH\Models\Pdf_model.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\gerenciador-leet\\app\\Models\\Pdf_model.php', 46)
+ 2 APPPATH\Controllers\pdfLeet_controller.php(12): App\Models\Pdf_model->carregaPedidos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-26 13:31:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '57' at line 11 in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Pdf_model.php(46): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\pdfLeet_controller.php(12): App\Models\Pdf_model->carregaPedidos('56,57')
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-26 13:31:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '57' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ')
+ 4 APPPATH\Models\Pdf_model.php(46): CodeIgniter\Database\BaseConnection->query('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ')
+ 5 APPPATH\Controllers\pdfLeet_controller.php(12): App\Models\Pdf_model->carregaPedidos('56,57')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-26 13:32:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '57' at line 11 in C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\gerenciador-leet\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\wamp64\www\gerenciador-leet\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\wamp64\www\gerenciador-leet\app\Models\Pdf_model.php(46): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\wamp64\www\gerenciador-leet\app\Controllers\pdfLeet_controller.php(12): App\Models\Pdf_model->carregaPedidos('56,57')
+#5 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+#6 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+#7 C:\wamp64\www\gerenciador-leet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\gerenciador-leet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-26 13:32:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '57' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ')
+ 4 APPPATH\Models\Pdf_model.php(46): CodeIgniter\Database\BaseConnection->query('SELECT 
+            TP.*,
+            TC.nome_cliente,
+            TC.telefone_cliente,
+            E.sigla,
+            C.nome AS nome_cidade
+        FROM tb_pedido TP 
+            LEFT JOIN tb_cliente TC ON TC.id_cliente = TP.cliente
+            LEFT JOIN servico_bd.estados E ON E.id = TP.estado_pedido
+            LEFT JOIN servico_bd.cidades C ON C.id = TP.cidade_pedido
+        WHERE TP.id_pedido = 56,57
+        ')
+ 5 APPPATH\Controllers\pdfLeet_controller.php(12): App\Models\Pdf_model->carregaPedidos('56,57')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pdfLeet_controller->pdfLeet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pdfLeet_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 13:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 13:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
