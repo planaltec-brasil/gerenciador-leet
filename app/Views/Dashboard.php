@@ -286,6 +286,27 @@
         }
 
     }
+
+    footer#btn-logout {
+    position: fixed;
+    bottom: 0;
+    width: 15%;
+    /* background: #1B1B1B; */
+    padding: 10px;
+    justify-content: center;
+    }
+
+    footer#btn-logout a {
+        color: red;
+        text-decoration: none;
+        border:none;
+        background-color: #1B1B1B;
+    }
+
+    footer#btn-logout a:hover {
+        color: white;
+        border:none;
+    }
 </style>
 <script>
     $(document).ready(function () {
@@ -303,7 +324,9 @@
                                 <img src="<?= base_url(); ?>assets/img/Leet Logo.png" />
                                 <span class="navBar-daniel">DashBoard</span>
                             </a></li>
-                                <h3 style="color: white; text-align: center; font-size: 20px;">Bem vindo :  <?php echo $_SESSION['usuario'];  ?></h3>
+                        <h3 style="color: white; text-align: center; font-size: 20px;">Bem vindo :
+                            <?php echo $_SESSION['usuario']; ?>
+                        </h3>
                         <li class="navBar-daniel">
                             <a href="Dashboard">
                                 <i class="fas fa-home"></i> Home
@@ -338,12 +361,17 @@
                                 <i class="fas fa-solid fa-calculator"></i> Acrescimos
                             </a>
                         </li>
-                        <li class="navBar-daniel">
-                            <a href="logout" class="logout">
-                                <i class="fas fa-sign-out-alt"></i> Sair
+                        <!-- <li class="navBar-daniel baixando">
+                            <a id="btn-logout" href="logout" class="logout btn btn-light">
+                                <i class="fas fa-sign-out-alt"></i> Deslogar
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
+                    <footer id="btn-logout">
+                        <a href="logout" class="logout btn btn-light">
+                            <i class="fas fa-sign-out-alt"></i> Deslogar
+                        </a>
+                    </footer>
                 </nav>
             </div>
             <div class="col-10">

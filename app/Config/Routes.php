@@ -73,7 +73,7 @@ $routes->post('/cidadeporID', 'Cliente_controller::getCidade');
 $routes->post('/cidadeporID', 'Cadspedido_controller::getCidade');
 $routes->post('/pegaId', 'Cliente_controller::pegaId');
 $routes->post('/pegaId', 'Cadspedido_controller::pegaId');
-$routes->post('/verificaLogin', 'Login_controller::verificaLogin');
+$routes->post('/verificaLogin', 'Login_Controller::verificaLogin');
 $routes->post('/Pdfleet', 'pdfleet_controller::ListaAcrescimfuncaopuxaostremo');
 $routes->get('/logout', 'Login_Controller::logout');
 

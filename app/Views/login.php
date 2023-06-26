@@ -186,7 +186,7 @@
                         <div class="form-group col-12 d-grid gap-3">
                             <label for="username">Senha</label>
                             <input id="senha" name="senha" type="password" class="form-control"
-                                style="height: 50px; border-radius: 12px;" />
+                                style="height: 50px; border-radius: 12px;"/>
                         </div>
 
                         <div class="form-group col-12 d-grid gap-3">
@@ -199,7 +199,7 @@
                         </div>
 
                         <div class="form-group col-12 d-flex justify-content-center mt-5">
-                            <button type="button" class="btn btn-lg glow-on-hover" id="btnEnvia" >Entrar</button>
+                            <button type="submit" class="btn btn-lg glow-on-hover" id="btnEnvia" >Entrar</button>
                         </div>
                     </div>
                 </div>
@@ -224,12 +224,7 @@
                         if(res){
                         window.location.href='Dashboard';
                         }else{
-                            $("#alerta").html(
-                                "<div class='alert alert-danger'> Usuário ou senha incorretos</div>"
-                            );
-                            setTimeout(() => {
-                                $("#alerta").html("");
-                            }, 4000);
+                            alert('login e senha incorreta!!')
                         }
                     }
                 })
