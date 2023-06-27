@@ -15,6 +15,37 @@ class PdfLeet_controller extends BaseController{
 
         foreach($data['pedido'] as $pedido) {
             $pedido->produtos = $this->pdfzinModel->carregaProdutosPedidos($pedido->id_pedido);
+
+             /* Endpoint */
+            $url = 'https://gsplanaltec.com/GerenciamentoServicos/APIControle/s3files';
+    
+            /* eCurl */
+            $curl = curl_init($url);
+    
+            /* Data */
+            $SendData = [
+                'file'=> $pedido->foto_pedido, 
+                'path'=>'uploadLeet'
+            ];
+    
+            /* Set JSON data to POST */
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $SendData);
+                
+            /* Define content type */
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+                
+            /* Return json */
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                
+            /* make request */
+            $result = curl_exec($curl);
+                
+            /* close curl */
+            curl_close($curl);
+
+            var_dump($result);
+            exit;
+
             foreach($pedido->produtos as $produto) {
                 $produto->acrescimos = $this->pdfzinModel->carregaAcrescimosProdutosPedidos($pedido->id_pedido, $produto->produtos_pedido);
             }

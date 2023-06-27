@@ -393,6 +393,12 @@
                 arr.push($(obj).val());
             });
 
+
+
+            // $.post("https://gsplanaltec.com/GerenciamentoServicos/APIControle/s3files", {file: res.foto_pedido , path: 'uploadLeet', json : true}, function (data) {
+//                 var myfile = JSON.parse(data);
+//                 $('#tempPedidoFoto').attr("src",myfile);
+//             });
             if(arr.length == 0) {
                 alert('Selecione pelo menos um registro!'); 
                 return;
@@ -551,7 +557,7 @@
         $('#falta_pagar').val((Number($('#valor_total').val()) - Number($("#valor_sinal").val())).toFixed(2))
     }
 
-    function EditaDados(id_pedido) {
+    async function EditaDados(id_pedido) {
         $("#pills-cadastro-tab").click();
         $.ajax({
             url: "CarregaPedido",
@@ -564,6 +570,13 @@
                 var resProdutos = res['produtos'];
                 var res = res['pedidos'];
                 if (res) {
+                    if(res.foto_pedido){
+                        $.post("https://gsplanaltec.com/GerenciamentoServicos/APIControle/s3files", {file: res.foto_pedido , path: 'uploadLeet', json : true}, function (data) {
+                            var myfile = JSON.parse(data);
+                            $('#tempPedidoFoto').attr("src",myfile);
+                        });
+                    }
+
                     $("#addCliente").selectpicker('val', res.cliente).change();
                     $("#dados_arte").val(res.dados_arte);
                     $("#data_pedido").val(res.data_pedido);
@@ -578,6 +591,7 @@
                     $("#id_Edita").val(res.id_pedido);
 
                     $("#produtosAdd").html('');
+
                     for (var i = 0; i < resProdutos.length; i++) {
                         var html = "";
                         html += `<div class="col-md-4 col-sm-12 produto-${resProdutos[i].id_produto}">`;
@@ -668,6 +682,21 @@
                 select.last().selectpicker();
             }
         });
+    }
+
+    function getFile(file){
+        $.ajax({
+            url:'',
+            dataType:'JSON',
+            type:'POST',
+            data: {
+                
+            },
+            success:function(res){
+                return JSON.parse(res);
+            }
+        })
+
     }
 
     function excluiInput(_this) {
