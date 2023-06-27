@@ -43,8 +43,8 @@ class PdfLeet_controller extends BaseController{
             /* close curl */
             curl_close($curl);
 
-            var_dump($result);
-            exit;
+            // var_dump($result);
+            // exit;
 
             foreach($pedido->produtos as $produto) {
                 $produto->acrescimos = $this->pdfzinModel->carregaAcrescimosProdutosPedidos($pedido->id_pedido, $produto->produtos_pedido);

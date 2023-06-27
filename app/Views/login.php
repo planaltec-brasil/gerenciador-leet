@@ -211,6 +211,16 @@
     </div>
     <script>
         $(document).ready(function () {
+
+
+            $("#senha").keypress(function (event) {
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if (keycode == '13') {
+                    $("#btnEnvia").click();
+                }
+
+            });
+
             $("#btnEnvia").on('click', function () {
                 $.ajax({
                     'url': "verificaLogin",
@@ -228,15 +238,6 @@
                         }
                     }
                 })
-            });
-
-
-            $("#senha").keypress(function (event) {
-                var keycode = (event.keyCode ? event.keyCode : event.which);
-                if (keycode == '13') {
-                    $("#btnEnvia").click();
-                }
-
             });
         });
 

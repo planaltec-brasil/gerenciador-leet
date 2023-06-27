@@ -230,7 +230,7 @@
 
         <div class="linha">
             <div class="divContent" style="width: 30%; text-align: left;">
-                <span><img src="assets/img/vector (5).png"></span>
+                <span><img src="<?php echo $pedido[$p]->foto_pedido ?>></span>
             </div>
             <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
                 <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
@@ -295,7 +295,7 @@
                 </div>
             </div>
             <div class="divContent" style="width: 50%; text-align: center;">
-                <img class="img-prod" src="assets/img/vector (5).png">
+                <img class="img-prod" src="<?php echo $pedido[$p]->foto_pedido ?>">
             </div>
         </div>
 
