@@ -186,7 +186,7 @@
                         <div class="form-group col-12 d-grid gap-3">
                             <label for="username">Senha</label>
                             <input id="senha" name="senha" type="password" class="form-control"
-                                style="height: 50px; border-radius: 12px;"/>
+                                style="height: 50px; border-radius: 12px;" />
                         </div>
 
                         <div class="form-group col-12 d-grid gap-3">
@@ -199,7 +199,7 @@
                         </div>
 
                         <div class="form-group col-12 d-flex justify-content-center mt-5">
-                            <button type="submit" class="btn btn-lg glow-on-hover" id="btnEnvia" >Entrar</button>
+                            <button type="submit" class="btn btn-lg glow-on-hover" id="btnEnvia">Entrar</button>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
         </div>
     </div>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#btnEnvia").on('click', function () {
                 $.ajax({
                     'url': "verificaLogin",
@@ -221,15 +221,28 @@
                         'senha': $("#senha").val()
                     },
                     success: function (res) {
-                        if(res){
-                        window.location.href='Dashboard';
-                        }else{
-                            alert('login e senha incorreta!!')
+                        if (res) {
+                            window.location.href = 'Dashboard';
+                        } else {
+                            alert('login e senha incorreta.');
                         }
                     }
                 })
             });
+
+
+            $("#senha").keypress(function (event) {
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if (keycode == '13') {
+                    $("#btnEnvia").click();
+                }
+
+            });
         });
+
+
+
+
 
     </script>
 </body>
