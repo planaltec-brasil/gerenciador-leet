@@ -72,7 +72,7 @@
     <div class="linha">
         
         <div class="divContent" style="width: 30%; text-align: left;">
-            <span><img src="assets/img/vector (5).png"></span>
+            <span><img src="assets/img/Leet.png"></span>
         </div>
         <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
             <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
@@ -231,7 +231,7 @@
 
         <div class="linha">
             <div class="divContent" style="width: 30%; text-align: left;">
-                <span><img src="<?php echo $pedido[$p]->foto_pedido ?>"></span>
+                <span><img src="assets/img/Leet.png"></span>
             </div>
             <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
                 <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
