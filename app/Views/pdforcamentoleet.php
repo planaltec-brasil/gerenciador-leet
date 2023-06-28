@@ -72,7 +72,7 @@
     <div class="linha">
         
         <div class="divContent" style="width: 30%; text-align: left;">
-            <span><img src="assets/img/Leet.png"></span>
+            <span><img src="assets/img/2pontozero.jpg"></span>
         </div>
         <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
             <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
@@ -167,7 +167,7 @@
                     <td><?php echo $produto->qtd; ?></td>
                     <td><?php echo $produto->nome_produto; ?></td>
                     <td>
-                        <?php foreach($produto->acrescimos as $k => $acrescimo) { array_push($acrescimosArr, $acrescimo->nome_acrescimo); echo $acrescimo->nome_acrescimo . ($k+1 < count($produto->acrescimos) ? ' + ' : ''); } ?>
+                        <?php foreach($produto->acrescimos as $k => $acrescimo) { for($v = 0; $v < $produto->qtd; $v++) { array_push($acrescimosArr, $acrescimo->nome_acrescimo); } echo $acrescimo->nome_acrescimo . ($k+1 < count($produto->acrescimos) ? ' + ' : ''); } ?>
                     </td>
                     <td><?php echo "R$" . number_format($produto->valor_produto, 2, ',', ''); ?></td>
                 </tr>
@@ -203,23 +203,8 @@
         <div class="divContent" style="width: 60%;">
             <div class="linha">
                 <div class="divContent" style="text-align: center;">
-                    <img class="img-prod" src="assets/img/vector (5).png">
+                    <img class="img-prod" src="<?php echo $pedido[$p]->foto_pedido ?>">
                 </div>
-                <!-- <div class="divContent" style="width: 50%; text-align: center;">
-                    <img class="img-prod" src="assets/img/vector (5).png">
-                </div>
-                <div class="divContent" style="width: 50%; text-align: center;">
-                    <img class="img-prod" src="assets/img/vector (5).png">
-                </div>
-                <div class="divContent" style="width: 50%; text-align: center;">
-                    <img class="img-prod" src="assets/img/vector (5).png">
-                </div>
-                <div class="divContent" style="width: 50%; text-align: center;">
-                    <img class="img-prod" src="assets/img/vector (5).png">
-                </div>
-                <div class="divContent" style="width: 50%; text-align: center;">
-                    <img class="img-prod" src="assets/img/vector (5).png">
-                </div> -->
             </div>
         </div>
     </div>
@@ -231,7 +216,7 @@
 
         <div class="linha">
             <div class="divContent" style="width: 30%; text-align: left;">
-                <span><img src="assets/img/Leet.png"></span>
+                <span><img src="assets/img/2pontozero.jpg"></span>
             </div>
             <div class="divContent" style="width: 30%; text-align: center; padding-top: 12px;">
                 <span style="font-size:large; font-weight: bold">Pedido de Venda</span>
