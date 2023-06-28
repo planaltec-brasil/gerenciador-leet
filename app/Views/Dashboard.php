@@ -367,12 +367,12 @@
                             </a>
                         </li> -->
                     </ul>
-                    <footer id="btn-logout">
-                        <a href="logout" class="logout btn btn-light">
-                            <i class="fas fa-sign-out-alt"></i> Deslogar
-                        </a>
-                    </footer>
                 </nav>
+                <footer id="btn-logout">
+                    <a href="logout" class="logout btn btn-light">
+                        <i class="fas fa-sign-out-alt"></i> Deslogar
+                    </a>
+                </footer>
             </div>
             <div class="col-10">
                 <section class="main" style="">

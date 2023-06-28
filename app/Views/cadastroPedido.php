@@ -78,7 +78,7 @@
         align-items: center;
     }
 
-    #tempPedidoFoto{
+    #tempPedidoFoto {
         width: 60%;
     }
 
@@ -87,6 +87,8 @@
             transform: rotate(360deg)
         }
     }
+
+
 </style>
 <script>
 
@@ -129,6 +131,7 @@
         $('#addCliente').on('change', function () {
             var telefone = $('option:selected', this).attr("data-subtext");
             $("#telefone_pedido").val(telefone);
+
         });
 
         var tabela = $('#tb_pedido').DataTable({
@@ -396,11 +399,11 @@
 
 
             // $.post("https://gsplanaltec.com/GerenciamentoServicos/APIControle/s3files", {file: res.foto_pedido , path: 'uploadLeet', json : true}, function (data) {
-//                 var myfile = JSON.parse(data);
-//                 $('#tempPedidoFoto').attr("src",myfile);
-//             });
-            if(arr.length == 0) {
-                alert('Selecione pelo menos um registro!'); 
+            //                 var myfile = JSON.parse(data);
+            //                 $('#tempPedidoFoto').attr("src",myfile);
+            //             });
+            if (arr.length == 0) {
+                alert('Selecione pelo menos um registro!');
                 return;
             }
 
@@ -487,36 +490,50 @@
         });
 
         $("#btnEnvia").on('click', function () {
-            $.ajax({
-                'url': "InsereDadosCliente",
-                'dataType': "JSON",
-                'type': "POST",
-                data: {
-                    'nome_cliente': $("#nome_cliente").val(),
-                    'cpf_cliente': $("#cpf_cliente").val(),
-                    'telefone_cliente': $("#telefone_cliente").val(),
-                    'cidade_cliente': $("#cidade").val(),
-                    'estado_cliente': $("#estado").val(),
-                    'cep_cliente': $("#cep_cliente").val(),
-                    'id_Edita': $("#id_Edita").val()
-                },
-                success: function (res) {
-                    if (res) {
-                        carregaCliente();
-                        $("#atualizaTable").click();
-                        $("#alerta").html("<div class='alert alert-success'> Sucesso ao Cadastrar!</div>");
-                        setTimeout(() => {
-                            $("#alerta").html("");
-                        }, 2000);
+            if (
+                $("#addCliente").val() == "" ||
+                $("#nome_cliente").val() == "" ||
+                $("#telefone_cliente").val() == "" ||
+                $("#cep_cliente").val() == ""
+                // $("#qtdPrd").val() == "" ||
+                // $("#valorProd").val() == "" ||
+                // $("#acrescimo").val() == ""
 
-                    } else {
-                        $("#alerta").html("<div class='alert alert-danger'>Erro ao inserir os dados!</div>");
-                        setTimeout(() => {
-                            $("#alerta").html("");
-                        }, 2000);
+            ) {
+                alert(' Todos os campos são obrigatórios ');
+                return;
+            } else {
+                $.ajax({
+                    'url': "InsereDadosCliente",
+                    'dataType': "JSON",
+                    'type': "POST",
+                    data: {
+                        'nome_cliente': $("#nome_cliente").val(),
+                        'cpf_cliente': $("#cpf_cliente").val(),
+                        'telefone_cliente': $("#telefone_cliente").val(),
+                        'cidade_cliente': $("#cidade").val(),
+                        'estado_cliente': $("#estado").val(),
+                        'cep_cliente': $("#cep_cliente").val(),
+                        'id_Edita': $("#id_Edita").val()
+                    },
+                    success: function (res) {
+                        if (res) {
+                            carregaCliente();
+                            $("#atualizaTable").click();
+                            $("#alerta").html("<div class='alert alert-success'> Sucesso ao Cadastrar!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+
+                        } else {
+                            $("#alerta").html("<div class='alert alert-danger'>Erro ao inserir os dados!</div>");
+                            setTimeout(() => {
+                                $("#alerta").html("");
+                            }, 2000);
+                        }
                     }
-                }
-            })
+                })
+            }
 
         });
 
@@ -570,10 +587,10 @@
                 var resProdutos = res['produtos'];
                 var res = res['pedidos'];
                 if (res) {
-                    if(res.foto_pedido){
-                        $.post("https://gsplanaltec.com/GerenciamentoServicos/APIControle/s3files", {file: res.foto_pedido , path: 'uploadLeet', json : true}, function (data) {
+                    if (res.foto_pedido) {
+                        $.post("https://gsplanaltec.com/GerenciamentoServicos/APIControle/s3files", { file: res.foto_pedido, path: 'uploadLeet', json: true }, function (data) {
                             var myfile = JSON.parse(data);
-                            $('#tempPedidoFoto').attr("src",myfile);
+                            $('#tempPedidoFoto').attr("src", myfile);
                         });
                     }
 
@@ -684,15 +701,15 @@
         });
     }
 
-    function getFile(file){
+    function getFile(file) {
         $.ajax({
-            url:'',
-            dataType:'JSON',
-            type:'POST',
+            url: '',
+            dataType: 'JSON',
+            type: 'POST',
             data: {
-                
+
             },
-            success:function(res){
+            success: function (res) {
                 return JSON.parse(res);
             }
         })
@@ -959,7 +976,7 @@
                             <label for="inputAddress2" class="form-label">Número Arte</label>
                             <input type="text" class="form-control" id="dados_arte">
                         </div>
-    
+
                         <div class="col-md-4">
                             <label for="inputState" class="form-label">CEP</label>
                             <input type="text" class="form-control" id="cep_pedido" onblur="getCepPedido(this.value)">
@@ -999,7 +1016,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="row g-4" >
+                    <div class="row g-4">
                         <div class="col-md-12 text-center">
                             <img class="img-resposive" src="assets/img/image.png" id="tempPedidoFoto" />
                         </div>
@@ -1063,10 +1080,9 @@
                     <button class="btn btn-primary" type="button" id="addProduto"><i
                             class="fa-solid fa-circle-plus"></i> Adicionar</button>
                 </div>
-                <div>
-                    <button type="button" id="Btncadas" class="btn btn-primary">Cadastrar</button>
-                    <button type="button" id="reloadPage" class="btn btn-primary" onclick="location.reload()">Limpar
-                        campos</button>
+                <div style="padding-left: 62vw">
+                    <button style="border-radius: 15px" type="button" id="Btncadas" class="btn btn-success">Cadastrar</button>
+                    <button style="width:150px;" type="button" id="reloadPage" class="btn btn-danger" onclick="location.reload()">Limpar campos</button>
                 </div>
                 <div class='row mt-3' id="produtosAdd">
 
