@@ -82,6 +82,7 @@
                 },
                 success: function (res) {
                     if (res) {
+                        alert('Cadastro feito com Sucesso')
                         $("#atualizaTable").click();
                         $("#alerta").html("<div class='alert alert-success'> Sucesso ao Cadastrar!</div>");
                         setTimeout(() => {
