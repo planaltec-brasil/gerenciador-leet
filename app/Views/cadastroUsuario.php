@@ -171,7 +171,7 @@
         </div>
         <div class="col-md-3">
             <label for="dadosClient" class="form-label">Senha</label>
-            <input type="text" id="senha" class="form-control" id="">
+            <input type="password" id="senha" class="form-control" id="">
         </div>
         <div class="col-md-3">
             <label for="inputAddress2" class="form-label">Cargo/Permissões</label>

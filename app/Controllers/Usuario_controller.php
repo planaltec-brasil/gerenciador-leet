@@ -10,6 +10,7 @@ class Usuario_controller extends BaseController {
         $formDados = $this->request->getPost();
         $id = $formDados["id_Edita"];
         unset($formDados["id_Edita"]);
+        $formDados['senha'] = SHA1(MD5($formDados['senha']));
         if($id == "" || $id == null){
             $res = $this->user_model->save($formDados);
         }else{
