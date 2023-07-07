@@ -491,7 +491,6 @@
 
         $("#btnEnvia").on('click', function () {
             if (
-                $("#addCliente").val() == "" ||
                 $("#nome_cliente").val() == "" ||
                 $("#telefone_cliente").val() == "" ||
                 $("#cep_cliente").val() == ""
